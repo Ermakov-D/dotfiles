@@ -1,0 +1,20 @@
+[Desktop Entry]
+Comment[ru]=
+Comment=
+Exec=wine "c:\\Telconi\\telconi.exe"
+GenericName[ru]=Telconi Terminal
+GenericName=Telconi Terminal
+Icon=/home/depeche/Изображения/telconi_4_48x48x8.png
+MimeType=
+Name[ru]=Telconi.win
+Name=Telconi.win
+NoDisplay=false
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

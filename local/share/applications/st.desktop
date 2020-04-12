@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=Simply Terminal
+Comment=Simply Terminal
+Exec=/usr/bin/st
+Icon=/home/depeche/Изображения/st.png
+Terminal=false
+Categories=System

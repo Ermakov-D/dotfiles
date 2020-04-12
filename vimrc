@@ -1,4 +1,4 @@
-"" Last update: 11.04.2020 12:48
+"" Last update: 12.04.2020 16:45
 "" .vimrc  файл конфирурации для текстового редактора VIM
 "" dimio (http://dimio.org)
 "" Подробности по адресу:
@@ -119,7 +119,7 @@ autocmd BufEnter *.* :call RemoveTrailingSpaces()
 set path=.,,**
 
 " Настройки для vundle
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 " репозитории на github
 Bundle 'tpope/vim-fugitive'

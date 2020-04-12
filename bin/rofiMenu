@@ -1,0 +1,12 @@
+#!/bin/bash
+
+selected=$(ls "$HOME/rofiMenu" | rofi -dmenu -theme arthur -p "Quick: ")
+if [ -f $HOME/rofiMenu/$selected ]; then
+    $HOME/rofiMenu/$selected
+    exit $?
+else
+    echo '#!/bin/bash' > $HOME/rofiMenu/$selected
+    chmod +x $HOME/rofiMenu/$selected
+    vim $HOME/rofimenu/$selected
+fi
+

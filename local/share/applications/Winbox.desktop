@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment[ru_RU]=
+Comment=
+Exec=wine "c:\\Winbox\\winbox.exe"
+GenericName[ru_RU]=Winbox
+GenericName=Winbox
+Icon=/home/depeche/Изображения/winbox_icon.png
+MimeType=
+Name=Winbox
+NoDisplay=false
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-SubstituteUID=false
+X-KDE-Username=

@@ -17,7 +17,10 @@
     ~/.config/freerdp/known_hosts2: config/freerdp/known_hosts2
     ~/.ssh/config: ssh/config
     ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes
-
+    ~/.vim/bundle: vim/bundle
+    ~/.local/share/applications/st.desktop: local/share/applications/st.desktop
+    ~/.local/share/applications/Telconi.win.desktop: local/share/applications/Telconi.win.desktop
+    ~/.local/share/applications/Winbox.desktop:  local/share/applications/Winbox.desktop
 - create:
     - ~/.vim/undo-history
 

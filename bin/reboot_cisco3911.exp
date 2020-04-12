@@ -1,0 +1,21 @@
+#!/usr/bin/expect
+
+    foreach HOST { 123 116 } {
+        spawn   telnet 192.168.15.$HOST
+        expect  "Login:" {
+            send admin
+            sleep 2
+            send \r
+        }
+        expect  "Password:" {
+            send cisco
+            sleep 3
+            send \r
+        }
+        expect "#" {
+            send reboot
+            sleep 1
+            send \r\n
+        }
+        expect eof {break}
+    }
