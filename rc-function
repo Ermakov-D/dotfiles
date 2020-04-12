@@ -1,0 +1,36 @@
+myip ()
+{
+# используется Geo: https://github.com/jakewmeyer/Geo
+    #geo -o country
+    #wan=$(geo -w)A
+    #dns_wan=$(dig +short -x ${wan})
+    #echo "Wan: ${wan}-${dns_wan}"
+    echo "Lan:"
+    geo -l
+    geo  -o country
+    echo "---- IPv6: "
+    ip -6 a | grep inet6 | awk -F " " '{print $2}' | grep -v ::1/128
+
+}
+
+weather()
+{
+        # change Paris to your default location
+        local request="wttr.in/${1-Moscow?2}"
+                [ "$(tput cols)" -lt 125 ] && request+='?n'
+                    curl -H "Accept-Language: ${LANG%_*}" --compressed "$request"
+}
+
+alias погода="weather"
+alias gjujlf="weather"
+
+viamnet()
+{
+    if [ $# -eq "0" ]; then
+        geo -l
+        echo "Use: viamnet NAME.viamnet.local"
+        return 0
+    fi
+
+    dig +short @192.168.250.10 $1
+}

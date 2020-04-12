@@ -1,0 +1,25 @@
+- defaults:
+    link:
+      relink: true
+      force: true
+- clean: ['~']
+- link:
+    ~/.config/i3:
+      path: config/i3
+      force: true
+    ~/.config/polybar:
+      path: config/polybar
+      force: true
+    ~/.config/pac/pac.yml: config/pac/pac.yml
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.config/remmina/remmina.pref: config/remmina/remmina.pref
+    ~/.config/freerdp/known_hosts2: config/freerdp/known_hosts2
+    ~/.ssh/config: ssh/config
+
+- create:
+    - ~/.vim/undo-history
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
