@@ -1,0 +1,3 @@
+# Игнорировать установленные плагины vim'а
+vim/bundle/
+!vim/bundle/Vundle.Vim

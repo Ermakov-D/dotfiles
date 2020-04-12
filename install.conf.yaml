@@ -21,6 +21,10 @@
     ~/.local/share/applications/st.desktop: local/share/applications/st.desktop
     ~/.local/share/applications/Telconi.win.desktop: local/share/applications/Telconi.win.desktop
     ~/.local/share/applications/Winbox.desktop:  local/share/applications/Winbox.desktop
+    ~/bin/reboot_cisco3911.exp: bin/reboot_cisco3911.exp
+    ~/bin/rofiMenu: bin/rofiMenu
+    ~/bin/screenlock.sh: bin/screenlock.sh
+
 - create:
     - ~/.vim/undo-history
 

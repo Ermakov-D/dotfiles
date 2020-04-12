@@ -1,0 +1,5 @@
+- link:
+    ~/bin/reboot_cisco3911.exp: bin/reboot_cisco3911.exp
+    ~/bin/rofiMenu: bin/rofiMenu
+    ~/bin/screenlock.sh: bin/screenlock.sh
+

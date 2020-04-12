@@ -1,0 +1,9 @@
+- link:
+    ~/.config/i3: config/i3
+    ~/.config/polybar: config/polybar
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.ssh/config: ssh/config
+    ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes
+
+
