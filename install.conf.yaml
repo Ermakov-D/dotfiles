@@ -16,6 +16,7 @@
     ~/.config/remmina/remmina.pref: config/remmina/remmina.pref
     ~/.config/freerdp/known_hosts2: config/freerdp/known_hosts2
     ~/.ssh/config: ssh/config
+    ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes
 
 - create:
     - ~/.vim/undo-history
