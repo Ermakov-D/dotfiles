@@ -1,0 +1,10 @@
+- link:
+    ~/.vimrc: vimrc
+    ~/.vim/bundle: vim/bundle
+    ~/.zshrc: zshrc
+    ~/.ssh/config: ssh/config
+    ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes
+    ~/.config/polybar/scripts: config/polybar/scripts
+    ~/.config/polybar/launch.sh: config/polybar/launch.sh
+
+
