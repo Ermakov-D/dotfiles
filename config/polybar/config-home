@@ -122,7 +122,7 @@ font-4 = "Weather Icons:size=7;2"
 modules-left = i3 xwindow
 ;modules-center = weather
 # kernel
-modules-right = memory2 cpu2 xkeyboard pavolume battery date
+modules-right = memory2 cpu2 xkeyboard pavolume battery date poweroff
 
 separator = |
 
@@ -1880,3 +1880,15 @@ exec = ~/.config/polybar/scripts/openweathermap-fullfeatured.sh
 interval = 600
 ###############################################################################
 
+[module/poweroff]
+type = custom/script
+exec = echo "" 
+click-left = ~/bin/rofi-logout
+format = <label>
+;format-prefix = " "
+format-prefix-foreground = #3EC13F
+;format-underline = #3EC13F
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+
+###############################################################################

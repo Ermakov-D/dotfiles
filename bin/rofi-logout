@@ -2,7 +2,7 @@
 
 question=$(echo " lock| logout| reboot| shutdown" | rofi -sep "|" \
     -dmenu -i -p 'System: ' "" -width 20 -hide-scrollbar \
-    -eh 1 -line-padding 4 -padding 20 -lines 4 -color-enabled)
+    -eh 1 -line-padding 4 -padding 20 -lines 4 -color-enabled -theme Adapta-Nokto)
 
 case $question in
     *lock)
