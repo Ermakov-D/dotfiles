@@ -19,7 +19,7 @@
 pseudo-transparency = true
 #Цвета панели
 [colors]
-background = #0f21457A
+background = #0021457A
 background-alt = #1463B6
 foreground = #dfdfdf
 foreground-alt = #568DDD
