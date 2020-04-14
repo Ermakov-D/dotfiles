@@ -31,7 +31,7 @@ case "$1" in
     elif [ "$(connection_status)" = "3" ]; then
         echo " Config not found!"
     else
-        echo " down"
+        echo " $config_name down"
     fi
     ;;
 esac

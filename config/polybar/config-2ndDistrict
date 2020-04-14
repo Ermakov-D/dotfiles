@@ -77,7 +77,7 @@ font-3 = FontAwesome5Brands:style=Solid:size=7.5;2.5
 #Расположение и активация модулей
 modules-left = i3
 modules-center = openweathermap-fullfeatured
-modules-right = vpn-VIAMNet filesystem pulseaudio wlan cpu memory battery system-usb-udev xkeyboard powermenu date
+modules-right = VDSina-status vpn-VIAMNet filesystem pulseaudio wlan cpu memory battery system-usb-udev xkeyboard powermenu date
 
 
 
@@ -546,4 +546,10 @@ type = custom/script
 exec = ~/.config/polybar/scripts/vpn-wireguard-wg.sh
 interval = 5
 click-left = ~/.config/polybar/scripts/vpn-wireguard-wg.sh --toggle &
+
+[module/VDSina-status]
+type = custom/script
+exec = ~/.config/polybar/scripts/vpn-nmcli.sh VDSina
+interval = 15
+
 
