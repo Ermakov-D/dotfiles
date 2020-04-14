@@ -49,7 +49,7 @@ bindsym $mod+F10 exec --no-startup-id thunar
 bindsym $mod+m exec --no-startup-id megasync
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Home exec --no-startup-id cvlc
-bindsym $mod+Menu exec --no-startup-id i3lock-fancy
+#bindsym $mod+Menu exec --no-startup-id i3lock-fancy
 bindsym $mod+Prior exec killall -s 6 vlc todoist megasync flameshot firefox subl3
 bindsym $mod+F12 exec tilix --quake 
 
