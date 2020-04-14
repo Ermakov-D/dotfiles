@@ -4,8 +4,11 @@
       create: true
       relink: true
 
+- link:
+    ~/bin/rofi-logout: bin/rofi-logout
+
 - clean: ['~']
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-        
+
