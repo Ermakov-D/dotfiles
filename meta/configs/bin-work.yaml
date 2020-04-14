@@ -1,0 +1,8 @@
+- link:
+    ~/bin/deepin-switchLanguage: bin/deepin-switchLanguage
+    ~/bin/rofiMenu: bin/rofiMenu
+    ~/bin/screenlock.sh: bin/screenlock.sh
+    ~/bin/local_route.sh: bin/local_route.sh
+    ~/bin/mount-iconbit.sh: bin/mount-iconbit.sh
+
+

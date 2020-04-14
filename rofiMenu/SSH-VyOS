@@ -1,0 +1,3 @@
+#!/bin/sh
+st -t "VDSina.Depeche.xyz" -e ssh vyos@vdsina.depeche.xyz
+

@@ -1,0 +1,1 @@
+/home/depeche/bin/mount-iconbit.sh

@@ -1,0 +1,13 @@
+sudo ip route add 192.168.0.0/22 via 192.168.20.3
+sudo ip route add 192.168.4.0/24 via 192.168.20.3
+sudo ip route add 192.168.30.0/24 via 192.168.20.3
+sudo ip route add 192.168.40.0/24 via 192.168.20.3
+sudo ip route add 194.247.190.66 via 192.168.20.3
+sudo ip route add 194.85.88.0/24 via 192.168.20.3
+sudo ip route add 212.46.229.20/30 via 192.168.20.3
+sudo ip route add 217.69.139.160 via 192.168.20.3
+sudo ip route add 94.100.180.16 via 192.168.20.3
+sudo ip route add 91.189.116.42 via 192.168.20.3
+sudo ip route add 91.189.116.40 via 192.168.20.3
+sudo ip route add 91.189.116.43 via 192.168.20.3
+sudo ip route add 91.189.116.41 via 192.168.20.3

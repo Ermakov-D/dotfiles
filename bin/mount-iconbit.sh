@@ -1,0 +1,1 @@
+sudo /usr/bin/mount.cifs //172.16.202.253/c /mnt/IconBit/ -o user=nobody,password=nobody,vers=1.0

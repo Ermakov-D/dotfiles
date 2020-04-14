@@ -1,0 +1,1 @@
+/home/depeche/bin/viam_route.sh

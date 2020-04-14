@@ -1,0 +1,14 @@
+#!/bin/bash
+myip()
+{
+    wanip=$(geo -w)
+    dnsname=$(dig +short -x ${wanip})
+    #echo "Wan: $(geo -w)"
+    echo "Lan:"
+    geo -l
+    echo "Wan:"
+    echo "${wanip} ${dnsname}"
+    geo -o country
+}
+
+zenity --notification --text "$(myip)"

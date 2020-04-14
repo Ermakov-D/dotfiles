@@ -1,0 +1,3 @@
+#!/bin/sh
+st -t "Server-LNX" -e ssh depeche@server-lnx.inet.ru
+

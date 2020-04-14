@@ -1,0 +1,10 @@
+#!/bin/sh
+case $1 in 
+    "ru") dbus-send --type=method_call --dest=com.deepin.daemon.InputDevices /com/deepin/daemon/InputDevice/Keyboard org.freedesktop.DBus.Properties.Set string:"com.deepin.daemon.InputDevice.Keyboard" string:"CurrentLayout"  variant:string:"ru;"
+        ;;
+    "en")
+        dbus-send --type=method_call --dest=com.deepin.daemon.InputDevices /com/deepin/daemon/InputDevice/Keyboard org.freedesktop.DBus.Properties.Set string:"com.deepin.daemon.InputDevice.Keyboard" string:"CurrentLayout" variant:string:"us;"
+        ;;
+    *)
+        exit
+esac

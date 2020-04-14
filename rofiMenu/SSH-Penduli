@@ -1,0 +1,4 @@
+#!/bin/sh
+#st -t="Penduli" -e ssh depeche@192.168.3.42
+gnome-terminal -- ssh depeche@192.168.3.42
+

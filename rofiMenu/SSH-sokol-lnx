@@ -1,0 +1,3 @@
+#!/bin/sh
+st -t="Sokol-Lnx" -e ssh depeche@192.168.20.7
+
