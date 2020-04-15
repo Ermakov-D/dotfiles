@@ -216,7 +216,7 @@ font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Weather Icons:size=7;2"
 
-modules-left = load-average
+modules-left = load-average VIAMNET-status
 modules-center = networkspeeddown networkspeedup pub-ip wireless-network volume 
 modules-right = openweather filesystem
 
@@ -1056,7 +1056,7 @@ bar-empty = ─
 type = internal/battery
 battery = BAT0
 adapter = AC0
-full-at = 200
+full-at = 100
 
 format-charging = <animation-charging> <label-charging>
 label-charging =  %percentage%%
@@ -1073,8 +1073,8 @@ format-discharging-background = ${colors.background}
 format-full-prefix = " "
 format-full-prefix-foreground = #a3c725
 format-full-underline = #a3c725
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
+format-full-foreground = ${colors.foreground}
+format-full-background = ${colors.background}
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
@@ -1890,5 +1890,18 @@ format-prefix-foreground = #3EC13F
 ;format-underline = #3EC13F
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
+
+###############################################################################
+[module/VIAMNET-status]
+type = custom/script
+exec = ~/.config/polybar/scripts/vpn-nmcli.sh VIAM--wg-
+interval = 15
+format = <label>
+;format-prefix = " "
+format-prefix-foreground = #3EC13F
+format-underline = #D2CFCF
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+
 
 ###############################################################################
