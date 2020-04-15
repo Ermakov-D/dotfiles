@@ -10,7 +10,10 @@ case $question in
         ;;
     *logout)
         #command -v gnome-session-quit 2>/dev/null 2>&1 || command -v session-logout >/dev/null 2>&1
-        command -v session-logout
+        i3-nagbar -t warning \
+            -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' \
+            -B 'Yes, exit i3' \
+            'i3-msg exit'
         ;;
     *reboot)
         systemctl reboot
