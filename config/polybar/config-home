@@ -122,7 +122,7 @@ font-4 = "Weather Icons:size=7;2"
 modules-left = i3 xwindow
 ;modules-center = weather
 # kernel
-modules-right = memory2 cpu2 xkeyboard pavolume battery date poweroff
+modules-right = memory2 cpu2 xkeyboard battery date poweroff
 
 separator = |
 
@@ -217,7 +217,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Weather Icons:size=7;2"
 
 modules-left = load-average
-modules-center = networkspeeddown networkspeedup pub-ip wireless-network
+modules-center = networkspeeddown networkspeedup pub-ip wireless-network volume 
 modules-right = openweather filesystem
 
 separator = |
