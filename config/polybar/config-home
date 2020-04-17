@@ -1894,7 +1894,7 @@ format-background = ${colors.background}
 ###############################################################################
 [module/VIAMNET-status]
 type = custom/script
-exec = ~/.config/polybar/scripts/vpn-nmcli.sh VIAM--wg-
+exec = ~/.config/polybar/scripts/vpn-nmcli.sh VIAM
 interval = 15
 format = <label>
 ;format-prefix = " "
