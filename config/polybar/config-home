@@ -216,8 +216,9 @@ font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Weather Icons:size=7;2"
 
-modules-left = load-average VIAMNET-status
-modules-center = networkspeeddown networkspeedup pub-ip wireless-network volume 
+;modules-left = load-average VIAMNET-status
+modules-left =VIAMNET-status
+modules-center = networkspeeddown networkspeedup pub-ip wireless-network volume mpd 
 modules-right = openweather filesystem
 
 separator = |
@@ -1344,7 +1345,8 @@ format-underline = #0084FF
 [module/jgmenu]
 type = custom/script
 interval = 120
-exec = echo "ArcoLinux"
+;exec = echo "ArcoLinux"
+exec = echo ""
 click-left = "jgmenu_run >/dev/null 2>&1 &"
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
@@ -1449,9 +1451,9 @@ format-background = ${colors.background}
 
 [module/mpd]
 ;https://github.com/jaagr/polybar/wiki/Module:-mpd
-type = internal/Mpd
-;format-online =  "<label-song>   <icon-prev>  <icon-stop>  <toggle>  <icon-next>"
-format-online =  "<label-song>  <bar-progress>"
+type = internal/mpd
+format-online =  "<label-song>   <icon-prev>  <icon-stop>  <toggle>  <icon-next>"
+;format-online =  "<label-song>  <bar-progress>"
 ;format-online =  "<label-song>  <bar-progress> <icon-prev>  <icon-stop>  <toggle>  <icon-next>"
 icon-prev = 
 icon-stop = 
@@ -1460,7 +1462,7 @@ icon-pause = 
 icon-next = 
 label-song-maxlen = 40
 label-song-ellipsis = true
-bar-progress-width = 10
+bar-progress-width = 5
 bar-progress-indicator = 
 bar-progress-fill = 
 bar-progress-empty = 
@@ -1469,6 +1471,10 @@ bar-progress-fill-background = ${colors.background}
 bar-progress-indicator-foreground = ${colors.foreground}
 format-online-foreground = ${colors.foreground}
 format-online-background = ${colors.background}
+
+host=127.0.0.1
+port=6600
+interval=2
 ################################################################################
 
 [module/networkspeedup]

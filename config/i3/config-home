@@ -6,7 +6,7 @@ set $mod Mod4
 exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:shift_caps_switch"
 exec --no-startup-id xrandr --output HDMI1 --auto --above eDP1
 #exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper.jpg 
-exec --no-startup-id nitrogen --restore &
+exec --no-startup-id nitrogen --restore
 exec --no-startup-id exec compton -b
 exec --no-startup-id xrandr --dpi 100
 exec --no-startup-id flameshot
@@ -18,6 +18,8 @@ exec --no-startup-id dropbox
 exec --no-startup-id yandex-disk-indicator
 exec --no-startup-id pamac-tray
 exec --no-startup-id xautolock -time 30 -locker ~/bin/screenlock.sh &
+exec --no-startup-id blueman-tray
+
 
 
 # Отлючение заголовков
@@ -79,6 +81,18 @@ bindsym $mod+Shift+l exec /home/depeche/bin/screenlock.sh
 
 # Убить окно нажав средней кнопкой мыши на титульный заголовок окна
 #bindsym --whole-window button2 kill
+
+# Настройки для 2-х монитором
+set $notebook eDP1
+set $HDMI HDMI1
+
+# Привязка рабочих столов к монитору
+workspace 1 output $HDMI
+workspace 2 output $notebook
+workspace 3 output $HDMI
+workspace 6 output $HDMI
+workspace 10 output $notebook
+
 
 # Переключение рабочих столов
 bindsym $mod+1 workspace number $ws1

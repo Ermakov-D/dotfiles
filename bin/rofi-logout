@@ -27,6 +27,9 @@ case $question in
     *shutdown)
         systemctl poweroff
         ;;
+    suspend)
+        systemctl suspend
+        ;;
     *)
         exit 0  # do nothing on wrong response
         ;;
