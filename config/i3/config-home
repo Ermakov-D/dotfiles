@@ -8,10 +8,10 @@ exec --no-startup-id xrandr --output HDMI1 --auto --above eDP1
 #exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper.jpg 
 exec --no-startup-id nitrogen --restore
 exec --no-startup-id exec compton -b
-exec --no-startup-id xrandr --dpi 100
-exec --no-startup-id flameshot
+#exec --no-startup-id xrandr --dpi 100
+#exec --no-startup-id flameshot
 exec --no-startup-id xflux -l 54.73, -g 55.97 -k 2700
-exec --no-startup-id megasync
+#exec --no-startup-id megasync
 exec --no-startup-id greenclip daemon
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id dropbox
@@ -43,18 +43,18 @@ for_window [tiling] border pixel 3
 # Запуск программ
 # Привязка приложений к конкретным рабочим столам - workspace
 bindsym $mod+F1 exec --no-startup-id brave; workspace 1
-bindsym $mod+F3 exec --no-startup-id subl3; workspace 3
-bindsym $mod+F4 exec --no-startup-id cherrytree; workspace 4
-bindsym $mod+F5 exec --no-startup-id galculator
+#bindsym $mod+F3 exec --no-startup-id subl3; workspace 3
+#bindsym $mod+F4 exec --no-startup-id cherrytree; workspace 4
+#bindsym $mod+F5 exec --no-startup-id galculator
 bindsym $mod+F6 exec --no-startup-id remmina; workspace 6
 bindsym $mod+F7 exec --no-startup-id libreoffice --writer
 bindsym $mod+F8 exec --no-startup-id libreoffice --calc
-bindsym $mod+F10 exec --no-startup-id thunar
-bindsym $mod+m exec --no-startup-id megasync
-bindsym Print exec --no-startup-id flameshot gui
-bindsym $mod+Home exec --no-startup-id cvlc
+bindsym $mod+F10 exec --no-startup-id thunar; workspace 8
+#bindsym $mod+m exec --no-startup-id megasync
+#bindsym Print exec --no-startup-id flameshot gui
+#bindsym $mod+Home exec --no-startup-id cvlc
 #bindsym $mod+Menu exec --no-startup-id i3lock-fancy
-bindsym $mod+Prior exec killall -s 6 vlc todoist megasync flameshot firefox subl3
+#bindsym $mod+Prior exec killall -s 6 vlc todoist megasync flameshot firefox subl3
 bindsym $mod+F12 exec tilix --quake 
 
 # Перекидывает открытое окно на нужный рабочий стол
@@ -122,6 +122,13 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+# Усправление mpd
+bindsym XF86AudioPlay exec "mpc toggle"
+bindsym XF86AudioStop exec "mpc stop"
+bindsym XF86AudioNext exec "mpc next"
+bindsym XF86AudioPrev exec "mpc prev"
+# "~/.home/.config/i3wm/scripts/playprev.sh"
 
 # Управление яркостью экрана, нужно установить xbacklight
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
