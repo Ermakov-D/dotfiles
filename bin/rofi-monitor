@@ -1,0 +1,31 @@
+#!/bin/sh
+
+EXTERNAL_OUTPUT="HDMI1"
+INTERNAL_OUTPUT="eDP1"
+
+#xrandr --output HDMI1 --off --output LVDS --auto
+
+#i3-nagbar -m "Select Monitor" -t warning \
+#	-b "HDMI + eDP"  "xrandr --output $INTERNAL_OUTPUT --auto --output $EXTERNAL_OUTPUT --auto --above $INTERNAL_OUTPUT" \
+#	-b "eDP ONLY"    "xrandr --output $EXTERNAL_OUTPUT --off --output $INTERNAL_OUTPUT --auto"
+
+#/home/depeche/.config/polybar/launch.sh
+#nitrogen --restore
+question=$(echo " HDMI+eDP| eDP Only" | rofi -sep "|" \
+        -dmenu -i -p ' ' "" -width 20 -hide-scrollbar \
+        -eh 1 -line-padding 4 -padding 20 -lines 2 -color-enabled -theme Adapta-Nokto)
+
+echo $question
+case $question in
+    " HDMI+eDP")
+        xrandr --output $INTERNAL_OUTPUT --auto --output $EXTERNAL_OUTPUT --auto --above $INTERNAL_OUTPUT
+        /home/depeche/.config/polybar/launch.sh
+        nitrogen --restore
+        ;;
+    " eDP Only")
+        xrandr --output $EXTERNAL_OUTPUT --off --output $INTERNAL_OUTPUT --auto
+        /home/depeche/.config/polybar/launch.sh
+        ;;
+esac
+
+

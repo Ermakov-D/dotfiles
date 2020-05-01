@@ -30,11 +30,11 @@ case $desktop in
     if type "xrandr" > /dev/null; then
        for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
                 if [[ "$m" == "HDMI1" ]]; then
-                    echo "1-> $m"
+                    #echo "1-> $m"
                     MONITOR=$m polybar --reload mainbar-i3-extra-hdmi -c ~/.config/polybar/config &
                 fi
                 if [[ "$m" == "eDP1" ]]; then
-            	    echo "2-> $m"
+            	    #echo "2-> $m"
                     MONITOR=$m polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
                     # polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
                 fi

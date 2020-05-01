@@ -89,3 +89,10 @@ Host 192.168.1.7
     User depeche
     IdentityFile ~/.ssh/keys/depeche-rsa4096
 
+Host 185.248.100.187
+    User root
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+
+Host 10.10.5.8
+    KexAlgorithms +diffie-hellman-group1-sha1
+

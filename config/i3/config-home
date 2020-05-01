@@ -58,9 +58,13 @@ bindsym $mod+F10 exec --no-startup-id thunar; workspace 8
 bindsym $mod+F12 exec tilix --quake 
 
 # Перекидывает открытое окно на нужный рабочий стол
+# Определение class: xprop | grep WM_CLASS
+# Еще, что модно делать с окном: https://i3wm.org/docs/userguide.html
 for_window [class="vlc"] move to workspace $ws5
-for_window [class="Joplin"] move to workspace $ws0
-for_window [class="cantata"] move to workspace $ws0
+for_window [class="Joplin"] move to workspace $ws11
+for_window [class="cantata"] move to workspace $ws11
+for_window [class="Pamac-manager"] move to workspace $ws9
+for_window [class="Thunar"] move to workspace $ws8
 #for_window [class="Remmina"] move to workspace $ws6
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
@@ -129,6 +133,10 @@ bindsym XF86AudioStop exec "mpc stop"
 bindsym XF86AudioNext exec "mpc next"
 bindsym XF86AudioPrev exec "mpc prev"
 # "~/.home/.config/i3wm/scripts/playprev.sh"
+
+# Отключание/включение HDMI
+bindsym XF86ScreenSaver exec "~/bin/rofi-monitor"
+#"~/.config/i3/scripts/switch-monitor"
 
 # Управление яркостью экрана, нужно установить xbacklight
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
@@ -210,6 +218,7 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+set $ws11 "11"
 #set $ws10 "10:"
 
 # move focused container to workspace

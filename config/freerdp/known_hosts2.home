@@ -13,3 +13,5 @@ dc01.viamnet.local 3389 e3:6b:98:34:b2:c0:34:fb:97:f8:06:1b:e1:00:e3:f6:ca:08:fb
 192.168.250.100 3389 45:c4:24:d8:f7:c1:5b:95:4d:99:f5:19:ec:9e:4d:64:52:87:5b:02:96:a3:e7:60:22:f2:b0:a1:30:93:2e:24 Q04gPSBzZXJ2ZXIxc19hcHAudmlhbW5ldC5sb2NhbA== Q04gPSBzZXJ2ZXIxc19hcHAudmlhbW5ldC5sb2NhbA==
 hr-trm01.viamnet.local 3389 0b:39:50:17:39:c2:5d:78:2d:d3:47:33:b1:a0:ff:1b:ac:9e:6a:dd:86:64:1c:3a:e1:3b:4a:2e:f1:27:29:8e Q04gPSBoci10cm0wMS52aWFtbmV0LmxvY2Fs Q04gPSBoci10cm0wMS52aWFtbmV0LmxvY2Fs
 202.202.2.2 3389 7c:da:8c:ee:53:e0:df:15:1c:27:ae:3b:5c:a5:05:79:02:43:ce:f6:62:67:99:a9:53:a8:69:1a:fa:7b:c4:85 Q04gPSBzZXJ2ZXIyLnNva29sLnZpYW1uZXQubG9jYWw= Q04gPSBzZXJ2ZXIyLnNva29sLnZpYW1uZXQubG9jYWw=
+192.168.1.5 3389 89:e4:9e:a9:92:b8:09:4f:f5:b4:f8:da:a0:9a:1c:30:27:43:a3:ef:6e:ac:ef:36:6b:30:34:91:21:fe:a3:b7 Q04gPSBTZXJ2ZXJJTlQyLmluZXQucnU= Q04gPSBTZXJ2ZXJJTlQyLmluZXQucnU=
+viamsrv4.viamnet.local 3389 8b:50:b3:22:9a:d4:ae:2c:b2:0a:93:ae:81:99:39:32:89:91:7d:08:40:6c:d4:85:a4:f0:d7:59:6c:f6:da:54 Q04gPSBWSUFNU1JWNC52aWFtbmV0LmxvY2Fs Q04gPSBWSUFNU1JWNC52aWFtbmV0LmxvY2Fs

@@ -944,6 +944,7 @@ ws-icon-7 = 8;
 ;ws-icon-8 = 9;
 ws-icon-8 = 9;
 ws-icon-9 = 10;
+ws_icon-10 = 11;
 ws-icon-default = " "
 
 ; Available tags:
