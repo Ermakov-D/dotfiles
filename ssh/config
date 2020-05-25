@@ -57,7 +57,7 @@ Host ssh.viam.nichost.ru
 Host gitea.inet.ru
     HostName 192.168.2.212
     User git
-    IdentityFile ~/.ssh/keys/rsa-depeche-ds_work
+    IdentityFile ~/.ssh/keys/id_rsa
 
 Host 195.88.208.17
     HostName 195.88.208.17
