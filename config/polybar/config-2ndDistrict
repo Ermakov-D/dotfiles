@@ -831,7 +831,7 @@ fuzzy-match = false
 ;extra icons to choose from
 ;http://fontawesome.io/cheatsheet/
 ;       v     
-;      
+;       > 
 
 ws-icon-0 = 1;
 ;ws-icon-1 = 2;
