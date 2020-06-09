@@ -4,5 +4,6 @@
     ~/bin/screenlock.sh: bin/screenlock.sh
     ~/bin/local_route.sh: bin/local_route.sh
     ~/bin/mount-iconbit.sh: bin/mount-iconbit.sh
-
+    ~/bit/monitor-2ndDistrict: bin/monitor-2ndDistrict
+    
 

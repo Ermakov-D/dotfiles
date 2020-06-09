@@ -96,3 +96,9 @@ Host 185.248.100.187
 Host 10.10.5.8
     KexAlgorithms +diffie-hellman-group1-sha1
 
+# Mikrotik Sokol
+Host 192.168.20.8
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+
+
