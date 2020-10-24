@@ -38,6 +38,10 @@ case $desktop in
                     MONITOR=$m polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
                     # polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
                 fi
+		if [[ "$m" == "VGA-1" ]]; then
+                    MONITOR=$m polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
+                    # polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
+                fi
        done
     else
      polybar --reload mainbar-i3-extra -c config &

@@ -175,6 +175,7 @@ cursor-scroll =
 ;https://github.com/jaagr/polybar/wiki/Configuration
 
 monitor = ${env:MONITOR}
+;monitor = VGA-1
 ;monitor-fallback = HDMI1
 monitor-strict = false
 override-redirect = false
@@ -831,7 +832,7 @@ fuzzy-match = false
 ;extra icons to choose from
 ;http://fontawesome.io/cheatsheet/
 ;       v     
-;      
+;       > 
 
 ws-icon-0 = 1;
 ;ws-icon-1 = 2;
