@@ -7,7 +7,7 @@ exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:shift_caps_switch"
 exec --no-startup-id xrandr --output HDMI1 --auto --above eDP1
 #exec --no-startup-id feh --bg-scale ~/.config/i3/wallpaper.jpg 
 exec --no-startup-id nitrogen --restore
-exec --no-startup-id exec compton -b
+#exec --no-startup-id exec compton -b
 #exec --no-startup-id xrandr --dpi 100
 #exec --no-startup-id flameshot
 exec --no-startup-id xflux -l 54.73, -g 55.97 -k 2700
@@ -65,6 +65,9 @@ for_window [class="Joplin"] move to workspace $ws11
 for_window [class="cantata"] move to workspace $ws11
 for_window [class="Pamac-manager"] move to workspace $ws9
 for_window [class="Thunar"] move to workspace $ws8
+for_window [class="Pidgin"] move to workspace $ws10
+for_window [class="TelegramDesktop"] move to workspace $ws10
+for_window [class="Brave-browser"] move to workspace $ws1
 #for_window [class="Remmina"] move to workspace $ws6
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable

@@ -96,3 +96,12 @@ Host 185.248.100.187
 Host 10.10.5.8
     KexAlgorithms +diffie-hellman-group1-sha1
 
+Host 192.168.3.200
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+
+Host 192.168.3.201
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+
+
