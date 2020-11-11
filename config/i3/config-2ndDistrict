@@ -3,10 +3,11 @@ set $mod Mod4
 
 # Автозапуск программ
 #exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:alt_shift_toggle,grp_led:scroll"
+exec --no-startup-id xrandr --output VGA-1 --auto --output HDMI-1 --auto --right-of VGA-1
 exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:shift_caps_switch"
 exec --no-startup-id feh --randomize --bg-scale ~/.dotfile/pictures/*
-exec --no-startup-id exec compton -b
-exec --no-startup-id xrandr --dpi 100
+#exec --no-startup-id exec compton -b
+#exec --no-startup-id xrandr --dpi 100
 exec --no-startup-id flameshot
 exec --no-startup-id xflux -l 54.73, -g 55.97 -k 2700
 exec --no-startup-id megasync
@@ -45,7 +46,7 @@ bindsym $mod+F5 exec --no-startup-id galculator
 bindsym $mod+F6 exec --no-startup-id remmina; workspace 6
 bindsym $mod+F7 exec --no-startup-id libreoffice --writer
 bindsym $mod+F8 exec --no-startup-id libreoffice --calc
-bindsym $mod+F10 exec --no-startup-id thunar
+bindsym $mod+F10 exec --no-startup-id thunar; workspace 8
 bindsym $mod+m exec --no-startup-id megasync
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Home exec --no-startup-id cvlc
@@ -55,7 +56,7 @@ bindsym $mod+F12 exec tilix --quake
 
 # Перекидывает открытое окно на нужный рабочий стол
 for_window [class="vlc"] move to workspace $ws9
-for_window [class="Joplin"] move to workspace $ws9
+for_window [class="Joplin"] move to workspace $ws10
 for_window [class="cantata"] move to workspace $ws10
 #for_window [class="Remmina"] move to workspace $ws6
 # Открытие программ в плавающе окне
@@ -75,7 +76,7 @@ bindsym $mod+mod1+v exec rofi -theme arthur -modi "clipboard:greenclip print" -s
 bindsym $mod+mod1+k exec networkmanager_dmenu
 bindsym $mod+b exec bwmenu -- -location 2 -theme arthur
 bindsym $mod+Shift+l exec /home/depeche/bin/screenlock.sh
-
+bindsym $mod+Shift+t exec picom-trans -o 100
 # Убить окно нажав средней кнопкой мыши на титульный заголовок окна
 #bindsym --whole-window button2 kill
 
