@@ -78,6 +78,7 @@ for_window [class="Xfce4-terminal"] floating enable
 bindsym $mod+Control+q kill
 bindsym $mod+q exec /home/depeche/bin/rofiMenu
 bindsym $mod+Return exec i3-sensible-terminal # xfce4-terminal
+bindsym $mod+Shift+Return exec thunar
 bindsym $mod+Escape exec shutdown -h now
 bindsym $mod+r exec rofi -show drun -theme arthur -show-icons
 bindsym $mod+Shift+r exec rofi -show window -theme arthur - show-icons
