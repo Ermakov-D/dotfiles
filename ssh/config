@@ -106,4 +106,9 @@ Host 192.168.20.8
     User depeche
     IdentityFile ~/.ssh/keys/depeche-rsa4096
 
+# Mikrotik Sokol Master
+Host 192.168.20.9
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+
 

@@ -55,20 +55,25 @@ bindsym $mod+Prior exec killall -s 6 vlc todoist megasync flameshot firefox subl
 bindsym $mod+F12 exec tilix --quake 
 
 # Перекидывает открытое окно на нужный рабочий стол
+for_window [class="Brave-browser"] move to workspace $ws1
+for_window [class="Asbru-cm"] move to workspace $ws3
 for_window [class="vlc"] move to workspace $ws9
 for_window [class="Joplin"] move to workspace $ws10
 for_window [class="cantata"] move to workspace $ws10
+for_window [class="TelegramDesktop"] move to workspace $ws11
+for_window [class="Thunar"] move to workspace $ws8
 #for_window [class="Remmina"] move to workspace $ws6
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
 for_window [class="Xfce4-terminal"] floating enable
-for_window [class="Xterm"] floating enable
+for_window [class="xterm"] floating enable
 #for_window [class="St"] floating enable
 
 # Горячие клавиши
 bindsym $mod+Control+q kill
 bindsym $mod+q exec /home/depeche/bin/rofiMenu
 bindsym $mod+Return exec gnome-terminal   #i3-sensible-terminal # xfce4-terminal
+bindsym $mod+Shift+Return exec thunar
 bindsym $mod+Escape exec shutdown -h now
 bindsym $mod+r exec rofi -show drun -theme arthur -show-icons
 bindsym $mod+Shift+r exec rofi -show window -theme arthur - show-icons
@@ -91,6 +96,7 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
+bindsym $mod+mod1+1 workspace number $ws11
 
 
 # Cпрятать окно, чтобы оно не мешалось, но в то же время было всегда под рукой. 
@@ -190,6 +196,7 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 #set $ws10 "10:"
+set $ws11 "11"
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
