@@ -1,0 +1,10 @@
+- link:
+    ~/rofiMenu/IPInfo: rofiMenu/IPInfo
+    ~/rofiMenu/mount-iconbit.sh: rofiMenu/mount-iconbit.sh
+    ~/rofiMenu/SSH-Penduli: rofiMenu/SSH-Penduli
+    ~/rofiMenu/SSH-server-lnx: rofiMenu/SSH-server-lnx
+    ~/rofiMenu/SSH-sokol-lnx: rofiMenu/SSH-sokol-lnx
+    ~/rofiMenu/SSH-VyOS: rofiMenu/SSH-VyOS
+    ~/rofiMenu/local_route.sh: ~/bin/local_route.sh
+
+

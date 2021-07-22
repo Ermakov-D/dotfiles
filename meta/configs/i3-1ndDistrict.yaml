@@ -1,0 +1,8 @@
+- link:
+    ~/.config/i3/config: config/i3/config-1ndDistrict
+    ~/.config/polybar/config: config/polybar/config-1ndDistrict
+    ~/.config/polybar/launch.sh: config/polybar/launch.sh
+    ~/.config/i3/wallpaper.jpg: pictures/hand_black_1920x1080.jpg
+
+
+

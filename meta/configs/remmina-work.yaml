@@ -1,0 +1,4 @@
+- link:
+    ~/.config/remmina/remmina.pref: config/remmina/remmina-work.pref
+    ~/.config/freerdp/known_hosts2: config/freerdp/known_hosts2.work
+

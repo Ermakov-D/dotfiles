@@ -121,4 +121,37 @@ case $desktop in
     #   done
     # fi
     ;;
+
+    i3-with-shmlog)
+    if type "xrandr" > /dev/null; then
+      for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+        MONITOR=$m polybar --reload mainbar-i3 -c ~/.config/polybar/config &
+      done
+    else
+    polybar --reload mainbar-i3 -c config &
+    fi
+    # second polybar at bottom
+    if type "xrandr" > /dev/null; then
+       for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
+                if [[ "$m" == "HDMI1" ]]; then
+                    #echo "1-> $m"
+                    MONITOR=$m polybar --reload mainbar-i3-extra-hdmi -c ~/.config/polybar/config &
+                fi
+                if [[ "$m" == "LVDS1" ]]; then
+            	    #echo "2-> $m"
+                    MONITOR=$m polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
+                    # polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
+                fi
+		if [[ "$m" == "VGA-1" ]]; then
+                    MONITOR=$m polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
+                    # polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
+                fi
+       done
+    else
+     polybar --reload mainbar-i3-extra -c config &
+    fi
+    ;;
+
+
+
 esac

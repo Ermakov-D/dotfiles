@@ -5,5 +5,6 @@
     ~/.ssh/config: ssh/config
     ~/.oh-my-zsh/custom/themes: oh-my-zsh/custom/themes
     ~/.config/polybar/scripts: config/polybar/scripts
+    ~/.rc-function: rc-function
 
 
