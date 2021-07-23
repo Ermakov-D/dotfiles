@@ -1,4 +1,4 @@
-nic_name=$(ip -o -4 route show to default | awk '{print $5}')
+nic_name=$(ip -o -4 route show to default|grep -v "ppp" | awk '{print $5}')
 defGW=$(ip route list dev ${nic_name} | awk ' /^default/ {print $3}' | tail -1)
 network=$(ip -o -f inet addr show dev enp12s0| awk '/scope global/{sub(/[^.]+\//,"0/",$4);print $4}\')
 sudo ip route add 192.168.0.0/22 via ${defGW}
@@ -24,6 +24,7 @@ case "$network" in
     *)
 	exit 1
 esac
+
 sudo ip route add 192.168.1.7/32 via $gate dev $nic_name
 sudo ip route add 192.168.3.36/32 via $gate
 sudo ip route add 192.168.2.212/32 via $gate
