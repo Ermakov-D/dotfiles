@@ -20,33 +20,33 @@ export ZSH="/usr/share/oh-my-zsh"
 #ZSH_THEME="powerlevel9k/powerlevel9k"
 #POWERLEVEL9K_MODE="nerdfont-complete"
 #source $ZSH/themes/powerlevel9k/powerlevel9k.zsh-theme
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+#source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 
-POWERLEVEL9K_FOLDER_ICON=""
-POWERLEVEL9K_HOME_SUB_ICON="$(print_icon "HOME_ICON")"
-POWERLEVEL9K_DIR_PATH_SEPARATOR=" $(print_icon "LEFT_SUBSEGMENT_SEPARATOR") "
+#POWERLEVEL9K_FOLDER_ICON=""
+#POWERLEVEL9K_HOME_SUB_ICON="$(print_icon "HOME_ICON")"
+#POWERLEVEL9K_DIR_PATH_SEPARATOR=" $(print_icon "LEFT_SUBSEGMENT_SEPARATOR") "
 
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0
+#POWERLEVEL9K_COMMAND_EXECUTION_TIME_THRESHOLD=0
 
-POWERLEVEL9K_DIR_OMIT_FIRST_CHARACTER=true
+#POWERLEVEL9K_DIR_OMIT_FIRST_CHARACTER=true
 
-POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND='black'
-POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND='178'
-POWERLEVEL9K_NVM_BACKGROUND="238"
-POWERLEVEL9K_NVM_FOREGROUND="green"
-POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND="blue"
-POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND="015"
+#POWERLEVEL9K_BACKGROUND_JOBS_FOREGROUND='black'
+#POWERLEVEL9K_BACKGROUND_JOBS_BACKGROUND='178'
+#POWERLEVEL9K_NVM_BACKGROUND="238"
+#POWERLEVEL9K_NVM_FOREGROUND="green"
+#POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND="blue"
+#POWERLEVEL9K_DIR_WRITABLE_FORBIDDEN_FOREGROUND="015"
 
-POWERLEVEL9K_TIME_BACKGROUND='255'
-#POWERLEVEL9K_COMMAND_TIME_FOREGROUND='gray'
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='245'
-POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='black'
+#POWERLEVEL9K_TIME_BACKGROUND='255'
+##POWERLEVEL9K_COMMAND_TIME_FOREGROUND='gray'
+#POWERLEVEL9K_COMMAND_EXECUTION_TIME_BACKGROUND='245'
+#POWERLEVEL9K_COMMAND_EXECUTION_TIME_FOREGROUND='black'
 
-POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator dir dir_writable vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs command_execution_time time)
-POWERLEVEL9K_SHOW_CHANGESET=true
+#POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
+#POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon root_indicator dir dir_writable vcs)
+#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs command_execution_time time)
+#POWERLEVEL9K_SHOW_CHANGESET=true
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -106,6 +106,7 @@ POWERLEVEL9K_SHOW_CHANGESET=true
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+ZSH_CUSTOM=~/.oh-my-zsh/custom
 plugins=(git sudo zsh-syntax-highlighting zsh-autosuggestions )
 
 source $ZSH/oh-my-zsh.sh
@@ -224,4 +225,5 @@ if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
 fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
