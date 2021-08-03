@@ -17,7 +17,7 @@ exec --no-startup-id yandex-disk-indicator
 exec --no-startup-id pamac-tray
 #exec --no-startup-id xautolock -time 30 -locker ~/bin/screenlock.sh &
 exec --no-startup-id /usr/bin/variety
-
+exec --no-startup-id /usr/bin/plank
 
 
 # Отлючение заголовков
@@ -65,6 +65,7 @@ for_window [class="cantata"] move to workspace $ws10
 for_window [class="TelegramDesktop"] move to workspace $ws11
 for_window [class="Thunar"] move to workspace $ws8
 for_window [class="org.remmina.Remmina"] move to workspace $ws6
+for_window [class="pamac-manager"] move to workspace $ws9
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
 for_window [class="Xfce4-terminal"] floating enable

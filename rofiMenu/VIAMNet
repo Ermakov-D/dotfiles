@@ -1,0 +1,22 @@
+connection_status() {
+    if [ -f "$config" ]; then
+        connection=$(sudo wg show "$config_name" 2>/dev/null | head -n 1 | awk '{print $NF }')
+
+        if [ "$connection" = "$config_name" ]; then
+            echo "1"
+        else
+            echo "2"
+        fi
+    else
+        echo "3"
+    fi
+}
+
+config="$HOME/VPNKeys/wg/VIAMNet.conf"
+config_name=$(basename "${config%.*}")
+
+sudo wg show VIAMNet > /dev/null 2>&1
+status=$?
+[ $status -eq 0 ] && echo "Ok" || sudo wg-quick up "$config" 2>/dev/null
+
+

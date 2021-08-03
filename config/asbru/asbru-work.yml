@@ -452,8 +452,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_93758871.5174481.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -552,8 +551,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_14968935.8845828.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -613,6 +611,7 @@ environments:
       39964da9-64c0-4489-afde-574df5b37bdc: 1
       6327dd18-9542-40fc-a1fd-98c48f9ecbd8: 1
       66cedc29-8135-4e76-bbaf-adfa11113443: 1
+      6906bbfc-59ef-42e4-83e2-7635d5c71f68: 1
       6d1661aa-1ea6-44fa-a9f0-768760fdd79f: 1
       7435cd66-87ad-4d7e-9002-cf11063005e8: 1
       760dd9b5-32ea-4583-9ba2-e9ada5a90d70: 1
@@ -759,8 +758,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_29836866.2038891.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -846,8 +844,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_66240122.9562271.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -937,8 +934,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_27644274.9010948.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -1022,8 +1018,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_52199738.2744506.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -1121,8 +1116,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_89051824.5803589.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -1208,8 +1202,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_70228270.0754764.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -1604,6 +1597,92 @@ environments:
     use sudo: ''
     user: ''
     variables: []
+  6906bbfc-59ef-42e4-83e2-7635d5c71f68:
+    KPX title regexp: '.*hr-gate-backup (VyOS) - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    description: Connection with 'hr-gate-backup (VyOS)'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.1.10
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: hr-gate-backup (VyOS)
+    options: ' -x'
+    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>~→]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: 'hr-gate-backup (VyOS) - 1-я территория'
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: vyos
+    variables: []
   6a3c861c-c607-40fb-b1a7-a8d93f3396ff:
     KPX title regexp: '.*HR-LNX-Gate1 - 1-я территория.*'
     _is_group: 0
@@ -1729,8 +1808,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_59096937.6277363.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -1821,8 +1899,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_17276318.6951531.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -1997,8 +2074,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_65607935.6506379.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -2093,8 +2169,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_77276180.8755537.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -2191,8 +2266,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_68322987.9613735.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -2373,8 +2447,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_55666748.7609998.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -2473,8 +2546,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_119332413.977002.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -2670,8 +2742,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_66154591.8727016.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -2768,8 +2839,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_60258198.2165082.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -3036,8 +3106,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_27605097.1213644.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -3123,8 +3192,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_106644832.955314.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -3211,8 +3279,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_8440247.83709943.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -3479,8 +3546,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_27344667.310531.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -3562,8 +3628,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_96183025.1632624.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -3910,8 +3975,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_78058859.2436129.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -4085,8 +4149,7 @@ environments:
     quote command: ''
     remove control chars: ''
     save session logs: ''
-    screenshots:
-      - /home/depeche/.config/asbru/screenshots/pac_screenshot_65527456.4171432.jpg
+    screenshots: []
     search pass on KPX: 0
     send slow: 0
     send string active: ''
@@ -4236,8 +4299,8 @@ environments:
     screenshots: []
 tmp:
   changed: 0
-  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{24650}_n11.txt'
-  socket: '/home/depeche/.config/asbru/sockets/asbru_PID{24650}_n11.socket'
-  socket exec: '/home/depeche/.config/asbru/sockets/asbru_PID{24650}_n11.exec.socket'
+  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{19224}_n21.txt'
+  socket: '/home/depeche/.config/asbru/sockets/asbru_PID{19224}_n21.socket'
+  socket exec: '/home/depeche/.config/asbru/sockets/asbru_PID{19224}_n21.exec.socket'
   tray available: warning
-  uuid: 'asbru_PID{24650}_n11'
+  uuid: 'asbru_PID{19224}_n21'

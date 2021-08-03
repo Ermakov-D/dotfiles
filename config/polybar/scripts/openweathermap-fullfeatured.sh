@@ -37,7 +37,7 @@ get_duration() {
 
 #KEY="bfc7a040ec603b127cb8fc3dde1bda2a"
 KEY="0f83dff8d1a5840e4c7291149edf2435"
-CITY="Moscow, RU"
+CITY="Moscow,RU"
 UNITS="metric"
 SYMBOL="°С"
 
