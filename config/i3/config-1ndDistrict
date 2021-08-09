@@ -18,6 +18,7 @@ exec --no-startup-id pamac-tray
 #exec --no-startup-id xautolock -time 30 -locker ~/bin/screenlock.sh &
 exec --no-startup-id /usr/bin/variety
 exec --no-startup-id /usr/bin/plank
+exec --no-startup-id /usr/bin/telegram-desktop
 
 
 # Отлючение заголовков
