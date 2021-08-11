@@ -16,13 +16,14 @@ sudo ip route add 91.189.116.43 via ${defGW}
 sudo ip route add 91.189.116.41 via ${defGW}
 sudo ip route add 195.239.45.194 via ${defGW}
 sudo ip route add 78.107.18.112/28 via ${defGW}
+sudo ip route add 192.168.4.0/24 via ${defGW} 
 
 case "$network" in
-    192.168.3.0/22) 
+    192.168.3.0/22)
 	gate="192.168.1.7"
 	sudo ip route add 192.168.20.0/24 via ${defGW}
 		    ;;
-    192.168.20.0/24) 
+    192.168.20.0/24)
 	gate="192.168.20.8"
 	sudo ip route add 192.168.1.7/32 via ${defGW}
 	sudo ip route add 192.168.3.36/32 via ${defGW}
@@ -30,9 +31,8 @@ case "$network" in
 	sudo ip route add 192.168.2.228/32 via ${defGW}
 	sudo ip route add 192.168.0.0/22 via ${defGW}
 	;;
-	
+
     *)
 	exit 1
 esac
 
-sudo ip route add 192.168.4.0/24 via $gate
