@@ -29,7 +29,7 @@ if ! [ -x "$(command -v multilockscreen)" ]; then
         \
         --clock \
         --force-clock \
-        --timepos 5:h-80 \
+        #--timepos 5:h-80 \
         --timecolor 880088ff \
         --datepos tx:ty+15 \
         --datecolor 990099ff \

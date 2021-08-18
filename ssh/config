@@ -97,6 +97,10 @@ Host 192.168.1.7
     User depeche
     IdentityFile ~/.ssh/keys/depeche-rsa4096
 
+Host 192.168.1.7
+    User mikroansible
+    IdentityFile ~/.ssh/keys/mikroansible
+
 Host 185.248.100.187
     User root
     IdentityFile ~/.ssh/keys/depeche-rsa4096
@@ -114,4 +118,37 @@ Host 192.168.20.9
     User depeche
     IdentityFile ~/.ssh/keys/depeche-rsa4096
 
+# Mikrotik Sokol
+Host 192.168.20.9
+    User mikroansible
+    IdentityFile ~/.ssh/keys/mikroansible
 
+# Mikrotik Sokol Master
+Host 192.168.20.10
+    User mikroansible
+    IdentityFile ~/.ssh/keys/mikroansible
+
+Host 78.107.18.123   
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+
+Host 192.168.3.200
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+    UserKnownHostsFile=/dev/null
+
+Host 192.168.3.201
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+    UserKnownHostsFile=/dev/null
+
+Host 192.168.3.202
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+    UserKnownHostsFile=/dev/null
+
+Host 192.168.249.101
+    KexAlgorithms +diffie-hellman-group1-sha1
+
+Host 192.168.250.215
+    Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
