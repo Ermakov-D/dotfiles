@@ -1,0 +1,10 @@
+{
+    "targets": [
+        {
+            "command": "ssh",
+            "host": "vyos@vdsina.depeche.xyz",
+            "friendly": "VDSina",
+            "options": []
+        }
+    ]
+}
