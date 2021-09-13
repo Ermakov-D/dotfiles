@@ -5,6 +5,37 @@
             "host": "vyos@vdsina.depeche.xyz",
             "friendly": "VDSina",
             "options": []
+        },
+        {
+            "command": "ssh",
+            "host": "depeche@10.10.8.1",
+            "friendly": "ArubaCloud",
+            "options": [
+                "-i",
+                "/home/depeche/.ssh/keys/depeche-rsa4096"
+            ]
+        },
+        {
+            "command": "sshfs",
+            "host": "depeche@192.168.2.212:/",
+            "friendly": "SSHFS Server-LNX",
+            "options": [
+                "/home/depeche/SSHFS-Mount/Server-Lnx"
+            ]
+        },
+        {
+            "command": "sshfs",
+            "host": "depeche@192.168.3.42:/",
+            "friendly": "SSHFS Penduli",
+            "options": [
+                "/home/depeche/SSHFS-Mount/Penduli"
+            ]
+        },
+        {
+            "command": "ssh",
+            "host": "root@192.168.20.248",
+            "friendly": "HSi-PVE01",
+            "options": []
         }
     ]
 }
