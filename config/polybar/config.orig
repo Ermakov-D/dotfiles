@@ -218,7 +218,7 @@ font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Weather Icons:size=10;2"
 
-modules-left = load-average vpn-VIAMNet vpn-VDSina
+modules-left = load-average vpn-VDSina vpn-VIAMNet
 modules-center = networkspeeddown networkspeedup pub-ip volume spotify1 
 modules-right = openweather filesystem
 

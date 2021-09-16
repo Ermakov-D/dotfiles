@@ -153,7 +153,7 @@ myip()
     echo "LAN:"
     geo -l
 }
-viamnet()
+function viamnet()
 {
     if [ $# -eq "0" ]; then
         geo -l
@@ -227,3 +227,13 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+alias update='sudo pacman -Syyu'
+
+function vdi () {
+    passwd=$(zenity --password --title="User Password" )
+    /usr/bin/xfreerdp /f /cert-ignore /smartcard /v:192.168.252.20 /u:ermakov_ds@viamnet.local /p:${passwd} /drive:home,/home/depeche
+}
+
+#alias vdi-ermakov='/usr/bin/xfreerdp /f /cert-ignore /smartcard /v:192.168.252.20 /u:ermakov_ds@viamnet.local /drive:home,/home/depeche'
+

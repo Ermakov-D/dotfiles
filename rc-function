@@ -35,4 +35,10 @@ viamnet()
     dig +short @192.168.250.10 $1
 }
 
+vdi ()
+{
+    passwd=$(zenity --password --title="User Password" )
+    /usr/bin/xfreerdp /f /cert-ignore /smartcard /v:192.168.252.20 /u:ermakov_ds@viamnet.local /p:${passwd} /drive:home,/home/depeche
+}
+
 alias z="zsh"

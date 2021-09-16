@@ -2,7 +2,8 @@
 set $mod Mod4
 
 # Автозапуск программ
-exec --no-startup-id  xrandr --output LVDS1 --auto --output HDMI1 --auto --left-of LVDS1
+# notebook exec --no-startup-id  xrandr --output LVDS1 --auto --output HDMI1 --auto --left-of LVDS1
+exec --no-startup-id  xrandr --output HDMI3 --auto --output HDMI2 --auto --left-of HDMI3
 exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:shift_caps_switch"
 exec --no-startup-id feh --randomize --bg-scale ~/.dotfile/pictures/*
 #exec --no-startup-id exec compton -b
@@ -92,13 +93,15 @@ bindsym $mod+Shift+t exec picom-trans -o 100
 
 # Настройка на 2-а монитора
 set $notebook LVDS1
-set $HDMI HDMI1
+set $VGA DS1
+set $DVI HDMI2
+set $HDMI HDMI3
 
 # Привязка рабочих столов к монитору
 workspace 1 output $HDMI
-workspace 2 output $notebook
+workspace 2 output $DVI
 workspace 3 output $HDMI
-workspace 11 output $notebook
+workspace 11 output $DVI
 workspace 6 output $HDMI
 
 
@@ -114,7 +117,7 @@ bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 bindsym $mod+mod1+1 workspace number $ws11
-
+bindsym $mod+mod1+2 workspace number $ws12
 
 # Cпрятать окно, чтобы оно не мешалось, но в то же время было всегда под рукой. 
 # Можно добавить несколько окон и переключаться между ними. 
@@ -214,6 +217,7 @@ set $ws9 "9"
 set $ws10 "10"
 #set $ws10 "10:"
 set $ws11 "11"
+set $ws12 "12"
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1

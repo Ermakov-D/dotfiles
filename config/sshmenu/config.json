@@ -36,6 +36,12 @@
             "host": "root@192.168.20.248",
             "friendly": "HSi-PVE01",
             "options": []
+        },
+        {
+            "command": "ssh",
+            "host": "depech@78.107.18.117",
+            "friendly": "Vr-TrueConf",
+            "options": []
         }
     ]
 }

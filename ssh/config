@@ -159,3 +159,7 @@ Host 192.168.250.213
 Host 192.168.250.224
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
 
+Host 78.107.18.117 
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+ 
