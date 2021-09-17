@@ -39,7 +39,7 @@
         },
         {
             "command": "ssh",
-            "host": "depech@78.107.18.117",
+            "host": "depeche@78.107.18.117",
             "friendly": "Vr-TrueConf",
             "options": []
         }
