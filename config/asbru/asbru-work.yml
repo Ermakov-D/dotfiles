@@ -1,5 +1,7 @@
 ---
 __PAC__EXPORTED__FULL__: 1
+config version: 2
+config version change: Added keybindings settings
 defaults:
   allow more instances: ''
   append group name: 1
@@ -13,8 +15,8 @@ defaults:
   autostart shell upon start: 0
   back color: '#000000000000'
   bold color: '#cc62cc62cc62'
-  bold color like text: 1
-  bold is brigth: 0
+  bold color like text: ''
+  bold is brigth: ''
   capture xterm title: 0
   change main title: ''
   check versions at start: 0
@@ -57,15 +59,246 @@ defaults:
   hostkey changed prompt: '^.+ontinue connecting \((.+)\/(.+)\)\?\s*$'
   how to switch tabs: ''
   info font: Liberation Mono 0
+  jump ip: ''
+  jump key: ''
+  jump pass: ''
+  jump port: 22
+  jump user: ''
   keepass:
-    ask_user: ''
-    database: /home/depeche
+    database: ''
+    keyfile: ''
     password: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    use_keepass: ''
+    pathcli: ''
+    use_keepass: 0
+  keybindings:
+    pacmain:
+      Alt+n:
+        - Main Window
+        - showconnections
+        - Show/Hide connections list
+      Ctrl+T:
+        - Main Window
+        - localshell
+        - Open a local shell
+      Ctrl+f:
+        - Main Window
+        - find
+        - Find in connection tree
+      Ctrl+q:
+        - Main Window
+        - quit
+        - Exit Ásbrú
+    pactabs:
+      Ctrl+F4:
+        - Tabs
+        - close
+        - Close current Tab
+      Ctrl+Page_Down:
+        - Tabs
+        - next
+        - Next Tab
+      Ctrl+Page_Up:
+        - Tabs
+        - previous
+        - Previous Tab
+      Ctrl+Tab:
+        - Tabs
+        - last
+        - Last focused Tab
+      undef-infotab:
+        - Tabs
+        - infotab
+        - Got to Info Tab
+    terminal:
+      Alt+e:
+        - Terminal
+        - edit_node
+        - Edit Connection
+      Alt+n:
+        - Terminal
+        - showconnections
+        - Show/Hide connections list
+      AltCtrl+X:
+        - Terminal
+        - reset-clear
+        - Reset Terminal and Clear window
+      AltCtrl+s:
+        - Terminal
+        - sftp
+        - Open SFTP session
+      AltCtrl+x:
+        - Terminal
+        - reset
+        - Reset Terminal
+      Ctrl+0:
+        - Terminal
+        - zoomreset
+        - Zoom reset text
+      Ctrl+C:
+        - Terminal
+        - copy
+        - Copy selection to clipboard
+      Ctrl+D:
+        - Terminal
+        - duplicate
+        - Duplicate connection
+      Ctrl+F3:
+        - Terminal
+        - find-terminal
+        - Find Terminal
+      Ctrl+I:
+        - Terminal
+        - infotab
+        - Show the Info tab
+      Ctrl+N:
+        - Terminal
+        - close-disconected
+        - Close disconnected sessions
+      Ctrl+R:
+        - Terminal
+        - restart
+        - Restart connection (close and start)
+      Ctrl+Return:
+        - Terminal
+        - start
+        - Start Terminal
+      Ctrl+V:
+        - Terminal
+        - paste
+        - Paste clipboard into terminal
+      Ctrl+W:
+        - Terminal
+        - disconnect
+        - Disconnect Terminal
+      Ctrl+ampersand:
+        - Terminal
+        - cisco
+        - Send Cisco interrupt keypress
+      Ctrl+b:
+        - Terminal
+        - paste-delete
+        - Paste and regex delete
+      Ctrl+f:
+        - Terminal
+        - find
+        - Find in connection tree
+      Ctrl+g:
+        - Terminal
+        - hostname
+        - Guess hostname
+      Ctrl+minus:
+        - Terminal
+        - zoomout
+        - Zoom out text
+      Ctrl+p:
+        - Terminal
+        - paste-passwd
+        - Paste terminal password
+      Ctrl+plus:
+        - Terminal
+        - zoomin
+        - Zoom in text
+      Ctrl+q:
+        - Terminal
+        - quit
+        - Exit Ásbrú
+      Ctrl+w:
+        - Terminal
+        - close
+        - Close Terminal
+      CtrlAlt+r:
+        - Terminal
+        - remove_from_cluster
+        - Remove terminal from cluster
+      CtrlShift+F4:
+        - Terminal
+        - closealltabs
+        - Close all tabs
+      F11:
+        - Terminal
+        - fullscreen
+        - Go full screen
+      Shift+Insert:
+        - Terminal
+        - paste-primary
+        - Paste selection into terminal
+    treeClusters:
+      Alt+e:
+        - Clusters Tree
+        - edit_node
+        - Edit selected node
+    treeConnections:
+      Alt+F:
+        - Connections Tree
+        - del_favourite
+        - Remove connection from favourites
+      Alt+c:
+        - Connections Tree
+        - connect_node
+        - Connect selected node
+      Alt+e:
+        - Connections Tree
+        - edit_node
+        - Edit selected node
+      Alt+f:
+        - Connections Tree
+        - add_favourite
+        - Add connection to favourites
+      Alt+r:
+        - Connections Tree
+        - protection
+        - Toggle protection
+      Ctrl+c:
+        - Connections Tree
+        - copy
+        - Copy node
+      Ctrl+d:
+        - Connections Tree
+        - clone
+        - Clone connection
+      Ctrl+f:
+        - Connections Tree
+        - find
+        - Find in connection tree
+      Ctrl+r:
+        - Connections Tree
+        - expand_all
+        - Expand tree completly
+      Ctrl+t:
+        - Connections Tree
+        - collaps_all
+        - Collaps tree completly
+      Ctrl+v:
+        - Connections Tree
+        - paste
+        - Paste node
+      Ctrl+x:
+        - Connections Tree
+        - cut
+        - Cut node
+      F2:
+        - Connections Tree
+        - rename
+        - Rename node
+    treeFavourites:
+      Alt+F:
+        - Favourites Tree
+        - del_favourite
+        - Remove connection from favourites
+      Alt+e:
+        - Favourites Tree
+        - edit_node
+        - Edit selected node
+    treeHistory:
+      Alt+e:
+        - History Tree
+        - edit_node
+        - Edit selected node
   layout: Traditional
   layout previous: Traditional
   layout traditional settings: 1
   local commands: []
+  log timestamp: ''
   lt auto save: 1
   lt close to tray: ''
   lt start iconified: ''
@@ -81,7 +314,7 @@ defaults:
   prevent mouse over show tree: 1
   protected color: '#ffffb0b02222'
   protected set: background
-  proxy: ''
+  proxy: No
   proxy ip: ''
   proxy pass: ''
   proxy port: 8080
@@ -106,7 +339,7 @@ defaults:
   show connections tooltips: ''
   show favourites in unity: ''
   show global commands box: ''
-  show screenshots: 1
+  show screenshots: ''
   show statistics: 1
   show tray icon: ''
   show tree titles: 1
@@ -139,6 +372,7 @@ defaults:
   tree font: Normal
   tree on right side: ''
   tree overlay scrolling: 1
+  unprotected color: '#000000000000'
   unprotected set: foreground
   unsplit disconnected terminals: ''
   use bw icon: ''
@@ -414,6 +648,92 @@ environments:
     use sudo: ''
     user: depeche
     variables: []
+  0adbb92d-d2c3-49b1-adc0-ab8d59103f07:
+    KPX title regexp: '.*hsi-pve01 - 2-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    description: Connection with 'hsi-pve01'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.20.248
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: hsi-pve01
+    options: ' -x'
+    parent: 779a78b3-db94-48c3-9c05-bcffc7afa64b
+    pass: 53616c7465645f5f3132333435363738d0047cd5c23e795c6ef5c943a267ba06
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>~→]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: 'hsi-pve01 - 2-я территория'
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: root
+    variables: []
   0fdfdafa-05de-475a-8daa-b255792cf113:
     KPX title regexp: '.*Server-Lnx - 1-я территория.*'
     _is_group: 0
@@ -613,6 +933,7 @@ environments:
       66cedc29-8135-4e76-bbaf-adfa11113443: 1
       6906bbfc-59ef-42e4-83e2-7635d5c71f68: 1
       6d1661aa-1ea6-44fa-a9f0-768760fdd79f: 1
+      710b1737-cb30-4421-9687-d80b7316a65e: 1
       7435cd66-87ad-4d7e-9002-cf11063005e8: 1
       760dd9b5-32ea-4583-9ba2-e9ada5a90d70: 1
       b078ecc5-d620-427d-b7a2-1d236d451383: 1
@@ -2036,6 +2357,92 @@ environments:
     use sudo: ''
     user: depeche
     variables: []
+  710b1737-cb30-4421-9687-d80b7316a65e:
+    KPX title regexp: '.*vr-trueconf - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    description: Connection with 'vr-trueconf'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 78.107.18.117
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: vr-trueconf
+    options: ' -x'
+    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>~→]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: 'vr-trueconf - 1-я территория'
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
   7435cd66-87ad-4d7e-9002-cf11063005e8:
     KPX title regexp: '.*SZ-Notebook - 1-я территория.*'
     _is_group: 0
@@ -2221,6 +2628,7 @@ environments:
     _is_group: 1
     _protected: 0
     children:
+      0adbb92d-d2c3-49b1-adc0-ab8d59103f07: 1
       a623da96-ba25-4d50-b2a7-50bf3edaad43: 1
       ba044c56-38b2-4a7b-9500-91a7e12f1760: 1
       bef71702-27b0-4fca-a335-2d76b060204d: 1
@@ -4299,8 +4707,8 @@ environments:
     screenshots: []
 tmp:
   changed: 0
-  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{19224}_n21.txt'
-  socket: '/home/depeche/.config/asbru/sockets/asbru_PID{19224}_n21.socket'
-  socket exec: '/home/depeche/.config/asbru/sockets/asbru_PID{19224}_n21.exec.socket'
+  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{5645}_n10.txt'
+  socket: '/home/depeche/.config/asbru/sockets/asbru_PID{5645}_n10.socket'
+  socket exec: '/home/depeche/.config/asbru/sockets/asbru_PID{5645}_n10.exec.socket'
   tray available: warning
-  uuid: 'asbru_PID{19224}_n21'
+  uuid: 'asbru_PID{5645}_n10'
