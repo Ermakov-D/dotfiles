@@ -163,3 +163,6 @@ Host 78.107.18.117
     User depeche
     IdentityFile ~/.ssh/keys/depeche-rsa4096
  
+Host 192.168.3.36
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
