@@ -162,7 +162,15 @@ Host 192.168.250.224
 Host 78.107.18.117 
     User depeche
     IdentityFile ~/.ssh/keys/depeche-rsa4096
+<<<<<<< HEAD
  
 Host 192.168.3.36
     User depeche
     IdentityFile ~/.ssh/keys/depeche-rsa4096
+=======
+
+Host 192.168.20.201
+    User root
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+
+>>>>>>> 4afb8b624f0745dc0774936492dda1e14815d925
