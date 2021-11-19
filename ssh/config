@@ -172,4 +172,7 @@ Host 192.168.20.201
     User root
     IdentityFile ~/.ssh/keys/depeche-rsa4096
 
+Host 192.168.250.118
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
 
