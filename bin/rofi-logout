@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 hostname=$(uname -n)
+distr=$(awk -F= '$1=="ID" { print $2 ;}' /etc/os-release)
 if [ "${hostname}" == "depeche-notebook" ]; then
     question=$(echo " lock| logout| reboot| shutdown| suspend" | rofi -sep "|" \
         -dmenu -i -p 'System: ' "" -width 20 -hide-scrollbar \
@@ -16,10 +17,17 @@ case $question in
         ;;
     *logout)
         #command -v gnome-session-quit 2>/dev/null 2>&1 || command -v session-logout >/dev/null 2>&1
-        i3-nagbar -t warning \
-            -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' \
-            -B 'Yes, exit i3' \
-            'i3-msg exit'
+        case ${distr} in 
+            arcolinux)
+                arcolinux-logout
+                ;;
+            *)
+                i3-nagbar -t warning \
+                    -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' \
+                    -B 'Yes, exit i3' \
+                    'i3-msg exit'
+                ;;
+        esac
         ;;
     *reboot)
         systemctl reboot
