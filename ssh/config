@@ -153,9 +153,15 @@ Host 192.168.249.101
 
 Host 192.168.250.215
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
+    HostKeyAlgorithms=+ssh-dss,ssh-rsa
 
 Host 192.168.250.213
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
+    HostKeyAlgorithms=+ssh-dss,ssh-rsa
+
+Host 192.168.250.239
+    KexAlgorithms +diffie-hellman-group1-sha1
+    HostKeyAlgorithms=+ssh-dss,ssh-rsa
 
 Host 192.168.250.224
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
