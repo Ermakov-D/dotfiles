@@ -27,7 +27,7 @@ case $question in
     *shutdown)
         systemctl poweroff
         ;;
-    suspend)
+    *suspend)
         systemctl suspend
         ;;
     *)
