@@ -228,7 +228,11 @@ fi
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias update='sudo pacman -Syyu'
+#alias update='sudo pacman -Syyu'
+function update () {
+    sudo pacman -Syyu
+    sudo paccache -rk1
+}
 
 function vdi () {
     passwd=$(zenity --password --title="User Password" )
