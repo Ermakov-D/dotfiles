@@ -4203,7 +4203,7 @@ environments:
     macros: []
     method: SSH
     name: Hr-Lnx-01.viamnet.local
-    options: ' -x'
+    options: ' -X'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
     pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
@@ -4360,11 +4360,11 @@ environments:
     autoreconnect: ''
     autossh: ''
     cluster: []
-    description: Connection with 'hr-sw-309-vlancore'
+    description: Connection with 'hr-sw-306-vlancore'
     embed: 0
     expect: []
     favourite: 0
-    ip: 192.168.250.239
+    ip: 10.10.6.239
     jump ip: ''
     jump key: ''
     jump pass: ''
@@ -4377,7 +4377,7 @@ environments:
     mac: ''
     macros: []
     method: SSH
-    name: hr-sw-309-vlancore
+    name: hr-sw-306-vlancore
     options: ' -x'
     parent: 3b860b5e-dc3f-4bd7-b6bb-dd0d6df7245c
     pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
@@ -4431,7 +4431,7 @@ environments:
       use personal settings: ''
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
-    title: 'hr-sw-309-vlancore - ELTEX-SRVRoom027'
+    title: 'hr-sw-306-vlancore - ELTEX-SRVRoom027'
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -5242,8 +5242,8 @@ environments:
     variables: []
 tmp:
   changed: 0
-  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{10478}_n3.txt'
-  socket: '/home/depeche/.config/asbru/sockets/asbru_PID{10478}_n3.socket'
-  socket exec: '/home/depeche/.config/asbru/sockets/asbru_PID{10478}_n3.exec.socket'
+  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{16645}_n9.txt'
+  socket: '/home/depeche/.config/asbru/sockets/asbru_PID{16645}_n9.socket'
+  socket exec: '/home/depeche/.config/asbru/sockets/asbru_PID{16645}_n9.exec.socket'
   tray available: warning
-  uuid: 'asbru_PID{10478}_n3'
+  uuid: 'asbru_PID{16645}_n9'
