@@ -1,4 +1,4 @@
 # Игнорировать установленные плагины vim'а
 vim/bundle/
 !vim/bundle/Vundle.Vim
-/config/freerdp/known_hosts2.*
+config/freerdp/known_hosts2.*
