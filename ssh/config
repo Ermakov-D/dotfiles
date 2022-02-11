@@ -177,7 +177,8 @@ Host 10.10.6.239
 Host 192.168.250.238
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
     HostKeyAlgorithms=+ssh-dss,ssh-rsa
-Host 192.168.250.237
+
+Host 192.168.250.237 10.10.6.237
     KexAlgorithms +diffie-hellman-group1-sha1
     HostKeyAlgorithms=+ssh-dss
 # End Eltex ===============================================================
