@@ -57,6 +57,8 @@ Host ssh.materials.nichost.ru
 Host ssh.agnc.nichost.ru
     User agnc
     IdentityFile ~/.ssh/keys/depeche-rsa4096
+    HostKeyAlgorithms=+ssh-rsa
+    PubkeyAcceptedKeyTypes +ssh-rsa
 
 Host ssh.viam.nichost.ru
     User viam
