@@ -232,6 +232,11 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 function update () {
     sudo pacman -Syyu
     sudo paccache -rk1
+    if [ ! -f $(which yay) ]; then
+        echo "yay не установлен"
+    else
+        yay -Syu
+    fi
 }
 
 function vdi () {
