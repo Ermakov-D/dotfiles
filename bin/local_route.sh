@@ -4,6 +4,7 @@ network=$(ip -o -f inet addr show dev ${nic_name}| awk '/scope global/{sub(/[^.]
 
 sudo ip route add 192.168.30.0/24 via ${defGW}
 sudo ip route add 192.168.40.0/24 via ${defGW}
+sudo ip route add 192.168.42.0/24 via ${defGW}
 sudo ip route add 10.254.2.0/30 via ${defGW}
 sudo ip route add 194.247.190.66 via ${defGW}
 sudo ip route add 194.85.88.0/24 via ${defGW}
