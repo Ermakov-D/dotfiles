@@ -3,7 +3,8 @@ set $mod Mod4
 
 # Автозапуск программ
 # notebook exec --no-startup-id  xrandr --output LVDS1 --auto --output HDMI1 --auto --left-of LVDS1
-exec --no-startup-id  xrandr --output HDMI3 --auto --primary --output HDMI2 --auto --left-of HDMI3
+#exec --no-startup-id  xrandr --output HDMI3 --auto --primary --output HDMI2 --auto --left-of HDMI3
+exec --no-startup-id xrandr --output HDMI3 --auto --primary --output HDMI2 --off 
 exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:shift_caps_switch"
 exec --no-startup-id feh --randomize --bg-scale ~/.dotfile/pictures/*
 #exec --no-startup-id exec compton -b
@@ -21,6 +22,7 @@ exec --no-startup-id /usr/bin/variety
 exec --no-startup-id /usr/bin/plank
 exec --no-startup-id /usr/bin/telegram-desktop
 exec --no-startup-id /usr/bin/blueberry-tray
+exec --no-startup-id sudo input-remapper-control --command autoload
 
 # Отлючение заголовков
 default_border pixel
@@ -118,6 +120,8 @@ bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 bindsym $mod+mod1+1 workspace number $ws11
 bindsym $mod+mod1+2 workspace number $ws12
+bindsym $mod+mod1+KP_End workspace number $ws11
+bindsym $mod+mod1+KP_Down workspace number $ws12
 
 # Cпрятать окно, чтобы оно не мешалось, но в то же время было всегда под рукой. 
 # Можно добавить несколько окон и переключаться между ними. 
