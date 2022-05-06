@@ -59,7 +59,7 @@ bindsym $mod+F12 exec tilix --quake
 
 # Перекидывает открытое окно на нужный рабочий стол
 # Определение class: xprop | grep WM_CLASS
-# Еще, что модно делать с окном: https://i3wm.org/docs/userguide.html
+# Еще, что можно делать с окном: https://i3wm.org/docs/userguide.html
 for_window [class="vlc"] move to workspace $ws5
 for_window [class="Joplin"] move to workspace $ws11
 for_window [class="cantata"] move to workspace $ws11
@@ -68,6 +68,7 @@ for_window [class="Thunar"] move to workspace $ws8
 for_window [class="Pidgin"] move to workspace $ws10
 for_window [class="TelegramDesktop"] move to workspace $ws10
 for_window [class="Brave-browser"] move to workspace $ws1
+for_window [class="libreoffice"] move to workspace $ws11
 #for_window [class="Remmina"] move to workspace $ws6
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
