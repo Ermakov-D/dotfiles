@@ -42,3 +42,5 @@ vdi ()
 }
 
 alias z="zsh"
+
+alias remapper="sudo input-remapper-control --command autoload"
