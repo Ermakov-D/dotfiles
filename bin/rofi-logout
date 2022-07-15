@@ -19,7 +19,7 @@ case $question in
         #command -v gnome-session-quit 2>/dev/null 2>&1 || command -v session-logout >/dev/null 2>&1
         case ${distr} in 
             arcolinux)
-		archlinux-logout
+                archlinux-logout
                 ;;
             *)
                 i3-nagbar -t warning \

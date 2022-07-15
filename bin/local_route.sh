@@ -1,4 +1,4 @@
-nic_name=$(ip -o -4 route show to default|grep -v "ppp" | awk '{print $5}')
+nic_name=$(ip -o -4 route show to default|grep -v "ppp" |grep -v "static" | awk '{print $5}')
 defGW=$(ip route list dev ${nic_name} | awk ' /^default/ {print $3}' | tail -1)
 network=$(ip -o -f inet addr show dev ${nic_name}| awk '/scope global/{sub(/[^.]+\//,"0/",$4);print $4}\')
 
