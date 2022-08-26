@@ -7,15 +7,6 @@
             "options": []
         },
         {
-            "command": "ssh",
-            "host": "depeche@10.10.8.1",
-            "friendly": "ArubaCloud",
-            "options": [
-                "-i",
-                "/home/depeche/.ssh/keys/depeche-rsa4096"
-            ]
-        },
-        {
             "command": "sshfs",
             "host": "depeche@192.168.2.212:/",
             "friendly": "SSHFS Server-LNX",
@@ -41,6 +32,12 @@
             "command": "ssh",
             "host": "depeche@78.107.18.117",
             "friendly": "Vr-TrueConf",
+            "options": []
+        },
+        {
+            "command": "ssh",
+            "host": "depeche@192.168.3.240",
+            "friendly": "HRi-SW-Core",
             "options": []
         }
     ]

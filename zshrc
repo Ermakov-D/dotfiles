@@ -238,6 +238,7 @@ function update () {
         yay -Syu
     fi
 }
+alias гзвфеу=update
 
 function vdi () {
     passwd=$(zenity --password --title="User Password" )

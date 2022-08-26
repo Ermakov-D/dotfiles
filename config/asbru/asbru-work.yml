@@ -382,7 +382,7 @@ defaults:
   use proxy: ''
   use system proxy: 1
   username prompt: '([l|L]ogin|[u|U]suario|([u|U]ser-?)*[n|N]ame.*|[u|U]ser)\s*:\s*$'
-  version: 6.3.2
+  version: 6.3.3
   visible bell: ''
   when no more tabs: 0
   word characters: \.:_\/a-zA-Z0-9-
@@ -831,7 +831,7 @@ environments:
     autoreconnect: ''
     autossh: ''
     cluster: []
-    description: Connection with 'VSi-FocalBoard'
+    description: Connection with 'VSi-Mirror'
     embed: 0
     expect: []
     favourite: 0
@@ -848,7 +848,7 @@ environments:
     mac: ''
     macros: []
     method: SSH
-    name: VSi-FocalBoard
+    name: VSi-Mirror
     options: ' -x'
     parent: 779a78b3-db94-48c3-9c05-bcffc7afa64b
     pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
@@ -902,7 +902,7 @@ environments:
       use personal settings: ''
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
-    title: 'VSi-FocalBoard - 2-я территория'
+    title: 'VSi-Mirror - 2-я территория'
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -942,14 +942,20 @@ environments:
     infer from KPX where: 3
     infer user pass from KPX: ''
     ip: 94.103.80.202
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
     local after: []
     local before: []
     local connected: []
+    log timestamp: ''
     mac: ''
     macros: []
     method: SSH
     name: VDSina
-    options: ' -X'
+    options: ' -X -L localhost:8291:172.16.1.1:8291'
     parent: f5b7de86-798b-4131-9b67-e81ce284f48d
     pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
@@ -960,7 +966,8 @@ environments:
     proxy pass: ''
     proxy port: 8080
     proxy user: ''
-    public key: /home/depeche
+    pseudo jump: ''
+    public key: ''
     quote command: ''
     remove control chars: ''
     save session logs: ''
@@ -978,21 +985,17 @@ environments:
     startup script: ''
     startup script name: sample1.pl
     terminal options:
-      audible bell: ''
+      audible bell: 0
       back color: '#000000000000'
       bold color: '#cc62cc62cc62'
       bold color like text: 1
       command prompt: '[#%\$>]|\:\/\s*$'
       cursor shape: block
-      disable ALT key bindings: ''
-      disable CTRL key bindings: ''
-      disable SHIFT key bindings: ''
       open in tab: 1
       password prompt: '([p|P]ass|[p|P]ass[w|W]or[d|t](\s+for\s+|\w+@\w+)*|[c|C]ontrase.a|Enter passphrase for key )\s*:\s*$'
       tab back color: '#000000000000'
       terminal backspace: auto
       terminal character encoding: UTF-8
-      terminal emulation: xterm
       terminal font: Monospace 9
       terminal scrollback lines: 5000
       terminal select words: \.:_\/-A-Za-z0-9
@@ -1005,7 +1008,6 @@ environments:
       use personal settings: ''
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
-      visible bell: ''
     title: 'VDSina - HomeSweetHome'
     use prepend command: ''
     use proxy: 0
@@ -1114,9 +1116,11 @@ environments:
       710b1737-cb30-4421-9687-d80b7316a65e: 1
       760dd9b5-32ea-4583-9ba2-e9ada5a90d70: 1
       b078ecc5-d620-427d-b7a2-1d236d451383: 1
+      b9e218b8-a413-4ecd-8b93-e0fed466001e: 1
       d49ae78d-d206-4569-9c1d-65e03a890c77: 1
       d6cdbb80-48b0-41c1-a3e0-97a4712df614: 1
       e1a9b4b5-9dde-4a0a-bb20-73ca75b4364e: 1
+      e5bb29e1-68f8-4c9b-89ff-10a18ad85d5d: 1
     description: Connection group '1-я территория'
     name: 1-я территория
     parent: __PAC__ROOT__
@@ -1299,6 +1303,92 @@ environments:
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
       visible bell: ''
     title: 'FreeBSD-Test - 1-я территория'
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
+  25bad7f9-474e-4e8c-a95d-5c8c8aab4efb:
+    KPX title regexp: '.*hri-sw-306-Core - Switch.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    description: Connection with 'hri-sw-306-Core'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.3.240
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: hri-sw-306-Core
+    options: ' -x'
+    parent: b9e218b8-a413-4ecd-8b93-e0fed466001e
+    pass: 53616c7465645f5f3132333435363738fa97bd0d822b7b8513dddf1360fe857e
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>~→]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: 'hri-sw-306-Core - Switch'
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -1593,14 +1683,20 @@ environments:
     infer from KPX where: 3
     infer user pass from KPX: ''
     ip: 172.16.202.251
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
     local after: []
     local before: []
     local connected: []
+    log timestamp: ''
     mac: ''
     macros: []
     method: SSH
     name: Raspberry
-    options: ' -X'
+    options: ' -X -L localhost:9081:172.16.1.1:80'
     parent: f5b7de86-798b-4131-9b67-e81ce284f48d
     pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
@@ -1611,7 +1707,8 @@ environments:
     proxy pass: ''
     proxy port: 8080
     proxy user: ''
-    public key: /home/depeche
+    pseudo jump: ''
+    public key: ''
     quote command: ''
     remove control chars: ''
     save session logs: ''
@@ -1629,21 +1726,17 @@ environments:
     startup script: ''
     startup script name: sample1.pl
     terminal options:
-      audible bell: ''
+      audible bell: 0
       back color: '#000000000000'
       bold color: '#cc62cc62cc62'
       bold color like text: 1
       command prompt: '[#%\$>]|\:\/\s*$'
       cursor shape: block
-      disable ALT key bindings: ''
-      disable CTRL key bindings: ''
-      disable SHIFT key bindings: ''
       open in tab: 1
       password prompt: '([p|P]ass|[p|P]ass[w|W]or[d|t](\s+for\s+|\w+@\w+)*|[c|C]ontrase.a|Enter passphrase for key )\s*:\s*$'
       tab back color: '#000000000000'
       terminal backspace: auto
       terminal character encoding: UTF-8
-      terminal emulation: xterm
       terminal font: Monospace 9
       terminal scrollback lines: 5000
       terminal select words: \.:_\/-A-Za-z0-9
@@ -1656,7 +1749,6 @@ environments:
       use personal settings: ''
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
-      visible bell: ''
     title: 'Raspberry - HomeSweetHome'
     use prepend command: ''
     use proxy: 0
@@ -2997,7 +3089,7 @@ environments:
     macros: []
     method: SSH
     name: vr-trueconf
-    options: ' -x'
+    options: ' -x -L localhost:8080:localhost:80'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
     pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
@@ -4199,6 +4291,15 @@ environments:
     use sudo: ''
     user: ''
     variables: []
+  b9e218b8-a413-4ecd-8b93-e0fed466001e:
+    _is_group: 1
+    _protected: 0
+    children:
+      25bad7f9-474e-4e8c-a95d-5c8c8aab4efb: 1
+    description: Connection group 'Switch'
+    name: Switch
+    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
+    screenshots: []
   ba044c56-38b2-4a7b-9500-91a7e12f1760:
     KPX title regexp: '.*sokol-lnx - 2-я территория.*'
     _is_group: 0
@@ -5243,6 +5344,93 @@ environments:
     use sudo: ''
     user: depeche
     variables: []
+  e5bb29e1-68f8-4c9b-89ff-10a18ad85d5d:
+    KPX title regexp: '.*vr-trueconf - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    description: Connection with 'vr-trueconf'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 78.107.18.117
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: 'vr-trueconf - copy'
+    options: ' -x'
+    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>~→]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: 'vr-trueconf - 1-я территория'
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
   e6c3c526-8fe3-4f84-bb33-3f4d5ff31baa:
     KPX title regexp: '.*Mikrotik - Ляпин В..*'
     _is_group: 0
@@ -5700,8 +5888,8 @@ environments:
     variables: []
 tmp:
   changed: 0
-  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{16869}_n13.txt'
-  socket: '/home/depeche/.config/asbru/sockets/asbru_PID{16869}_n13.socket'
-  socket exec: '/home/depeche/.config/asbru/sockets/asbru_PID{16869}_n13.exec.socket'
+  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{53381}_n2.txt'
+  socket: '/home/depeche/.config/asbru/sockets/asbru_PID{53381}_n2.socket'
+  socket exec: '/home/depeche/.config/asbru/sockets/asbru_PID{53381}_n2.exec.socket'
   tray available: warning
-  uuid: 'asbru_PID{16869}_n13'
+  uuid: 'asbru_PID{53381}_n2'

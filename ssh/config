@@ -181,6 +181,11 @@ Host 192.168.250.238
 Host 192.168.250.237 10.10.6.237
     KexAlgorithms +diffie-hellman-group1-sha1
     HostKeyAlgorithms=+ssh-dss
+    
+Host 192.168.3.240 172.16.16.33
+    KexAlgorithms +diffie-hellman-group1-sha1
+    HostKeyAlgorithms=+ssh-dss
+    
 # End Eltex ===============================================================
 
 Host 78.107.18.117 
