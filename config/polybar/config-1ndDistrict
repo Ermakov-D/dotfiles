@@ -220,7 +220,7 @@ font-4 = "Weather Icons:size=10;2"
 
 modules-left = load-average vpn-VIAMNet vpn-VDSina
 modules-center = networkspeeddown networkspeedup pub-ip volume spotify1 
-modules-right = openweather filesystem
+modules-right = unread-mail openweather filesystem
 
 separator = |
 
@@ -1519,4 +1519,19 @@ format-prefix-foreground = #c1941a
 format-underline = #c1941a
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
+
+###############################################################################
+# Почта 
+[module/unread-mail]
+type = custom/script
+#label-font = 2
+#format-underline = #f50a4d
+click-left = thunderbird &
+exec = ~/.config/polybar/scripts/UnseenMail.py
+interval = 500
+format-prefix-foreground = #3EC13F
+format-underline = #737CA1
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+
 

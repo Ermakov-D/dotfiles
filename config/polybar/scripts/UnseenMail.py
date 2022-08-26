@@ -10,7 +10,7 @@ import configparser
 
 dirname = os.path.split(os.path.abspath(__file__))[0]
 accounts = configparser.RawConfigParser()
-accounts.read(os.path.abspath(dirname + '/home/depeche/.config/accounts.ini'))
+accounts.read(os.path.abspath(dirname + '/accounts.ini'))
 strFormatted = ""
 
 
