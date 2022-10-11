@@ -19,10 +19,10 @@ Host 02.depeche.xyz
     IdentityFile ~/.ssh/keys/mikroansible
     User mikroansible
 
-Host 03.depeche.xyz
-    HostName 03.depeche.xyz
-    IdentityFile ~/.ssh/keys/depeche-rsa4096
-    User depeche
+    #Host 03.depeche.xyz
+    #HostName 03.depeche.xyz
+    #IdentityFile ~/.ssh/keys/depeche-rsa4096
+    #User depeche
 
 Host 172.16.1.1
     HostName 172.16.1.1

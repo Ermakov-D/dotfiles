@@ -237,6 +237,11 @@ function update () {
     else
         yay -Syu
     fi
+
+    # обновление hblock до 12 дня
+    if [ $(date +%H) -lt 12 ]; then
+        sudo hblock --color true
+    fi
 }
 alias гзвфеу=update
 

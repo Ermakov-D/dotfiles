@@ -18,11 +18,13 @@ sudo ip route add 91.189.116.41 via ${defGW}
 sudo ip route add 195.239.45.194 via ${defGW}
 sudo ip route add 78.107.18.112/28 via ${defGW}
 sudo ip route add 192.168.4.0/24 via ${defGW}
+sudo ip route add 172.16.10.0/24 via 192.168.3.240
 
 case "$network" in
     192.168.3.0/22)
 	    gate="192.168.1.7"
 	    sudo ip route add 192.168.20.0/24 via ${defGW}
+        sudo ip route add 10.254.10.0/26 via 192.168.1.10
 		;;
     192.168.20.0/24)
 	    gate="192.168.20.8"
