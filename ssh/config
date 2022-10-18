@@ -208,3 +208,11 @@ Host 192.168.42.2
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
     HostKeyAlgorithms=+ssh-dss,ssh-rsa
 
+Host 192.168.40.234
+    Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
+    HostKeyAlgorithms=+ssh-dss,ssh-rsa
+
+Host vri-mail.corp.viam.ru
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+

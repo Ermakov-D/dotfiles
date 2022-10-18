@@ -242,6 +242,7 @@ function update () {
     if [ $(date +%H) -lt 12 ]; then
         sudo hblock --color true
     fi
+    betterlockscreen -u /home/depeche/.config/variety/Downloaded/
 }
 alias гзвфеу=update
 

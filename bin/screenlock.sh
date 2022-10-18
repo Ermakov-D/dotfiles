@@ -11,8 +11,12 @@ T='#ee00eeee'  # text
 W='#880000bb'  # wrong
 V='#c5c2c2'              # '#bb00bbbb'  # verifying
 
-if ! [ -x "$(command -v multilockscreen)" ]; then
-    # --keyhlcolor 880088cc \
+if [ -x "$(command -v betterlockscreen)" ]; then
+    betterlockscreen -l dimblur --display 1 --span
+elif [ -x "$(command -v multilockscreen)" ]; then
+    multilockscreen -l dimblur --display 1 --span
+else
+# --keyhlcolor 880088cc \
     i3lock \
         --blur 5 \
         --bar-indicator \
@@ -30,9 +34,9 @@ if ! [ -x "$(command -v multilockscreen)" ]; then
         --clock \
         --force-clock \
         #--timepos 5:h-80 \
-        --timecolor 880088ff \
-        --datepos tx:ty+15 \
-        --datecolor 990099ff \
+        #--timecolor 880088ff \
+        #--datepos tx:ty+15 \
+        #--datecolor 990099ff \
         --date-align 1 \
         --time-align 1 \
         --ringvercolor 8800ff88 \
@@ -45,6 +49,4 @@ if ! [ -x "$(command -v multilockscreen)" ]; then
         --modifpos -50:-50 \
         \
         --screen 1
-else
-    multilockscreen -l dimblur --display 1 --span
 fi

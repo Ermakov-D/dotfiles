@@ -17,7 +17,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id dropbox
 exec --no-startup-id yandex-disk-indicator
 exec --no-startup-id pamac-tray
-#exec --no-startup-id xautolock -time 30 -locker ~/bin/screenlock.sh &
+exec --no-startup-id xautolock -time 30 -locker ~/bin/screenlock.sh &
 exec --no-startup-id /usr/bin/variety
 exec --no-startup-id /usr/bin/plank
 exec --no-startup-id /usr/bin/telegram-desktop
@@ -55,9 +55,9 @@ bindsym $mod+F10 exec --no-startup-id thunar; workspace 8
 bindsym $mod+m exec --no-startup-id megasync
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Home exec --no-startup-id cvlc
-bindsym $mod+Menu exec --no-startup-id i3lock-fancy
+#bindsym $mod+Menu exec --no-startup-id i3lock-fancy
 bindsym $mod+Prior exec killall -s 6 vlc todoist megasync flameshot firefox subl3
-bindsym $mod+F12 exec tilix --quake 
+#bindsym $mod+F12 exec tilix --quake 
 
 # Перекидывает открытое окно на нужный рабочий стол
 # Определение class: xprop | grep WM_CLASS
