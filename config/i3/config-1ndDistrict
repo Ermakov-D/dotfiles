@@ -3,8 +3,8 @@ set $mod Mod4
 
 # Автозапуск программ
 # notebook exec --no-startup-id  xrandr --output LVDS1 --auto --output HDMI1 --auto --left-of LVDS1
-#exec --no-startup-id  xrandr --output HDMI3 --auto --primary --output HDMI2 --auto --left-of HDMI3
-exec --no-startup-id xrandr --output HDMI3 --auto --primary --output HDMI2 --off 
+exec --no-startup-id  xrandr --output HDMI3 --auto --primary --output HDMI2 --auto --left-of HDMI3
+#exec --no-startup-id xrandr --output HDMI3 --auto --primary --output HDMI2 --off 
 exec --no-startup-id setxkbmap "us,ru" ",winkeys" "grp:shift_caps_switch"
 exec --no-startup-id feh --randomize --bg-scale ~/.dotfile/pictures/*
 #exec --no-startup-id exec compton -b
@@ -17,7 +17,7 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id dropbox
 exec --no-startup-id yandex-disk-indicator
 exec --no-startup-id pamac-tray
-exec --no-startup-id xautolock -time 30 -locker ~/bin/screenlock.sh &
+exec --no-startup-id xautolock -time 10 -detectsleep -locker ~/bin/screenlock.sh
 exec --no-startup-id /usr/bin/variety
 exec --no-startup-id /usr/bin/plank
 exec --no-startup-id /usr/bin/telegram-desktop

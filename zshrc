@@ -242,14 +242,16 @@ function update () {
     if [ $(date +%H) -lt 12 ]; then
         sudo hblock --color true
     fi
+    rm -rf ~/.cache/betterlockscreen/1-HDMI3/*.png
     betterlockscreen -u /home/depeche/.config/variety/Downloaded/
 }
 alias гзвфеу=update
 
 function vdi () {
     passwd=$(zenity --password --title="User Password" )
-    /usr/bin/xfreerdp /f /cert-ignore /smartcard /v:192.168.252.20 /u:ermakov_ds@viamnet.local /p:${passwd} /drive:home,/home/depeche
+    /usr/bin/xfreerdp /f /cert-ignore /smartcard /v:10.10.224.12 /u:ermakov_ds@viamnet.local /p:${passwd} /drive:home,/home/depeche
 }
 
 #alias vdi-ermakov='/usr/bin/xfreerdp /f /cert-ignore /smartcard /v:192.168.252.20 /u:ermakov_ds@viamnet.local /drive:home,/home/depeche'
-
+alias lockupdate='rm -rf ~/.cache/betterlockscreen/1-HDMI3/*.png;betterlockscreen -u /home/depeche/.config/variety/Downloaded/'
+alias updatelock='rm -rf ~/.cache/betterlockscreen/1-HDMI3/*.png;betterlockscreen -u /home/depeche/.config/variety/Downloaded/'
