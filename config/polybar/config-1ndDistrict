@@ -218,7 +218,7 @@ font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Weather Icons:size=10;2"
 
-modules-left = load-average vpn-VIAMNet vpn-VDSina
+modules-left = load-average vpn-VIAMNet vpn-VDSina vpn-ZeroTier
 modules-center = networkspeeddown networkspeedup pub-ip volume spotify1 
 modules-right = unread-mail openweather filesystem
 
@@ -1531,6 +1531,18 @@ exec = ~/.config/polybar/scripts/UnseenMail.py
 interval = 500
 format-prefix-foreground = #3EC13F
 format-underline = #737CA1
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+
+###############################################################################
+# Статус ZeroTier
+[module/vpn-ZeroTier]
+type = custom/script
+exec = ~/.config/polybar/scripts/zerotier-status.sh
+interval = 60
+#click-left = ~/.config/polybar/scripts/vpn-wireguard-wg.sh --toggle &
+format-prefix-foreground = #3EC13F
+format-underline = #D2CFCF
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
