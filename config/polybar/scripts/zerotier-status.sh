@@ -1,16 +1,17 @@
 #!/bin/sh
 
 networkname=Depeche-ZeroTier
+ztInterface=zt0
 
-connectionStatus=$(zerotier-cli listnetworks | grep "$networkname" | awk '{print $6}')
+connectionStatus=$(zerotier-cli listnetworks | grep "$ztInterface" | awk '{print $6}')
 
 case "$connectionStatus" in
 OK)
-    #echo " i ZeroTier        "
-    echo " ZeroTier"
+    #echo "  ZeroTier   "
+    echo " ZeroTier"
     ;;
 *)
-    echo " ZeroTier"
+    echo " ZeroTier"
     ;;
 esac
 

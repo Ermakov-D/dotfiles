@@ -53,7 +53,9 @@ Host 192.168.20.7
 Host ssh.materials.nichost.ru
     User materials
     IdentityFile ~/.ssh/keys/depeche-rsa4096
-    HostKeyAlgorithms=ssh-rsa
+    #HostKeyAlgorithms=ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
 
 Host ssh.agnc.nichost.ru
     User agnc
