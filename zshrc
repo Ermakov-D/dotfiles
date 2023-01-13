@@ -252,6 +252,6 @@ function vdi () {
     /usr/bin/xfreerdp /f /cert-ignore /smartcard /v:10.10.224.12 /u:ermakov_ds@viamnet.local /p:${passwd} /drive:home,/home/depeche
 }
 
-#alias vdi-ermakov='/usr/bin/xfreerdp /f /cert-ignore /smartcard /v:192.168.252.20 /u:ermakov_ds@viamnet.local /drive:home,/home/depeche'
-alias lockupdate='rm -rf ~/.cache/betterlockscreen/1-HDMI3/*.png;betterlockscreen -u /home/depeche/.config/variety/Downloaded/'
-alias updatelock='rm -rf ~/.cache/betterlockscreen/1-HDMI3/*.png;betterlockscreen -u /home/depeche/.config/variety/Downloaded/'
+#alias lockupdate='rm -rf ~/.cache/betterlockscreen/1-HDMI3/*.png;betterlockscreen -u /home/depeche/.config/variety/Downloaded/'
+alias updatelock='rm -rf ~/.cache/betterlockscreen/1-HDMI3/*.png;betterlockscreen -u `find /home/depeche/.config/variety/Downloaded/ -type f -name "*.jpg" | shuf -n 1` -u `find /home/depeche/.config/variety/Downloaded/ -type f -name "*.jpg" | shuf -n 1`'
+alias lockupdate='rm -rf ~/.cache/betterlockscreen/1-HDMI3/*.png;betterlockscreen -u `find /home/depeche/.config/variety/Downloaded/ -type f -name "*.jpg" | shuf -n 1` -u `find /home/depeche/.config/variety/Downloaded/ -type f -name "*.jpg" | shuf -n 1`'
