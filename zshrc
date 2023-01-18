@@ -242,8 +242,8 @@ function update () {
     if [ $(date +%H) -lt 12 ]; then
         sudo hblock --color true
     fi
-    rm -rf ~/.cache/betterlockscreen/1-HDMI3/*.png
-    betterlockscreen -u /home/depeche/.config/variety/Downloaded/
+    #rm -rf ~/.cache/betterlockscreen/1-HDMI3/*.png
+    #betterlockscreen -u /home/depeche/.config/variety/Downloaded/
 }
 alias гзвфеу=update
 
