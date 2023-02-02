@@ -382,7 +382,7 @@ defaults:
   use proxy: ''
   use system proxy: 1
   username prompt: '([l|L]ogin|[u|U]suario|([u|U]ser-?)*[n|N]ame.*|[u|U]ser)\s*:\s*$'
-  version: 6.3.3
+  version: 6.4.0
   visible bell: ''
   when no more tabs: 0
   word characters: \.:_\/a-zA-Z0-9-
@@ -430,6 +430,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: depeche
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -438,6 +439,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096.pub
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -446,6 +448,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -478,6 +481,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hs-lnx-gate1 - Gate-Cluster'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -514,6 +518,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -521,6 +526,7 @@ environments:
     proxy user: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -529,6 +535,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -564,6 +571,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'Jitsi - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -604,6 +612,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -612,6 +621,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -620,6 +630,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -652,6 +663,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hasp6 /185/ - Hasp-Lnx'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -690,6 +702,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -698,6 +711,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -706,6 +720,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -738,6 +753,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hsi-pve01 - 2-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -777,6 +793,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -785,6 +802,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -793,6 +811,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -825,6 +844,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hr-sw-306-main01 - Eltex-ViamNet'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -859,12 +879,13 @@ environments:
     macros: []
     method: SSH
     name: Server-Lnx
-    options: ' -X -L localhost:8081:10.90.90.90:80'
+    options: ' -X -L localhost:8081:10.10.17.14:80'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
     pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -873,6 +894,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -881,6 +903,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -913,6 +936,7 @@ environments:
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
     title: 'Server-Lnx - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -963,6 +987,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -971,6 +996,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -979,6 +1005,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -1011,6 +1038,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'VSi-Mirror - 2-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -1022,9 +1050,7 @@ environments:
     children:
       27704f88-6ea3-45fa-9ff5-70bb36da1c86: 1
       4321846d-f14f-4632-a62d-c3a2c8d2ac32: 1
-      4896ca6e-2643-4e8a-ad58-207a0bb2709e: 1
       598633e3-aa1a-4dfb-968e-d90751aee7a3: 1
-      59bdb965-39fd-45db-8ec9-a5e4ecd56bf3: 1
       862fed85-e992-49ce-a4f3-7e0c95849f2d: 1
       9365e4a6-6a88-4782-953a-5f5caa4e42a2: 1
       aba5cdc3-d2b8-4a70-b0d0-e984cce0db1b: 1
@@ -1070,6 +1096,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -1078,6 +1105,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -1086,6 +1114,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -1118,6 +1147,7 @@ environments:
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
     title: 'VDSina - HomeSweetHome'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -1157,6 +1187,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -1165,6 +1196,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -1173,6 +1205,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -1205,6 +1238,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hr-sw-027-05 - ELTEX-SRVRoom027'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -1270,6 +1304,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -1278,6 +1313,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -1286,6 +1322,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -1318,6 +1355,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'vri-mail - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -1355,6 +1393,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -1362,6 +1401,7 @@ environments:
     proxy user: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -1370,6 +1410,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -1405,6 +1446,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'HR-LNX-Gate1 - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -1449,6 +1491,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -1456,6 +1499,7 @@ environments:
     proxy user: ''
     public key: /home/depeche
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -1464,6 +1508,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -1501,6 +1546,7 @@ environments:
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
       visible bell: ''
     title: 'FreeBSD-Test - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -1539,6 +1585,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -1547,6 +1594,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -1555,6 +1603,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -1587,6 +1636,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hri-sw-306-Core - Switch'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -1638,6 +1688,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -1646,6 +1697,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -1654,6 +1706,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -1686,6 +1739,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hri-pve03 - hri-pve'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -1724,6 +1778,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: depeche
     port: 22222
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -1731,6 +1786,7 @@ environments:
     proxy user: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -1739,6 +1795,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -1774,10 +1831,101 @@ environments:
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
     title: 'Gate-Vosk - Воскресенск'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
     user: depeche
+    variables: []
+  376da3b9-e989-49d5-a130-52137c98c193:
+    KPX title regexp: '.*PVE - HomeSweetHome.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    description: Connection with 'PVE'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 172.16.202.249
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: PVE
+    options: ' -x'
+    parent: f5b7de86-798b-4131-9b67-e81ce284f48d
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: 0
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: 0
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>~→]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: 'PVE - HomeSweetHome'
+    use postpend command: 0
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: root
     variables: []
   4321846d-f14f-4632-a62d-c3a2c8d2ac32:
     KPX title regexp: '.*VR-NetBox - VIAM.*'
@@ -1812,6 +1960,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: depeche
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -1820,6 +1969,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -1828,6 +1978,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -1860,6 +2011,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'VR-NetBox - VIAM'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -1899,6 +2051,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -1907,6 +2060,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -1915,6 +2069,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -1947,6 +2102,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hr-sw-027-14 - ELTEX-SRVRoom027'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -1987,6 +2143,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -1995,6 +2152,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -2003,6 +2161,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -2035,96 +2194,11 @@ environments:
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
     title: 'Raspberry - HomeSweetHome'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
     user: pi
-    variables: []
-  4896ca6e-2643-4e8a-ad58-207a0bb2709e:
-    KPX title regexp: '.*Vr-JitseMeet - VIAM.*'
-    _is_group: 0
-    _protected: 0
-    auth fallback: 1
-    auth type: userpass
-    autoreconnect: ''
-    autossh: ''
-    cluster: []
-    description: Connection with 'Vr-JitseMeet'
-    embed: 0
-    expect: []
-    favourite: 0
-    ip: 192.168.250.118
-    jump ip: ''
-    jump key: ''
-    jump pass: ''
-    jump port: 22
-    jump user: ''
-    local after: []
-    local before: []
-    local connected: []
-    log timestamp: ''
-    mac: ''
-    macros: []
-    method: SSH
-    name: Vr-JitseMeet
-    options: ' -x'
-    parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase user: ''
-    port: 22
-    prepend command: ''
-    proxy ip: ''
-    proxy pass: ''
-    proxy port: 8080
-    proxy user: ''
-    pseudo jump: ''
-    public key: ''
-    quote command: ''
-    remove control chars: ''
-    save session logs: ''
-    screenshots: []
-    search pass on KPX: 0
-    send slow: 0
-    send string active: ''
-    send string every: 60
-    send string intro: 1
-    send string txt: ''
-    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
-    session logs amount: 10
-    session logs folder: /home/depeche/.config/asbru/session_logs
-    startup launch: ''
-    startup script: ''
-    startup script name: sample1.pl
-    terminal options:
-      audible bell: 0
-      back color: '#000000000000'
-      bold color: '#cc62cc62cc62'
-      bold color like text: 1
-      command prompt: '[#%\$>~→]|\:\/\s*$'
-      cursor shape: block
-      open in tab: 1
-      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
-      tab back color: '#000000000000'
-      terminal backspace: auto
-      terminal character encoding: UTF-8
-      terminal font: Monospace 9
-      terminal scrollback lines: -2
-      terminal select words: -.:_/
-      terminal transparency: 0
-      terminal window hsize: 800
-      terminal window vsize: 600
-      text color: '#cc62cc62cc62'
-      timeout command: 40
-      timeout connect: 40
-      use personal settings: ''
-      use tab back color: ''
-      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
-    title: 'Vr-JitseMeet - VIAM'
-    use prepend command: ''
-    use proxy: 0
-    use sudo: ''
-    user: depeche
     variables: []
   5152bc04-18b1-4b0f-b7d2-315b610360df:
     KPX title regexp: '.*hr-sw-027-03 - ELTEX-SRVRoom027.*'
@@ -2160,6 +2234,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -2168,6 +2243,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -2176,6 +2252,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -2208,6 +2285,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hr-sw-224room - Eltex-ViamNet'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -2247,6 +2325,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -2255,6 +2334,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -2263,6 +2343,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -2295,6 +2376,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hr-sw-306-vlancore - ELTEX-SRVRoom027'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -2334,6 +2416,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -2342,6 +2425,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -2350,6 +2434,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -2382,6 +2467,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hri-pve01 - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -2420,6 +2506,7 @@ environments:
     passphrase: 53616c7465645f5f31323334353637387fa039405ec4330b1c9b7fc3bfecc1941c5d697f18a8f5f7
     passphrase user: root
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -2428,6 +2515,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/vri-lxc-gitea
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -2436,6 +2524,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -2468,6 +2557,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'vri-lxc-gitea - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -2507,6 +2597,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -2515,6 +2606,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -2523,6 +2615,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -2555,6 +2648,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hr-sw-027-03 - ELTEX-SRVRoom027'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -2589,6 +2683,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -2596,6 +2691,7 @@ environments:
     proxy user: ''
     public key: /home/depeche
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -2604,6 +2700,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -2641,6 +2738,7 @@ environments:
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
       visible bell: ''
     title: 'vps-spb - Ляпин В.'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -2679,6 +2777,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -2687,6 +2786,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -2695,6 +2795,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -2727,92 +2828,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'VR-Ksh-T - VIAM'
-    use prepend command: ''
-    use proxy: 0
-    use sudo: ''
-    user: ''
-    variables: []
-  59bdb965-39fd-45db-8ec9-a5e4ecd56bf3:
-    KPX title regexp: '.*vr-git - VIAM.*'
-    _is_group: 0
-    _protected: 0
-    auth fallback: 1
-    auth type: publickey
-    autoreconnect: ''
-    autossh: ''
-    cluster: []
-    description: Connection with 'vr-git'
-    embed: 0
-    expect: []
-    favourite: 0
-    ip: 192.168.249.106
-    jump ip: ''
-    jump key: ''
-    jump pass: ''
-    jump port: 22
-    jump user: ''
-    local after: []
-    local before: []
-    local connected: []
-    log timestamp: ''
-    mac: ''
-    macros: []
-    method: SSH
-    name: vr-git
-    options: ' -x'
-    parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase user: ''
-    port: 22
-    prepend command: ''
-    proxy ip: ''
-    proxy pass: ''
-    proxy port: 8080
-    proxy user: ''
-    pseudo jump: ''
-    public key: /home/depeche/.ssh/keys/depeche-rsa4096
-    quote command: ''
-    remove control chars: ''
-    save session logs: ''
-    screenshots: []
-    search pass on KPX: 0
-    send slow: 0
-    send string active: ''
-    send string every: 60
-    send string intro: 1
-    send string txt: ''
-    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
-    session logs amount: 10
-    session logs folder: /home/depeche/.config/asbru/session_logs
-    startup launch: ''
-    startup script: ''
-    startup script name: sample1.pl
-    terminal options:
-      audible bell: 0
-      back color: '#000000000000'
-      bold color: '#cc62cc62cc62'
-      bold color like text: 1
-      command prompt: '[#%\$>~→]|\:\/\s*$'
-      cursor shape: block
-      open in tab: 1
-      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
-      tab back color: '#000000000000'
-      terminal backspace: auto
-      terminal character encoding: UTF-8
-      terminal font: Monospace 9
-      terminal scrollback lines: -2
-      terminal select words: -.:_/
-      terminal transparency: 0
-      terminal window hsize: 800
-      terminal window vsize: 600
-      text color: '#cc62cc62cc62'
-      timeout command: 40
-      timeout connect: 40
-      use personal settings: ''
-      use tab back color: ''
-      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
-    title: 'vr-git - VIAM'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -2854,6 +2870,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: depeche
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -2862,6 +2879,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -2870,6 +2888,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -2902,6 +2921,7 @@ environments:
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
     title: 'vr-sokollnx - 2-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -2943,6 +2963,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -2951,6 +2972,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -2959,6 +2981,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -2991,92 +3014,7 @@ environments:
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
     title: 'Pinduli-BackUp - 1-я территория'
-    use prepend command: ''
-    use proxy: 0
-    use sudo: ''
-    user: ''
-    variables: []
-  687edda7-c1c1-4c0d-ac01-b4afb358c341:
-    KPX title regexp: '.*G-Cloud - HomeSweetHome.*'
-    _is_group: 0
-    _protected: 0
-    auth fallback: 1
-    auth type: publickey
-    autoreconnect: ''
-    autossh: ''
-    cluster: []
-    description: Connection with 'G-Cloud'
-    embed: 0
-    expect: []
-    favourite: 0
-    ip: g-cloud.depeche.xyz
-    jump ip: ''
-    jump key: ''
-    jump port: 22
-    jump user: ''
-    local after: []
-    local before: []
-    local connected: []
-    mac: ''
-    macros: []
-    method: SSH
-    name: G-Cloud
-    options: ' -x'
-    parent: f5b7de86-798b-4131-9b67-e81ce284f48d
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase user: ''
-    port: 22
-    prepend command: ''
-    proxy ip: ''
-    proxy pass: ''
-    proxy port: 8080
-    proxy user: ''
-    public key: /home/depeche/.ssh/keys/depeche-rsa4096
-    quote command: ''
-    remove control chars: ''
-    save session logs: ''
-    screenshots: []
-    search pass on KPX: 0
-    send slow: 0
-    send string active: ''
-    send string every: 60
-    send string intro: 1
-    send string txt: ''
-    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
-    session logs amount: 10
-    session logs folder: /home/depeche/.config/asbru/session_logs
-    startup launch: ''
-    startup script: ''
-    startup script name: sample1.pl
-    terminal options:
-      audible bell: ''
-      back color: '#000000000000'
-      bold color: '#cc62cc62cc62'
-      bold color like text: 1
-      command prompt: '[#%\$>]|\:\/\s*$'
-      cursor shape: block
-      disable ALT key bindings: ''
-      disable CTRL key bindings: ''
-      disable SHIFT key bindings: ''
-      open in tab: 1
-      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
-      tab back color: '#000000000000'
-      terminal backspace: auto
-      terminal character encoding: UTF-8
-      terminal font: Monospace 9
-      terminal scrollback lines: 5000
-      terminal select words: -.:_/
-      terminal transparency: 0
-      terminal window hsize: 800
-      terminal window vsize: 600
-      text color: '#cc62cc62cc62'
-      timeout command: 40
-      timeout connect: 40
-      use personal settings: ''
-      use tab back color: ''
-      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
-    title: 'G-Cloud - HomeSweetHome'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -3109,12 +3047,13 @@ environments:
     macros: []
     method: SSH
     name: vr-gw-backup (VyOS)
-    options: ' -x'
+    options: ' -x -L localhost:8082:10.10.17.14:80'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
     pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -3123,6 +3062,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -3131,6 +3071,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -3163,6 +3104,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'vr-gw-backup (VyOS) - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -3200,6 +3142,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -3207,6 +3150,7 @@ environments:
     proxy user: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -3215,6 +3159,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -3250,6 +3195,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'VR-LNX-Gate2 - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -3284,6 +3230,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -3291,6 +3238,7 @@ environments:
     proxy user: ''
     public key: /home/depeche
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -3299,6 +3247,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -3336,6 +3285,7 @@ environments:
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
       visible bell: ''
     title: 'Stats - GTel'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -3375,6 +3325,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: depeche
     port: 22222
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -3382,6 +3333,7 @@ environments:
     proxy user: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -3390,6 +3342,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -3425,6 +3378,7 @@ environments:
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
     title: 'Gate1 - Gate1'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -3467,6 +3421,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -3475,6 +3430,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -3483,6 +3439,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -3515,6 +3472,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'vr-trueconf - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -3558,6 +3516,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -3565,6 +3524,7 @@ environments:
     proxy user: ''
     public key: /home/depeche
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -3573,6 +3533,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -3610,6 +3571,7 @@ environments:
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
       visible bell: ''
     title: 'HostingVIAM - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -3660,6 +3622,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -3667,6 +3630,7 @@ environments:
     proxy user: ''
     public key: /home/depeche
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -3675,6 +3639,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -3712,6 +3677,7 @@ environments:
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
       visible bell: ''
     title: 'vps-msk - Ляпин В.'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -3764,6 +3730,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -3772,6 +3739,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -3780,6 +3748,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -3812,6 +3781,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hasp5 /184/ - Hasp-Lnx'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -3852,6 +3822,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738c545f95dc48137a8
     passphrase user: vadmin
     port: 22222
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -3860,6 +3831,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -3868,6 +3840,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -3900,6 +3873,7 @@ environments:
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
     title: 'Gate-GCKI - Геленжик'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -3957,6 +3931,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: root
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -3965,6 +3940,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -3973,6 +3949,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -4005,6 +3982,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'Hr-PVE02.viamnet.local - VIAM'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -4039,6 +4017,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -4046,6 +4025,7 @@ environments:
     proxy user: ''
     public key: /home/depeche
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -4054,6 +4034,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -4091,6 +4072,7 @@ environments:
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
       visible bell: ''
     title: Valdemar-IP
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -4143,6 +4125,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: root
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -4151,6 +4134,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -4159,6 +4143,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -4191,6 +4176,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'vri-mailgate - Mail'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -4229,6 +4215,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: depeche
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -4237,6 +4224,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -4245,6 +4233,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -4277,6 +4266,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'pq.hosting - HomeSweetHome'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -4308,6 +4298,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -4315,6 +4306,7 @@ environments:
     proxy user: ''
     public key: ''
     quote command: 0
+    quotepost command: 0
     remove control chars: 0
     save session logs: 0
     screenshots: []
@@ -4323,6 +4315,7 @@ environments:
     send string active: 0
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: PACShell_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -4335,7 +4328,7 @@ environments:
       back color: '#000000000000'
       bold color: '#cc62cc62cc62'
       bold color like text: 1
-      command prompt: '(\]\#|\$\s)+'
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
       cursor shape: block
       open in tab: 1
       password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
@@ -4353,8 +4346,9 @@ environments:
       timeout connect: 40
       use personal settings: 0
       use tab back color: 0
-      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
     title: Local
+    use postpend command: 0
     use prepend command: 0
     use proxy: 0
     use sudo: 0
@@ -4413,6 +4407,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -4421,6 +4416,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -4429,6 +4425,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -4461,6 +4458,7 @@ environments:
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
     title: 'Gate-UNTC - Ульяновск'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -4506,6 +4504,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: '<ASK:User Name|depeche|vadmin>'
     port: 22222
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -4513,6 +4512,7 @@ environments:
     proxy user: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -4521,6 +4521,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -4558,6 +4559,7 @@ environments:
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
       visible bell: ''
     title: 'Gate-Sokol-I - 2-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -4596,6 +4598,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: root
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -4604,6 +4607,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -4612,6 +4616,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -4644,6 +4649,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'Hr-PVE01.viamnet.local - VIAM'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -4696,6 +4702,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: root
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -4704,6 +4711,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -4712,6 +4720,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -4744,6 +4753,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'vr-voip - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -4787,6 +4797,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -4794,6 +4805,7 @@ environments:
     proxy user: ''
     public key: /home/depeche
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -4802,6 +4814,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -4839,92 +4852,7 @@ environments:
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
       visible bell: ''
     title: 'sokol-lnx - 2-я территория'
-    use prepend command: ''
-    use proxy: 0
-    use sudo: ''
-    user: depeche
-    variables: []
-  bba3c3a9-28bc-486f-9b17-7b941d8ec055:
-    KPX title regexp: '.*Aruba - HomeSweetHome.*'
-    _is_group: 0
-    _protected: 0
-    auth fallback: 1
-    auth type: publickey
-    autoreconnect: ''
-    autossh: ''
-    cluster: []
-    description: Connection with 'Aruba'
-    embed: 0
-    expect: []
-    favourite: 0
-    infer from KPX where: 3
-    infer user pass from KPX: ''
-    ip: 10.10.8.1
-    local after: []
-    local before: []
-    local connected: []
-    mac: ''
-    macros: []
-    method: SSH
-    name: Aruba
-    options: ' -X -C'
-    parent: f5b7de86-798b-4131-9b67-e81ce284f48d
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase user: depeche
-    port: 22
-    prepend command: ''
-    proxy ip: ''
-    proxy pass: ''
-    proxy port: 8080
-    proxy user: ''
-    public key: /home/depeche/.ssh/keys/depeche-rsa4096
-    quote command: ''
-    remove control chars: ''
-    save session logs: ''
-    screenshots: []
-    search pass on KPX: 0
-    send slow: 0
-    send string active: ''
-    send string every: 60
-    send string intro: 1
-    send string txt: ''
-    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
-    session logs amount: 10
-    session logs folder: /home/depeche/.config/asbru/session_logs
-    startup launch: ''
-    startup script: ''
-    startup script name: sample1.pl
-    terminal options:
-      audible bell: ''
-      back color: '#000000000000'
-      bold color: '#cc62cc62cc62'
-      bold color like text: 1
-      command prompt: '[#%\$>]|\:\/\s*$'
-      cursor shape: block
-      disable ALT key bindings: ''
-      disable CTRL key bindings: ''
-      disable SHIFT key bindings: ''
-      open in tab: 1
-      password prompt: "([p|P]ass|[p|P]ass[w|W]or[d|t]|ontrase.a|Enter passphrase for key '.+'):\\s*$"
-      tab back color: '#000000000000'
-      terminal backspace: auto
-      terminal character encoding: UTF-8
-      terminal emulation: xterm
-      terminal font: Monospace 9
-      terminal scrollback lines: 5000
-      terminal select words: \.:_\/-A-Za-z0-9
-      terminal transparency: 0
-      terminal window hsize: 800
-      terminal window vsize: 600
-      text color: '#cc62cc62cc62'
-      timeout command: 40
-      timeout connect: 40
-      use personal settings: ''
-      use tab back color: ''
-      username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
-      visible bell: ''
-    title: 'Aruba - HomeSweetHome'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -4960,6 +4888,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: '<ASK:User Name|depeche|vadmin>'
     port: 22222
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -4967,6 +4896,7 @@ environments:
     proxy user: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -4975,6 +4905,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -5012,6 +4943,7 @@ environments:
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
       visible bell: ''
     title: 'Gate-Sokol-II - 2-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -5050,6 +4982,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: depeche
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -5058,6 +4991,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -5066,6 +5000,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -5098,6 +5033,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'VS-Lnx-Gate2 - Gate-Cluster'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -5137,6 +5073,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: depeche
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -5145,6 +5082,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -5153,6 +5091,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -5185,6 +5124,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'pq.hosting - ZT - HomeSweetHome'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -5224,6 +5164,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -5232,6 +5173,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -5240,6 +5182,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -5272,6 +5215,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hri-pve02 - hri-pve'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -5310,6 +5254,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ermakov.admin
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -5318,6 +5263,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/vr-lxc-console
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -5326,6 +5272,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -5345,7 +5292,7 @@ environments:
       tab back color: '#000000000000'
       terminal backspace: auto
       terminal character encoding: UTF-8
-      terminal font: Roboto Mono 9
+      terminal font: Roboto Mono 10
       terminal scrollback lines: -2
       terminal select words: -.:_/
       terminal transparency: 0
@@ -5358,6 +5305,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'vr-console - VIAM'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -5397,6 +5345,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -5405,6 +5354,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -5413,6 +5363,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -5445,6 +5396,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hri-pve04 - hri-pve'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -5484,6 +5436,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -5492,6 +5445,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -5500,6 +5454,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -5532,6 +5487,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'Hr-Lnx-01.viamnet.local - VIAM'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -5573,6 +5529,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -5581,6 +5538,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -5589,6 +5547,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -5621,6 +5580,7 @@ environments:
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
     title: 'Pinduli - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -5656,6 +5616,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: depeche
     port: 22222
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -5663,6 +5624,7 @@ environments:
     proxy user: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -5671,6 +5633,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -5708,6 +5671,7 @@ environments:
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
       visible bell: ''
     title: 'Gate2 - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -5748,6 +5712,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -5756,6 +5721,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -5764,6 +5730,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -5796,6 +5763,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hasp3 /180/ - Hasp-Lnx'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -5835,6 +5803,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -5843,6 +5812,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -5851,6 +5821,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -5883,6 +5854,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hasp1 /181/ - Hasp-Lnx'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -5917,6 +5889,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -5924,6 +5897,7 @@ environments:
     proxy user: ''
     public key: /home/depeche
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -5932,6 +5906,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -5969,6 +5944,7 @@ environments:
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
       visible bell: ''
     title: 'Ermakov_ds-ALT - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -6009,6 +5985,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -6017,6 +5994,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -6025,6 +6003,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -6057,6 +6036,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hasp2 /182/ - Hasp-Lnx'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -6096,6 +6076,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -6104,6 +6085,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -6112,6 +6094,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -6144,6 +6127,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hr-sw-Core - ELTEX-SRVRoom027'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -6183,6 +6167,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: depeche
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -6191,6 +6176,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/vri-docker
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -6199,6 +6185,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -6231,6 +6218,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'vri-docker - 1-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -6265,6 +6253,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -6272,6 +6261,7 @@ environments:
     proxy user: ''
     public key: /home/depeche
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -6280,6 +6270,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -6317,6 +6308,7 @@ environments:
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
       visible bell: ''
     title: 'VyOS - Ляпин В.'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -6355,6 +6347,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: depeche
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -6363,6 +6356,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -6371,6 +6365,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -6403,6 +6398,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'VSi-Test - 2-я территория'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -6443,6 +6439,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -6451,6 +6448,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -6459,6 +6457,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -6491,6 +6490,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hasp4 /183/ - Hasp-Lnx'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -6529,6 +6529,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -6537,6 +6538,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -6545,6 +6547,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -6577,6 +6580,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'alex.depeche.xyz - HomeSweetHome'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -6597,10 +6601,9 @@ environments:
     _protected: 0
     children:
       1c9a1a31-1823-4fa9-ae31-cbdbb6bb22ad: 1
+      376da3b9-e989-49d5-a130-52137c98c193: 1
       487d52d8-6c82-4d64-a999-1d507dd42473: 1
-      687edda7-c1c1-4c0d-ac01-b4afb358c341: 1
       9bba550a-6fc8-4909-bd9b-006d44532b9d: 1
-      bba3c3a9-28bc-486f-9b17-7b941d8ec055: 1
       c029b38d-bd91-46c9-b6fc-961f9f3c0247: 1
       f0a283ca-ae0b-4eb1-8617-29624a5ca7a1: 1
     description: Connection group 'HomeSweetHome'
@@ -6640,6 +6643,7 @@ environments:
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: depeche
     port: 22
+    postpend command: ''
     prepend command: ''
     proxy ip: ''
     proxy pass: ''
@@ -6648,6 +6652,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
+    quotepost command: 0
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -6656,6 +6661,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
+    send string only when idle: 0
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -6688,6 +6694,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'Hr-PgSQL01-D - VIAM'
+    use postpend command: 0
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -6695,8 +6702,8 @@ environments:
     variables: []
 tmp:
   changed: 0
-  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{146304}_n4.txt'
-  socket: '/home/depeche/.config/asbru/sockets/asbru_PID{146304}_n4.socket'
-  socket exec: '/home/depeche/.config/asbru/sockets/asbru_PID{146304}_n4.exec.socket'
-  tray available: warning
-  uuid: 'asbru_PID{146304}_n4'
+  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{4198}_n10.txt'
+  socket: '/home/depeche/.config/asbru/sockets/asbru_PID{4198}_n10.socket'
+  socket exec: '/home/depeche/.config/asbru/sockets/asbru_PID{4198}_n10.exec.socket'
+  tray available: 1
+  uuid: 'asbru_PID{4198}_n10'
