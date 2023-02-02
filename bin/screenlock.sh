@@ -11,8 +11,23 @@ T='#ee00eeee'  # text
 W='#880000bb'  # wrong
 V='#c5c2c2'              # '#bb00bbbb'  # verifying
 
+if [ -x "$(command -v safeeyes)" ]; then
+    safeeyesStatus=false
+    safeeyesCurrentStatus=$(safeeyes --status)
+    if [[ "$safeeyesCurrentStatus" == *"Следующий перерыв"* ]];then
+        safeeyesStatus=true
+    fi
+fi
+
 if [ -x "$(command -v betterlockscreen)" ]; then
-    betterlockscreen -l dimblur --display 1 --span
+    if $safeeyesStatus ; then
+        safeeyes --disable
+        betterlockscreen -l dimblur --display 1 --span
+        safeeyes --enable
+    else
+        betterlockscreen -l dimblur --display 1 --span
+    fi
+
 elif [ -x "$(command -v multilockscreen)" ]; then
     multilockscreen -l dimblur --display 1 --span
 else
