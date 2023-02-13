@@ -66,6 +66,8 @@ Host ssh.agnc.nichost.ru
 Host ssh.viam.nichost.ru
     User viam
     IdentityFile ~/.ssh/keys/depeche-rsa4096
+    HostKeyAlgorithms=+ssh-rsa
+    PubkeyAcceptedKeyTypes +ssh-rsa
 
 Host gitea.corp.viam.ru
     HostName 172.16.10.15
@@ -74,6 +76,11 @@ Host gitea.corp.viam.ru
 
 Host 195.88.208.17
     HostName 195.88.208.17
+    User root
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+
+Host 193.19.119.203
+    HostName 193.19.119.203
     User root
     IdentityFile ~/.ssh/keys/depeche-rsa4096
 

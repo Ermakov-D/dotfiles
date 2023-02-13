@@ -859,6 +859,7 @@ environments:
     autoreconnect: ''
     autossh: ''
     cluster: []
+    connection options: {}
     description: Connection with 'Server-Lnx'
     embed: 0
     expect: []
@@ -5230,6 +5231,7 @@ environments:
     autoreconnect: ''
     autossh: ''
     cluster: []
+    connection options: {}
     description: Connection with 'vr-console'
     embed: 0
     expect: []
@@ -6702,8 +6704,8 @@ environments:
     variables: []
 tmp:
   changed: 0
-  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{4198}_n10.txt'
-  socket: '/home/depeche/.config/asbru/sockets/asbru_PID{4198}_n10.socket'
-  socket exec: '/home/depeche/.config/asbru/sockets/asbru_PID{4198}_n10.exec.socket'
+  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{38454}_n3.txt'
+  socket: '/tmp/asbru-cm-s4eH/asbru_PID{38454}_n3.socket'
+  socket exec: '/tmp/asbru-cm-s4eH/asbru_PID{38454}_n3.exec.socket'
   tray available: 1
-  uuid: 'asbru_PID{4198}_n10'
+  uuid: 'asbru_PID{38454}_n3'
