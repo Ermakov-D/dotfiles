@@ -4382,13 +4382,15 @@ environments:
     autoreconnect: ''
     autossh: ''
     cluster: []
-    description: Connection with 'Gate-UNTC'
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'hui-pve01'
     embed: 0
     expect: []
     favourite: 0
     infer from KPX where: 3
     infer user pass from KPX: ''
-    ip: 192.168.40.3
+    ip: 192.168.40.239
     jump ip: ''
     jump key: ''
     jump pass: ''
@@ -4401,10 +4403,10 @@ environments:
     mac: ''
     macros: []
     method: SSH
-    name: Gate-UNTC
+    name: hui-pve01
     options: ' -x -L localhost:8080:10.90.90.90:80'
     parent: 85408ee5-ea23-4c19-b055-ff59115c513d
-    pass: 53616c7465645f5f3132333435363738fa97bd0d822b7b8513dddf1360fe857e
+    pass: 53616c7465645f5f3132333435363738039c9f5cf718119b7099cbb7f94541de
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase user: ''
     port: 22
@@ -4417,7 +4419,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
-    quotepost command: 0
+    quotepost command: ''
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -4426,7 +4428,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
-    send string only when idle: 0
+    send string only when idle: ''
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -4446,6 +4448,7 @@ environments:
       tab back color: '#000000000000'
       terminal backspace: auto
       terminal character encoding: UTF-8
+      terminal emulation: xterm
       terminal font: Monospace 9
       terminal scrollback lines: 5000
       terminal select words: \.:_\/-A-Za-z0-9
@@ -4458,12 +4461,12 @@ environments:
       use personal settings: ''
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
-    title: 'Gate-UNTC - Ульяновск'
-    use postpend command: 0
+    title: 'hui-pve01 - Ульяновск'
+    use postpend command: ''
     use prepend command: ''
     use proxy: 0
     use sudo: ''
-    user: depeche
+    user: ' root'
     variables: []
   a600dc07-df56-455e-86ad-ad5c06d182d0:
     _is_group: 1
@@ -5505,6 +5508,7 @@ environments:
     autossh: ''
     children: {}
     cluster: []
+    connection options: {}
     description: Connection with 'Pinduli'-i
     embed: 0
     expect: []
@@ -6704,8 +6708,8 @@ environments:
     variables: []
 tmp:
   changed: 0
-  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{38454}_n3.txt'
-  socket: '/tmp/asbru-cm-s4eH/asbru_PID{38454}_n3.socket'
-  socket exec: '/tmp/asbru-cm-s4eH/asbru_PID{38454}_n3.exec.socket'
+  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{22817}_n6.txt'
+  socket: '/tmp/asbru-cm-BPLp/asbru_PID{22817}_n6.socket'
+  socket exec: '/tmp/asbru-cm-BPLp/asbru_PID{22817}_n6.exec.socket'
   tray available: 1
-  uuid: 'asbru_PID{38454}_n3'
+  uuid: 'asbru_PID{22817}_n6'

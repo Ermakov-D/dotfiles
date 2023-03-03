@@ -137,6 +137,7 @@ tray-maxsize = 20
 tray-scale = 1.0
 tray-position = right
 tray-background = ${colors.background}
+tray_output = primary
 
 #i3: Make the bar appear below windows
 ;wm-restack = i3
