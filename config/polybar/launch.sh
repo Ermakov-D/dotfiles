@@ -29,11 +29,11 @@ case $desktop in
     # second polybar at bottom
     if type "xrandr" > /dev/null; then
        for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
-                if [[ "$m" == "HDMI3" ]]; then
+                if [[ "$m" == "HDMI-1" ]]; then
                     #echo "1-> $m"
-                    MONITOR=$m polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
+                    MONITOR=$m polybar --reload mainbar-i3-extra-hdmi -c ~/.config/polybar/config &
                 fi
-                if [[ "$m" == "eDP1" ]]; then
+                if [[ "$m" == "eDP-1" ]]; then
             	    #echo "2-> $m"
                     MONITOR=$m polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
                     # polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
@@ -147,8 +147,4 @@ case $desktop in
     	    polybar --reload mainbar-i3-extra -c config &
 	fi
 	;;
-    awesome)
-        echo "awesone wm"
-        ;;
-
 esac
