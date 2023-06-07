@@ -1486,7 +1486,7 @@ format-background = ${colors.background}
 ###############################################################################
 [module/vpn-VDSina]
 type = custom/script
-exec = ~/.config/polybar/scripts/vpn-nmcli.sh VDSina
+exec = ~/.config/polybar/scripts/vpn-nmcli.sh "VDSina:OpenConnect"
 interval = 15
 format = <label>
 ;format-prefix = " "
