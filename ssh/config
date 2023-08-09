@@ -87,6 +87,8 @@ Host 193.19.119.203
 Host ssh.viam-3.nichost.ru
     User viam-3
     IdentityFile ~/.ssh/keys/depeche-rsa4096
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
 
 Host ssh.viam-5.nichost.ru
     User viam-5
@@ -197,7 +199,13 @@ Host 192.168.3.240 172.16.16.33
     HostKeyAlgorithms=+ssh-dss
     
 # End Eltex ===============================================================
+# == D-Link ===============================================================
+Host 10.254.253.2
+    KexAlgorithms +diffie-hellman-group1-sha1
+    HostKeyAlgorithms=+ssh-dss
+    Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
 
+#==========================================================================
 Host 78.107.18.117 
     User depeche
     IdentityFile ~/.ssh/keys/depeche-rsa4096

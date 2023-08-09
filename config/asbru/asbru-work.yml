@@ -382,7 +382,7 @@ defaults:
   use proxy: ''
   use system proxy: 1
   username prompt: '([l|L]ogin|[u|U]suario|([u|U]ser-?)*[n|N]ame.*|[u|U]ser)\s*:\s*$'
-  version: 6.4.0
+  version: 6.4.1
   visible bell: ''
   when no more tabs: 0
   word characters: \.:_\/a-zA-Z0-9-
@@ -1170,7 +1170,8 @@ environments:
     autoreconnect: ''
     autossh: ''
     cluster: []
-    connection options: {}
+    connection options:
+      randomSocksTunnel: ''
     description: Connection with 'VDSina'
     embed: 0
     expect: []
@@ -1191,7 +1192,7 @@ environments:
     macros: []
     method: SSH
     name: VDSina
-    options: ' -X -L localhost:8291:172.16.1.1:8291'
+    options: ' -X -L localhost:8181:172.16.202.11:81'
     parent: f5b7de86-798b-4131-9b67-e81ce284f48d
     pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
@@ -1206,7 +1207,7 @@ environments:
     pseudo jump: ''
     public key: ''
     quote command: ''
-    quotepost command: 0
+    quotepost command: ''
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -1215,7 +1216,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
-    send string only when idle: 0
+    send string only when idle: ''
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -1235,6 +1236,7 @@ environments:
       tab back color: '#000000000000'
       terminal backspace: auto
       terminal character encoding: UTF-8
+      terminal emulation: xterm
       terminal font: Monospace 9
       terminal scrollback lines: 5000
       terminal select words: \.:_\/-A-Za-z0-9
@@ -1248,7 +1250,7 @@ environments:
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
     title: 'VDSina - HomeSweetHome'
-    use postpend command: 0
+    use postpend command: ''
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -4585,12 +4587,13 @@ environments:
     autoreconnect: ''
     autossh: ''
     cluster: []
-    connection options: {}
+    connection options:
+      randomSocksTunnel: ''
     description: Connection with 'pq.hosting'
     embed: 0
     expect: []
     favourite: 0
-    ip: 185.53.46.17
+    ip: 95.164.46.8
     jump ip: ''
     jump key: ''
     jump pass: ''
@@ -4619,7 +4622,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
-    quotepost command: 0
+    quotepost command: ''
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -4628,7 +4631,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
-    send string only when idle: 0
+    send string only when idle: ''
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -4648,6 +4651,7 @@ environments:
       tab back color: '#000000000000'
       terminal backspace: auto
       terminal character encoding: UTF-8
+      terminal emulation: xterm
       terminal font: Monospace 9
       terminal scrollback lines: -2
       terminal select words: -.:_/
@@ -4661,7 +4665,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'pq.hosting - HomeSweetHome'
-    use postpend command: 0
+    use postpend command: ''
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -5432,97 +5436,6 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'VS-Lnx-Gate2 - Gate-Cluster'
-    use postpend command: 0
-    use prepend command: ''
-    use proxy: 0
-    use sudo: ''
-    user: ''
-    variables: []
-  c029b38d-bd91-46c9-b6fc-961f9f3c0247:
-    KPX title regexp: '.*pq.hosting - HomeSweetHome.*'
-    _is_group: 0
-    _protected: 0
-    auth fallback: 1
-    auth type: publickey
-    autoreconnect: ''
-    autossh: ''
-    children: {}
-    cluster: []
-    description: Connection with 'pq.hosting'
-    embed: 0
-    expect: []
-    favourite: 0
-    ip: 10.147.17.3
-    jump ip: ''
-    jump key: ''
-    jump pass: ''
-    jump port: 22
-    jump user: ''
-    local after: []
-    local before: []
-    local connected: []
-    log timestamp: ''
-    mac: ''
-    macros: []
-    method: SSH
-    name: 'pq.hosting - ZT'
-    options: ' -x'
-    parent: f5b7de86-798b-4131-9b67-e81ce284f48d
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase user: depeche
-    port: 22
-    postpend command: ''
-    prepend command: ''
-    proxy ip: ''
-    proxy pass: ''
-    proxy port: 8080
-    proxy user: ''
-    pseudo jump: ''
-    public key: /home/depeche/.ssh/keys/depeche-rsa4096
-    quote command: ''
-    quotepost command: 0
-    remove control chars: ''
-    save session logs: ''
-    screenshots: []
-    search pass on KPX: 0
-    send slow: 0
-    send string active: ''
-    send string every: 60
-    send string intro: 1
-    send string only when idle: 0
-    send string txt: ''
-    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
-    session logs amount: 10
-    session logs folder: /home/depeche/.config/asbru/session_logs
-    startup launch: ''
-    startup script: ''
-    startup script name: sample1.pl
-    terminal options:
-      audible bell: 0
-      back color: '#000000000000'
-      bold color: '#cc62cc62cc62'
-      bold color like text: 1
-      command prompt: '[#%\$>~→]|\:\/\s*$'
-      cursor shape: block
-      open in tab: 1
-      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
-      tab back color: '#000000000000'
-      terminal backspace: auto
-      terminal character encoding: UTF-8
-      terminal font: Monospace 9
-      terminal scrollback lines: -2
-      terminal select words: -.:_/
-      terminal transparency: 0
-      terminal window hsize: 800
-      terminal window vsize: 600
-      text color: '#cc62cc62cc62'
-      timeout command: 40
-      timeout connect: 40
-      use personal settings: ''
-      use tab back color: ''
-      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
-    title: 'pq.hosting - ZT - HomeSweetHome'
     use postpend command: 0
     use prepend command: ''
     use proxy: 0
@@ -7108,7 +7021,6 @@ environments:
       376da3b9-e989-49d5-a130-52137c98c193: 1
       487d52d8-6c82-4d64-a999-1d507dd42473: 1
       9bba550a-6fc8-4909-bd9b-006d44532b9d: 1
-      c029b38d-bd91-46c9-b6fc-961f9f3c0247: 1
       f0a283ca-ae0b-4eb1-8617-29624a5ca7a1: 1
     description: Connection group 'HomeSweetHome'
     name: HomeSweetHome
@@ -7206,8 +7118,8 @@ environments:
     variables: []
 tmp:
   changed: 0
-  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{7961}_n21.txt'
-  socket: '/tmp/asbru-cm-0MOb/asbru_PID{7961}_n21.socket'
-  socket exec: '/tmp/asbru-cm-0MOb/asbru_PID{7961}_n21.exec.socket'
+  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{3638}_n6.txt'
+  socket: '/tmp/asbru-cm-pAXs/asbru_PID{3638}_n6.socket'
+  socket exec: '/tmp/asbru-cm-pAXs/asbru_PID{3638}_n6.exec.socket'
   tray available: 1
-  uuid: 'asbru_PID{7961}_n21'
+  uuid: 'asbru_PID{3638}_n6'
