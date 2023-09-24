@@ -1157,16 +1157,16 @@ format-prefix-foreground = #FFBB00
 
 ################################################################################
 
-[module/release]
-type = custom/script
-exec = (lsb_release -d | awk {'print $2'} ;echo " "; lsb_release -r | awk {'print $2'}) | tr -d '\n'
-interval = 6000
-
-format-foreground = ${colors.foreground}
-format-background = ${colors.background}
-format-prefix = "  "
-format-prefix-foreground = #62FF00
-format-underline = #62FF00
+#[module/release]
+#type = custom/script
+#exec = (lsb_release -d | awk {'print $2'} ;echo " "; lsb_release -r | awk {'print $2'}) | tr -d '\n'
+#interval = 6000
+#
+#format-foreground = ${colors.foreground}
+#format-background = ${colors.background}
+#format-prefix = "  "
+#format-prefix-foreground = #62FF00
+#format-underline = #62FF00
 
 ################################################################################
 
@@ -1486,7 +1486,7 @@ format-background = ${colors.background}
 ###############################################################################
 [module/vpn-VDSina]
 type = custom/script
-exec = ~/.config/polybar/scripts/vpn-nmcli.sh VDSina
+exec = ~/.config/polybar/scripts/vpn-nmcli.sh "VDSina:OpenConnect"
 interval = 15
 format = <label>
 ;format-prefix = " "
