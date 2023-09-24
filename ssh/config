@@ -164,7 +164,7 @@ Host 192.168.249.101
     HostKeyAlgorithms=+ssh-dss
 
 #Eltex ====================================================================
-Host 192.168.250.215
+Host 192.168.250.215 10.123.1.10 10.123.1.11
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
     HostKeyAlgorithms=+ssh-dss,ssh-rsa
 
