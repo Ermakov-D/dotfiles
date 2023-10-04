@@ -167,6 +167,11 @@ Host 192.168.249.101
     KexAlgorithms +diffie-hellman-group1-sha1
     HostKeyAlgorithms=+ssh-dss
 
+Host 192.168.3.237
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+ 
+
 #Eltex ====================================================================
 Host 192.168.250.215
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
