@@ -93,6 +93,8 @@ Host ssh.viam-3.nichost.ru
 Host ssh.viam-5.nichost.ru
     User viam-5
     IdentityFile ~/.ssh/keys/depeche-rsa4096
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
 
 Host penduli Penduli 192.168.3.42
     HostName 192.168.3.42
