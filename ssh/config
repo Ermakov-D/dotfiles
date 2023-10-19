@@ -93,6 +93,8 @@ Host ssh.viam-3.nichost.ru
 Host ssh.viam-5.nichost.ru
     User viam-5
     IdentityFile ~/.ssh/keys/depeche-rsa4096
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
 
 Host penduli Penduli 192.168.3.42
     HostName 192.168.3.42
@@ -164,6 +166,11 @@ Host 192.168.3.202
 Host 192.168.249.101
     KexAlgorithms +diffie-hellman-group1-sha1
     HostKeyAlgorithms=+ssh-dss
+
+Host 192.168.3.237
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+ 
 
 #Eltex ====================================================================
 Host 192.168.250.215 10.123.1.10 10.123.1.11
