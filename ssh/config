@@ -167,7 +167,7 @@ Host 192.168.249.101
     KexAlgorithms +diffie-hellman-group1-sha1
     HostKeyAlgorithms=+ssh-dss
 
-Host 192.168.3.237
+Host 192.168.3.237 192.168.3.236
     User depeche
     IdentityFile ~/.ssh/keys/depeche-rsa4096
  
@@ -208,6 +208,10 @@ Host 192.168.3.240 172.16.16.33
 Host 10.10.6.*
     PubkeyAcceptedAlgorithms +ssh-rsa
     HostkeyAlgorithms +ssh-rsa
+<<<<<<< HEAD
+=======
+
+>>>>>>> 24eaf5fed61b45e0a65fb8b11572f1f1ca748099
 # End Eltex ===============================================================
 # == D-Link ===============================================================
 Host 10.254.253.2
