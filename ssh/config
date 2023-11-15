@@ -204,7 +204,10 @@ Host 192.168.250.237 10.10.6.237
 Host 192.168.3.240 172.16.16.33
     KexAlgorithms +diffie-hellman-group1-sha1
     HostKeyAlgorithms=+ssh-dss
-    
+
+Host 10.10.6.*
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
 # End Eltex ===============================================================
 # == D-Link ===============================================================
 Host 10.254.253.2
