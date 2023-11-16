@@ -19,6 +19,7 @@ exec --no-startup-id yandex-disk-indicator
 exec --no-startup-id pamac-tray
 exec --no-startup-id xautolock -time 30 -locker ~/bin/screenlock.sh &
 exec --no-startup-id /usr/bin/blueman-applet
+exec --no-startup-id /usr/bin/solaar -w hide
 
 
 
