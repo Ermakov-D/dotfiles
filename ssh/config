@@ -29,6 +29,11 @@ Host 172.16.1.1
     IdentityFile ~/.ssh/keys/mikroansible
     User mikroansible
 
+Host pve.home
+    HostName 172.16.202.249
+    ProxyJump 03.depeche.xyz
+
+
 # For Work
     
 Host server-lnx
@@ -83,7 +88,10 @@ Host 193.19.119.203
     HostName 193.19.119.203
     User root
     IdentityFile ~/.ssh/keys/depeche-rsa4096
-
+Host 185.158.114.227
+    HostName 185.158.114.227
+    User root
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
 Host ssh.viam-3.nichost.ru
     User viam-3
     IdentityFile ~/.ssh/keys/depeche-rsa4096
@@ -100,6 +108,7 @@ Host penduli Penduli 192.168.3.42
     HostName 192.168.3.42
     User depeche
     IdentityFile ~/.ssh/keys/depeche-rsa4096
+    UserKnownHostsFile=/dev/null
 
 Host 10.254.1.1
     User depeche

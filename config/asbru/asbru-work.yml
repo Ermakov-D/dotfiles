@@ -976,7 +976,7 @@ environments:
     macros: []
     method: SSH
     name: Server-Lnx
-    options: ' -X -L localhost:8081:10.10.17.10:80'
+    options: ' -X -L localhost:8081:10.10.17.12:80'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
     pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
@@ -1142,6 +1142,99 @@ environments:
     use proxy: 0
     use sudo: ''
     user: depeche
+    variables: []
+  17483850-48fc-4c04-a204-b877e0881bae:
+    KPX title regexp: '.*hr-penduli-01 - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: manual
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'hr-penduli-01'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.3.237
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: hr-penduli-01
+    options: ' -x'
+    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Roboto Mono 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: 1
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'hr-penduli-01 - 1-я территория'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
     variables: []
   195b88b7-7dd1-4e4b-8de1-175cfeab91b0:
     _is_group: 1
@@ -1359,10 +1452,12 @@ environments:
       0341e470-11c5-4d1a-be3c-083ff7d99fba: 1
       0fdfdafa-05de-475a-8daa-b255792cf113: 1
       11a6550d-6d9c-4b64-bf25-3046bbeede52: 1
+      17483850-48fc-4c04-a204-b877e0881bae: 1
       2337ccb7-e004-4dfa-be34-84dc4ba14104: 1
       24f3ca17-412b-4af2-8bb1-a1c018dffdbe: 1
+      2622c248-338e-4e3d-8feb-4192905702fe: 1
+      387c8787-9d30-450c-be70-7e61c2ff807e: 1
       559b5b89-2967-44cb-ab47-5524dfaeb48b: 1
-      66cedc29-8135-4e76-bbaf-adfa11113443: 1
       6906bbfc-59ef-42e4-83e2-7635d5c71f68: 1
       6d1661aa-1ea6-44fa-a9f0-768760fdd79f: 1
       710b1737-cb30-4421-9687-d80b7316a65e: 1
@@ -1753,6 +1848,99 @@ environments:
     use proxy: 0
     use sudo: ''
     user: depeche
+    variables: []
+  2622c248-338e-4e3d-8feb-4192905702fe:
+    KPX title regexp: '.*hri-wazuh - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: manual
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'hri-wazuh'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 172.16.10.103
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: hri-wazuh
+    options: ' -x'
+    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'hri-wazuh - 1-я территория'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
     variables: []
   27704f88-6ea3-45fa-9ff5-70bb36da1c86:
     _is_group: 1
@@ -2227,6 +2415,100 @@ environments:
     use proxy: 0
     use sudo: ''
     user: root
+    variables: []
+  387c8787-9d30-450c-be70-7e61c2ff807e:
+    KPX title regexp: '.*hr-penduli-01 - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: manual
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'hr-penduli-01'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.3.236
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: hr-penduli-02
+    options: ' -x'
+    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Roboto Mono 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: 1
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'hr-penduli-02 - 1-я территория'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
     variables: []
   4321846d-f14f-4632-a62d-c3a2c8d2ac32:
     KPX title regexp: '.*VR-NetBox - VIAM.*'
@@ -3514,99 +3796,6 @@ environments:
     use sudo: ''
     user: depeche
     variables: []
-  66cedc29-8135-4e76-bbaf-adfa11113443:
-    KPX title regexp: '.*Pinduli - 1-я территория.*'
-    _is_group: 0
-    _protected: 0
-    auth fallback: 1
-    auth type: publickey
-    autoreconnect: ''
-    autossh: ''
-    children: {}
-    cluster: []
-    description: Connection with 'Pinduli'-i
-    embed: 0
-    expect: []
-    favourite: 0
-    infer from KPX where: 3
-    infer user pass from KPX: ''
-    ip: 192.168.3.41
-    jump ip: ''
-    jump key: ''
-    jump pass: ''
-    jump port: 22
-    jump user: ''
-    local after: []
-    local before: []
-    local connected: []
-    log timestamp: ''
-    mac: ''
-    macros: []
-    method: SSH
-    name: Pinduli-BackUp
-    options: ' -X -C'
-    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase user: ''
-    port: 22
-    postpend command: ''
-    prepend command: ''
-    proxy ip: ''
-    proxy pass: ''
-    proxy port: 8080
-    proxy user: ''
-    pseudo jump: ''
-    public key: /home/depeche/.ssh/keys/depeche-rsa4096
-    quote command: ''
-    quotepost command: 0
-    remove control chars: ''
-    save session logs: ''
-    screenshots: []
-    search pass on KPX: 0
-    send slow: 0
-    send string active: ''
-    send string every: 60
-    send string intro: 1
-    send string only when idle: 0
-    send string txt: ''
-    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
-    session logs amount: 10
-    session logs folder: /home/depeche/.config/asbru/session_logs
-    startup launch: ''
-    startup script: ''
-    startup script name: sample1.pl
-    terminal options:
-      audible bell: 0
-      back color: '#000000000000'
-      bold color: '#cc62cc62cc62'
-      bold color like text: 1
-      command prompt: '[#%\$>]|\:\/\s*$'
-      cursor shape: block
-      open in tab: 1
-      password prompt: '([p|P]ass|[p|P]ass[w|W]or[d|t](\s+for\s+|\w+@\w+)*|[c|C]ontrase.a|Enter passphrase for key )\s*:\s*$'
-      tab back color: '#000000000000'
-      terminal backspace: auto
-      terminal character encoding: UTF-8
-      terminal font: Monospace 9
-      terminal scrollback lines: 5000
-      terminal select words: \.:_\/-A-Za-z0-9
-      terminal transparency: 0
-      terminal window hsize: 800
-      terminal window vsize: 600
-      text color: '#cc62cc62cc62'
-      timeout command: 40
-      timeout connect: 40
-      use personal settings: ''
-      use tab back color: ''
-      username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
-    title: 'Pinduli-BackUp - 1-я территория'
-    use postpend command: 0
-    use prepend command: ''
-    use proxy: 0
-    use sudo: ''
-    user: ''
-    variables: []
   6906bbfc-59ef-42e4-83e2-7635d5c71f68:
     KPX title regexp: '.*hr-gate-backup (VyOS) - 1-я территория.*'
     _is_group: 0
@@ -3784,6 +3973,99 @@ environments:
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'VR-LNX-Gate2 - 1-я территория'
     use postpend command: 0
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
+  6c00a91f-864b-40e6-bb29-1fa9d3e1fae5:
+    KPX title regexp: '.*HRi-GW-NRCKI-01 - Геленжик.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: manual
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'HRi-GW-NRCKI-01'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 172.16.193.11
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: HRi-GW-NRCKI-01
+    options: ' -x'
+    parent: ad3dbcf9-b2d0-4976-b46e-c0e9c6586846
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'HRi-GW-NRCKI-01 - Геленжик'
+    use postpend command: ''
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -5539,7 +5821,9 @@ environments:
     _protected: 0
     children:
       335799f3-860f-432a-8364-c380c50af8ca: 1
+      6c00a91f-864b-40e6-bb29-1fa9d3e1fae5: 1
       81646c84-9298-4af6-aca2-ca1b090f5414: 1
+      fac1da7e-4e99-4a71-9188-f39109b1978d: 1
     description: Connection group 'Геленжик'
     name: Геленжик
     parent: __PAC__ROOT__
@@ -6391,14 +6675,15 @@ environments:
     autossh: ''
     children: {}
     cluster: []
-    connection options: {}
+    connection options:
+      randomSocksTunnel: ''
     description: Connection with 'Pinduli'-i
     embed: 0
     expect: []
     favourite: 0
     infer from KPX where: 3
     infer user pass from KPX: ''
-    ip: 192.168.3.42
+    ip: 192.168.3.235
     jump ip: ''
     jump key: ''
     jump pass: ''
@@ -6427,7 +6712,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
-    quotepost command: 0
+    quotepost command: ''
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -6436,7 +6721,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
-    send string only when idle: 0
+    send string only when idle: ''
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -6456,6 +6741,7 @@ environments:
       tab back color: '#000000000000'
       terminal backspace: auto
       terminal character encoding: UTF-8
+      terminal emulation: xterm
       terminal font: Roboto Mono 10
       terminal scrollback lines: 5000
       terminal select words: \.:_\/-A-Za-z0-9
@@ -6469,7 +6755,7 @@ environments:
       use tab back color: ''
       username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
     title: 'Pinduli - 1-я территория'
-    use postpend command: 0
+    use postpend command: ''
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -7692,10 +7978,104 @@ environments:
     use sudo: ''
     user: ''
     variables: []
+  fac1da7e-4e99-4a71-9188-f39109b1978d:
+    KPX title regexp: '.*HRi-GW-NRCKI-01 - Геленжик.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: manual
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'HRi-GW-NRCKI-01'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 172.16.193.12
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: HRi-GW-NRCKI-02
+    options: ' -x'
+    parent: ad3dbcf9-b2d0-4976-b46e-c0e9c6586846
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'HRi-GW-NRCKI-02 - Геленжик'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
 tmp:
   changed: 0
-  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{2869}_n4.txt'
-  socket: '/tmp/asbru-cm-qoiN/asbru_PID{2869}_n4.socket'
-  socket exec: '/tmp/asbru-cm-qoiN/asbru_PID{2869}_n4.exec.socket'
+  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{10036}_n12.txt'
+  socket: '/tmp/asbru-cm-_Wxf/asbru_PID{10036}_n12.socket'
+  socket exec: '/tmp/asbru-cm-_Wxf/asbru_PID{10036}_n12.exec.socket'
   tray available: 1
-  uuid: 'asbru_PID{2869}_n4'
+  uuid: 'asbru_PID{10036}_n12'
