@@ -15,7 +15,7 @@ exec --no-startup-id xflux -l 54.73, -g 55.97 -k 2700
 exec --no-startup-id greenclip daemon
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 #exec --no-startup-id dropbox
-exec --no-startup-id yandex-disk-indicator
+#exec --no-startup-id yandex-disk-indicator
 exec --no-startup-id pamac-tray
 exec --no-startup-id xautolock -time 30 -locker ~/bin/screenlock.sh &
 exec --no-startup-id /usr/bin/blueman-applet
