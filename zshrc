@@ -256,5 +256,8 @@ function vdi () {
 alias updatelock='rm -rf ~/.cache/betterlockscreen/1-HDMI3/*.png;betterlockscreen -u `find /home/depeche/.config/variety/Downloaded/ -type f -name "*.jpg" | shuf -n 1` -u `find /home/depeche/.config/variety/Downloaded/ -type f -name "*.jpg" | shuf -n 1`'
 alias lockupdate='rm -rf ~/.cache/betterlockscreen/1-HDMI3/*.png;betterlockscreen -u `find /home/depeche/.config/variety/Downloaded/ -type f -name "*.jpg" | shuf -n 1` -u `find /home/depeche/.config/variety/Downloaded/ -type f -name "*.jpg" | shuf -n 1`'
 
+# Replace ls to exa
+alias ls='exa -l'
+
 eval "$(direnv hook zsh)"
 
