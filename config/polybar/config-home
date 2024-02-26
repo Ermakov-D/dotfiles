@@ -218,7 +218,7 @@ font-4 = "Weather Icons:size=7;2"
 
 ;modules-left = load-average VIAMNET-status
 modules-left =VIAMNET-status
-modules-center = networkspeeddown networkspeedup pub-ip wireless-network volume 
+modules-center = networkspeeddown networkspeedup pub-ip wireless-network wired-network volume 
 modules-right = openweather filesystem
 
 separator = |
@@ -1843,7 +1843,7 @@ tail = true
 [module/wired-network]
 ;https://github.com/jaagr/polybar/wiki/Module:-network
 type = internal/network
-interface = enp4s0
+interface = enp2s0
 ;interface = enp14s0
 interval = 3.0
 
@@ -1857,7 +1857,8 @@ interval = 3.0
 ;   %linkspeed% [wired]
 ; Default: %ifname% %local_ip%
 label-connected =  %ifname%
-label-disconnected = %ifname% disconnected
+;label-disconnected = %ifname% disconnected
+label-disconnected = %ifname%
 
 format-connected-foreground = ${colors.foreground}
 format-connected-background = ${colors.background}
@@ -1867,8 +1868,13 @@ format-connected-prefix-foreground = #55aa55
 format-connected-prefix-background = ${colors.background}
 
 format-disconnected = <label-disconnected>
+format-disconnected-prefix = "  "
 format-disconnected-underline = ${colors.alert}
-label-disconnected-foreground = ${colors.foreground}
+#label-disconnected-foreground = ${colors.foreground}
+label-disconnected-foreground = ${colors.alert}
+label-disconnected-background = ${colors.background}
+format-disconnected-prefix-foreground = ${colors.alert}
+format-disconnected-prefix-background = ${colors.background}
 
 ################################################################################
 
