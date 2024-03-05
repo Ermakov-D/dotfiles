@@ -123,21 +123,22 @@ modules-left = i3 xwindow
 ;modules-center = weather
 # kernel
 #modules-right = memory2 cpu2 xkeyboard battery date poweroff
-modules-right = memory2 cpu2 xkeyboard battery popup-calendar poweroff
+#modules-right = memory2 cpu2 xkeyboard battery popup-calendar poweroff 
+modules-right = memory2 cpu2 xkeyboard popup-calendar poweroff tray_toggle tray
 
 separator = |
 
 ;dim-value = 1.0
 
-tray-detached = false
-tray-offset-x = 0
-tray-offset-y = 0
-tray-padding = 2
-tray-maxsize = 20
-tray-scale = 1.0
-tray-position = right
-tray-background = ${colors.background}
-tray_output = primary
+# tray-detached = false
+# tray-offset-x = 0
+# tray-offset-y = 0
+# tray-padding = 2
+# tray-maxsize = 20
+# tray-scale = 1.0
+# tray-position = right
+# tray-background = ${colors.background}
+# tray_output = primary
 
 #i3: Make the bar appear below windows
 ;wm-restack = i3
@@ -270,96 +271,96 @@ cursor-scroll =
 ################################################################################
 ################################################################################
 
-[bar/mainbar-awesome]
-;https://github.com/jaagr/polybar/wiki/Configuration
+# [bar/mainbar-awesome]
+# ;https://github.com/jaagr/polybar/wiki/Configuration# 
 
-monitor = ${env:MONITOR}
-;monitor-fallback = HDMI1
-monitor-strict = false
-override-redirect = false
-bottom = false
-fixed-center = true
-width = 100%
-height = 30
-;offset-x = 1%
-;offset-y = 1%
+# monitor = ${env:MONITOR}
+# ;monitor-fallback = HDMI1
+# monitor-strict = false
+# override-redirect = false
+# bottom = false
+# fixed-center = true
+# width = 100%
+# height = 30
+# ;offset-x = 1%
+# ;offset-y = 1%# 
 
-background = ${colors.background}
-foreground = ${colors.foreground}
+# background = ${colors.background}
+# foreground = ${colors.foreground}# 
 
-; Background gradient (vertical steps)
-;   background-[0-9]+ = #aarrggbb
-;background-0 =
+# ; Background gradient (vertical steps)
+# ;   background-[0-9]+ = #aarrggbb
+# ;background-0 =# 
 
-radius = 0.0
-line-size = 2
-line-color = #000000
+# radius = 0.0
+# line-size = 2
+# line-color = #000000# 
 
-border-size = 0
-;border-left-size = 25
-;border-right-size = 25
-;border-top-size = 0
-;border-bottom-size = 25
-border-color = #000000
+# border-size = 0
+# ;border-left-size = 25
+# ;border-right-size = 25
+# ;border-top-size = 0
+# ;border-bottom-size = 25
+# border-color = #000000# 
 
-padding-left = 1
-padding-right = 1
+# padding-left = 1
+# padding-right = 1# 
 
-module-margin-left = 3
-module-margin-right = 3
+# module-margin-left = 3
+# module-margin-right = 3# 
 
-;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "Noto Sans:size=10;0"
-font-1 = "FontAwesome:size=10;0"
-font-2 = "Noto Sans:size=10;0"
-font-3 = "Noto Sans Mono:size=10;0"
-font-4 = "Weather Icons:size=7;2"
+# ;https://github.com/jaagr/polybar/wiki/Fonts
+# font-0 = "Noto Sans:size=10;0"
+# font-1 = "FontAwesome:size=10;0"
+# font-2 = "Noto Sans:size=10;0"
+# font-3 = "Noto Sans Mono:size=10;0"
+# font-4 = "Weather Icons:size=7;2"# 
 
-modules-left = i3 xwindow
-;modules-center = weather
-# kernel
-#modules-right = memory2 cpu2 xkeyboard battery date poweroff
-modules-right = memory2 cpu2 xkeyboard battery popup-calendar poweroff
+# modules-left = i3 xwindow
+# ;modules-center = weather
+# # kernel
+# #modules-right = memory2 cpu2 xkeyboard battery date poweroff
+# modules-right = memory2 cpu2 xkeyboard battery popup-calendar poweroff# 
 
-separator = |
+# separator = |# 
 
-;dim-value = 1.0
+# ;dim-value = 1.0# 
 
-tray-detached = false
-tray-offset-x = 0
-tray-offset-y = 0
-tray-padding = 2
-tray-maxsize = 20
-tray-scale = 1.0
-tray-position = right
-tray-background = ${colors.background}
+# tray-detached = false
+# tray-offset-x = 0
+# tray-offset-y = 0
+# tray-padding = 2
+# tray-maxsize = 20
+# tray-scale = 1.0
+# tray-position = right
+# tray-background = ${colors.background}# 
 
-#i3: Make the bar appear below windows
-;wm-restack = i3
-;override-redirect = true
+# #i3: Make the bar appear below windows
+# ;wm-restack = i3
+# ;override-redirect = true# 
 
-; Enable support for inter-process messaging
-; See the Messaging wiki page for more details.
-enable-ipc = true
+# ; Enable support for inter-process messaging
+# ; See the Messaging wiki page for more details.
+# enable-ipc = true# 
 
-; Fallback click handlers that will be called if
-; there's no matching module handler found.
-click-left =
-click-middle =
-click-right =
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
-double-click-left =
-double-click-middle =
-double-click-right =
+# ; Fallback click handlers that will be called if
+# ; there's no matching module handler found.
+# click-left =
+# click-middle =
+# click-right =
+# scroll-up = i3wm-wsnext
+# scroll-down = i3wm-wsprev
+# double-click-left =
+# double-click-middle =
+# double-click-right =# 
 
-; Requires polybar to be built with xcursor support (xcb-util-cursor)
-; Possible values are:
-; - default   : The default pointer as before, can also be an empty string (default)
-; - pointer   : Typically in the form of a hand
-; - ns-resize : Up and down arrows, can be used to indicate scrolling
-cursor-click =
-cursor-scroll =
+# ; Requires polybar to be built with xcursor support (xcb-util-cursor)
+# ; Possible values are:
+# ; - default   : The default pointer as before, can also be an empty string (default)
+# ; - pointer   : Typically in the form of a hand
+# ; - ns-resize : Up and down arrows, can be used to indicate scrolling
+# cursor-click =
+# cursor-scroll =# 
 
 
 
@@ -1548,3 +1549,42 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
 
+###############################################################################
+# Tray
+[prefs]
+start_tray_hidden = true
+
+[module/tray]
+type = internal/tray
+
+; The action format code is to send a signal to the toggling script
+format = %{A1:kill -USR1 $(pgrep -f tray_toggle.sh):}%{A} <tray>
+
+hidden = ${prefs.start_tray_hidden}
+
+tray-size = 20
+tray-padding = 2
+tray-offset-x = 0
+tray-offset-y = 0
+tray-foreground = ${colors.foreground}
+tray-background = ${colors.background}
+format-background = ${colors.background}
+
+[module/tray_toggle]
+type = custom/script
+
+; this lets the underlying script know whether we're starting with the tray visible or not
+env-START_TRAY_HIDDEN=${prefs.start_tray_hidden}
+
+exec = $HOME/.config/polybar/scripts/tray_toggle.sh
+tail = true
+
+click-left = kill -USR1 %pid%
+
+format-prefix-foreground = #3EC13F
+;format-underline = #3EC13F
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+
+# End Tray Config
+###############################################################################
