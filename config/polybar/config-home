@@ -68,6 +68,23 @@ volume-max = #bf616a
 ;secondary = #e60053
 ;alert = #bd2c40
 
+
+#====[ TRAY ]====
+#module/tray]
+#type = internal/tray
+#
+#;format-margin = 8px
+#;tray-spacing = 8px
+#tray-size = 20
+#tray-padding = 2
+#tray-offset-x = 0
+#tray-offset-y = 0
+#tray-foreground = ${colors.foreground}
+#tray-background = ${colors.background}
+#format-background = ${colors.background}
+#####################################################
+
+
 ################################################################################
 ################################################################################
 ############                         MAINBAR-I3                     ############
@@ -123,11 +140,13 @@ modules-left = i3 xwindow
 ;modules-center = weather
 # kernel
 modules-right = memory2 cpu2 xkeyboard battery date poweroff
+#modules-right = memory2 cpu2 xkeyboard battery date poweroff tray
 
 separator = |
 
 ;dim-value = 1.0
 
+### OLD TRAY ##########
 tray-detached = false
 tray-offset-x = 0
 tray-offset-y = 0
@@ -136,6 +155,7 @@ tray-maxsize = 20
 tray-scale = 1.0
 tray-position = right
 tray-background = ${colors.background}
+################################################
 
 #i3: Make the bar appear below windows
 ;wm-restack = i3
