@@ -852,6 +852,99 @@ environments:
     use sudo: ''
     user: ''
     variables: []
+  0e84ad5d-197e-4de0-baa1-dce83a5b8543:
+    KPX title regexp: '.*vr-jitsi - VIAM.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'vr-jitsi'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.248.54
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: vr-jitsi
+    options: ' -x'
+    parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'vr-jitsi - VIAM'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
   0f5c93a2-fecb-46fb-a47b-fc918bad8d73:
     KPX title regexp: '.*Eltex ESR-12VF - Воскресенск.*'
     _is_group: 0
@@ -976,7 +1069,7 @@ environments:
     macros: []
     method: SSH
     name: Server-Lnx
-    options: ' -X -L localhost:8081:10.10.17.12:80'
+    options: ' -X -L localhost:8081:10.10.17.24:80'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
     pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
@@ -1240,7 +1333,9 @@ environments:
     _is_group: 1
     _protected: 0
     children:
+      0e84ad5d-197e-4de0-baa1-dce83a5b8543: 1
       27704f88-6ea3-45fa-9ff5-70bb36da1c86: 1
+      2a77189a-3e77-41d7-badd-1242b50093df: 1
       35778f43-0105-4138-a0be-749c669f6d82: 1
       4321846d-f14f-4632-a62d-c3a2c8d2ac32: 1
       4f7d26e0-f2fc-4dac-9473-adb1318f7320: 1
@@ -1252,6 +1347,7 @@ environments:
       aba5cdc3-d2b8-4a70-b0d0-e984cce0db1b: 1
       c6792010-96f1-43e1-805e-18dde77fe3f2: 1
       ccab7ff4-6d55-43db-a619-086abba9048e: 1
+      d898ffca-4724-4223-98a2-dd986b6dc003: 1
       f226e54c-1ee8-457f-83e9-5201c4e91861: 1
       f73ae80e-ce59-4268-9c3f-71cb48d3a8c3: 1
     description: Connection group 'VIAM'
@@ -1289,7 +1385,7 @@ environments:
     macros: []
     method: SSH
     name: VDSina
-    options: ' -X -L localhost:8181:172.16.202.11:81'
+    options: ' -X'
     parent: f5b7de86-798b-4131-9b67-e81ce284f48d
     pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
@@ -1456,6 +1552,7 @@ environments:
       2337ccb7-e004-4dfa-be34-84dc4ba14104: 1
       24f3ca17-412b-4af2-8bb1-a1c018dffdbe: 1
       2622c248-338e-4e3d-8feb-4192905702fe: 1
+      34102fbb-2f79-4642-9c31-21015476ed01: 1
       387c8787-9d30-450c-be70-7e61c2ff807e: 1
       559b5b89-2967-44cb-ab47-5524dfaeb48b: 1
       6906bbfc-59ef-42e4-83e2-7635d5c71f68: 1
@@ -1465,6 +1562,7 @@ environments:
       8b2110f2-6cf8-4b6a-9ff2-0338f3f70966: 1
       b078ecc5-d620-427d-b7a2-1d236d451383: 1
       b9e218b8-a413-4ecd-8b93-e0fed466001e: 1
+      c68ff7f7-b948-49d5-ab6a-090b8b7a3329: 1
       c8036f8c-154c-4915-a5a1-ccb08747ac69: 1
       d49ae78d-d206-4569-9c1d-65e03a890c77: 1
       d6cdbb80-48b0-41c1-a3e0-97a4712df614: 1
@@ -1485,7 +1583,8 @@ environments:
     autossh: ''
     children: {}
     cluster: []
-    connection options: {}
+    connection options:
+      randomSocksTunnel: ''
     description: Connection with 'vri-mail'
     embed: 0
     expect: []
@@ -1504,7 +1603,7 @@ environments:
     macros: []
     method: SSH
     name: vri-mail
-    options: ' -x'
+    options: ' -x -L localhost:3307:localhost:3306'
     parent: 006cf8df-cf10-4157-aaea-e6183296f88e
     pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
     passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
@@ -1519,7 +1618,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
-    quotepost command: 0
+    quotepost command: ''
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -1528,7 +1627,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
-    send string only when idle: 0
+    send string only when idle: ''
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -1548,6 +1647,7 @@ environments:
       tab back color: '#000000000000'
       terminal backspace: auto
       terminal character encoding: UTF-8
+      terminal emulation: xterm
       terminal font: Monospace 9
       terminal scrollback lines: -2
       terminal select words: -.:_/
@@ -1561,7 +1661,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'vri-mail - 1-я территория'
-    use postpend command: 0
+    use postpend command: ''
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -2046,6 +2146,99 @@ environments:
     use sudo: ''
     user: root
     variables: []
+  2a77189a-3e77-41d7-badd-1242b50093df:
+    KPX title regexp: '.*hr-gw01(vyos) - VIAM.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'hr-gw01(vyos)'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.248.3
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: hr-gw01(vyos)
+    options: ' -x'
+    parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'hr-gw01(vyos) - VIAM'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
   33399aa3-95fc-47db-8df9-2f9aaa672462:
     KPX title regexp: '.*Gate-Vosk - Воскресенск.*'
     _is_group: 0
@@ -2226,6 +2419,99 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
     title: 'Eltex-ERS-12VF - Геленжик'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
+  34102fbb-2f79-4642-9c31-21015476ed01:
+    KPX title regexp: '.*vri-kali - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'vri-kali'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.3.234
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: vri-kali
+    options: ' -x'
+    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'vri-kali - 1-я территория'
     use postpend command: ''
     use prepend command: ''
     use proxy: 0
@@ -3989,7 +4275,7 @@ environments:
     cluster: []
     connection options:
       randomSocksTunnel: ''
-    description: Connection with 'HRi-GW-NRCKI-01'
+    description: Connection with 'HGi-GW-NRCKI-01'
     embed: 0
     expect: []
     favourite: 0
@@ -4006,7 +4292,7 @@ environments:
     mac: ''
     macros: []
     method: SSH
-    name: HRi-GW-NRCKI-01
+    name: HGi-GW-NRCKI-01
     options: ' -x'
     parent: ad3dbcf9-b2d0-4976-b46e-c0e9c6586846
     pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
@@ -4064,7 +4350,7 @@ environments:
       use personal settings: ''
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
-    title: 'HRi-GW-NRCKI-01 - Геленжик'
+    title: 'HGi-GW-NRCKI-01 - Геленжик'
     use postpend command: ''
     use prepend command: ''
     use proxy: 0
@@ -4875,6 +5161,7 @@ environments:
     autossh: ''
     children: {}
     cluster: []
+    connection options: {}
     description: Connection with 'Hr-PVE01.viamnet.local'
     embed: 0
     expect: []
@@ -5246,6 +5533,99 @@ environments:
     name: Hasp-Lnx
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
     screenshots: []
+  99be1daa-d6a2-4a89-a4cd-5c758bb59d22:
+    KPX title regexp: '.*nms - HomeSweetHome.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'nms'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 185.17.3.13
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: nms
+    options: ' -x'
+    parent: f5b7de86-798b-4131-9b67-e81ce284f48d
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'nms - HomeSweetHome'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
   9a41b230-b6fe-4a16-bb53-d0d786f1a84b:
     KPX title regexp: '.*vri-lxc-mailgate - Mail.*'
     _is_group: 0
@@ -5735,6 +6115,7 @@ environments:
     autoreconnect: ''
     autossh: ''
     cluster: []
+    connection options: {}
     description: Connection with 'Hr-PVE01.viamnet.local'
     embed: 0
     expect: []
@@ -5823,6 +6204,8 @@ environments:
       335799f3-860f-432a-8364-c380c50af8ca: 1
       6c00a91f-864b-40e6-bb29-1fa9d3e1fae5: 1
       81646c84-9298-4af6-aca2-ca1b090f5414: 1
+      de680e46-97e6-4f94-bd29-b40e7061f434: 1
+      efee1f48-cc46-4077-987b-40b59f6a304c: 1
       fac1da7e-4e99-4a71-9188-f39109b1978d: 1
     description: Connection group 'Геленжик'
     name: Геленжик
@@ -5837,6 +6220,7 @@ environments:
     autoreconnect: ''
     autossh: ''
     cluster: []
+    connection options: {}
     description: Connection with 'vr-voip'
     embed: 0
     expect: []
@@ -6304,7 +6688,8 @@ environments:
     autoreconnect: ''
     autossh: ''
     cluster: []
-    connection options: {}
+    connection options:
+      randomSocksTunnel: ''
     description: Connection with 'vr-console'
     embed: 0
     expect: []
@@ -6338,7 +6723,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/vr-lxc-console
     quote command: ''
-    quotepost command: 0
+    quotepost command: ''
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -6347,7 +6732,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
-    send string only when idle: 0
+    send string only when idle: ''
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -6367,7 +6752,8 @@ environments:
       tab back color: '#000000000000'
       terminal backspace: auto
       terminal character encoding: UTF-8
-      terminal font: Roboto Mono 10
+      terminal emulation: xterm
+      terminal font: Hack 9
       terminal scrollback lines: -2
       terminal select words: -.:_/
       terminal transparency: 0
@@ -6380,11 +6766,102 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'vr-console - VIAM'
-    use postpend command: 0
+    use postpend command: ''
     use prepend command: ''
     use proxy: 0
     use sudo: ''
     user: ''
+    variables: []
+  c68ff7f7-b948-49d5-ab6a-090b8b7a3329:
+    KPX title regexp: '.*Ermakov_ds-ALT - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: manual
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    description: Connection with 'Ermakov_ds-ALT'
+    embed: 0
+    expect: []
+    favourite: 0
+    infer from KPX where: 3
+    infer user pass from KPX: ''
+    ip: 192.168.3.7
+    local after: []
+    local before: []
+    local connected: []
+    mac: ''
+    macros: []
+    method: SSH
+    name: 'Ermakov_ds-ALT - copy'
+    options: ' -X'
+    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    public key: /home/depeche
+    quote command: ''
+    quotepost command: 0
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: 0
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: ''
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      disable ALT key bindings: ''
+      disable CTRL key bindings: ''
+      disable SHIFT key bindings: ''
+      open in tab: 1
+      password prompt: "([p|P]ass|[p|P]ass[w|W]or[d|t]|ontrase.a|Enter passphrase for key '.+'):\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: 5000
+      terminal select words: \.:_\/-A-Za-z0-9
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([l|L]ogin|[u|u]suario|[u|U]ser-?[n|N]ame|[u|U]ser):\s*$'
+      visible bell: ''
+    title: 'Ermakov_ds-ALT - 1-я территория'
+    use postpend command: 0
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
     variables: []
   c8036f8c-154c-4915-a5a1-ccb08747ac69:
     KPX title regexp: '.*vri-lxc-gitea - 1-я территория.*'
@@ -6852,6 +7329,99 @@ environments:
     use sudo: ''
     user: depeche
     variables: []
+  d898ffca-4724-4223-98a2-dd986b6dc003:
+    KPX title regexp: '.*vr-glpi - VIAM.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'vr-glpi'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.248.12
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: vr-glpi
+    options: ' -x'
+    parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'vr-glpi - VIAM'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
   dcbb8f3d-b4f6-490a-99a7-7fa6e15e3144:
     KPX title regexp: '.*vr-trueconf - 1-я территория.*'
     _is_group: 0
@@ -7032,6 +7602,99 @@ environments:
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'hasp3 /180/ - Hasp-Lnx'
     use postpend command: 0
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
+  de680e46-97e6-4f94-bd29-b40e7061f434:
+    KPX title regexp: '.*hgi-sw-nrcki-03 - Геленжик.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'hgi-sw-nrcki-03'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 10.123.1.10
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: HGi-SW-NRCKI-03
+    options: ' -x'
+    parent: ad3dbcf9-b2d0-4976-b46e-c0e9c6586846
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'HGi-SW-NRCKI-03 - Геленжик'
+    use postpend command: ''
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -7764,6 +8427,100 @@ environments:
     use sudo: ''
     user: depeche
     variables: []
+  efee1f48-cc46-4077-987b-40b59f6a304c:
+    KPX title regexp: '.*hgi-sw-nrcki-03 - Геленжик.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'hgi-sw-nrcki-03'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 10.123.1.11
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: HGi-SW-NRCKI-04
+    options: ' -x'
+    parent: ad3dbcf9-b2d0-4976-b46e-c0e9c6586846
+    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'HGi-SW-NRCKI-04 - Геленжик'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
   f0a283ca-ae0b-4eb1-8617-29624a5ca7a1:
     KPX title regexp: '.*alex.depeche.xyz - HomeSweetHome.*'
     _is_group: 0
@@ -7879,6 +8636,7 @@ environments:
       1c9a1a31-1823-4fa9-ae31-cbdbb6bb22ad: 1
       376da3b9-e989-49d5-a130-52137c98c193: 1
       487d52d8-6c82-4d64-a999-1d507dd42473: 1
+      99be1daa-d6a2-4a89-a4cd-5c758bb59d22: 1
       9bba550a-6fc8-4909-bd9b-006d44532b9d: 1
       f0a283ca-ae0b-4eb1-8617-29624a5ca7a1: 1
     description: Connection group 'HomeSweetHome'
@@ -7990,7 +8748,7 @@ environments:
     cluster: []
     connection options:
       randomSocksTunnel: ''
-    description: Connection with 'HRi-GW-NRCKI-01'
+    description: Connection with 'HGi-GW-NRCKI-02'
     embed: 0
     expect: []
     favourite: 0
@@ -8007,7 +8765,7 @@ environments:
     mac: ''
     macros: []
     method: SSH
-    name: HRi-GW-NRCKI-02
+    name: HGi-GW-NRCKI-02
     options: ' -x'
     parent: ad3dbcf9-b2d0-4976-b46e-c0e9c6586846
     pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
@@ -8065,7 +8823,7 @@ environments:
       use personal settings: ''
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
-    title: 'HRi-GW-NRCKI-02 - Геленжик'
+    title: 'HGi-GW-NRCKI-02 - Геленжик'
     use postpend command: ''
     use prepend command: ''
     use proxy: 0
@@ -8074,8 +8832,8 @@ environments:
     variables: []
 tmp:
   changed: 0
-  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{10036}_n12.txt'
-  socket: '/tmp/asbru-cm-_Wxf/asbru_PID{10036}_n12.socket'
-  socket exec: '/tmp/asbru-cm-_Wxf/asbru_PID{10036}_n12.exec.socket'
+  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{8570}_n5.txt'
+  socket: '/tmp/asbru-cm-cGpm/asbru_PID{8570}_n5.socket'
+  socket exec: '/tmp/asbru-cm-cGpm/asbru_PID{8570}_n5.exec.socket'
   tray available: 1
-  uuid: 'asbru_PID{10036}_n12'
+  uuid: 'asbru_PID{8570}_n5'
