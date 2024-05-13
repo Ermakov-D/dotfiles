@@ -34,6 +34,12 @@ case $desktop in
                     #MONITOR=$m polybar --reload mainbar-i3-extra-hdmi -c ~/.config/polybar/config &
                     MONITOR=$m polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
                 fi
+                if [[ "$m" == "HDMI-1" ]]; then
+                    # домашний hdmi
+                    #echo "1-> $m"
+                    MONITOR=$m polybar --reload mainbar-i3-extra-hdmi -c ~/.config/polybar/config &
+                    #MONITOR=$m polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &
+                fi
                 if [[ "$m" == "eDP-1" ]]; then
             	    #echo "2-> $m"
                     MONITOR=$m polybar --reload mainbar-i3-extra -c ~/.config/polybar/config &

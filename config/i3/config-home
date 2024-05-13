@@ -70,6 +70,7 @@ for_window [class="Pidgin"] move to workspace $ws10
 for_window [class="TelegramDesktop"] move to workspace $ws10
 for_window [class="Brave-browser"] move to workspace $ws1
 for_window [class="libreoffice"] move to workspace $ws11
+for_window [class="iptvnator"] move to workspace $ws7
 #for_window [class="Remmina"] move to workspace $ws6
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
@@ -93,8 +94,8 @@ bindsym $mod+Shift+l exec /home/depeche/bin/screenlock.sh
 #bindsym --whole-window button2 kill
 
 # Настройки для 2-х монитором
-set $notebook eDP1
-set $HDMI HDMI1
+set $notebook eDP-1
+set $HDMI HDMI-1
 
 # Привязка рабочих столов к монитору
 workspace 1 output $HDMI
