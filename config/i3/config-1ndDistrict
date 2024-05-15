@@ -69,6 +69,7 @@ for_window [class="vlc"] move to workspace $ws9
 for_window [class="Joplin"] move to workspace $ws10
 for_window [class="cantata"] move to workspace $ws10
 for_window [class="TelegramDesktop"] move to workspace $ws11
+for_window [class="eXpress"] move to workspace $ws11
 for_window [class="Thunar"] move to workspace $ws8
 for_window [class="org.remmina.Remmina"] move to workspace $ws6
 for_window [class="pamac-manager"] move to workspace $ws9
