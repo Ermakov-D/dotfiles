@@ -75,6 +75,7 @@ for_window [class="org.remmina.Remmina"] move to workspace $ws6
 for_window [class="pamac-manager"] move to workspace $ws9
 for_window [class="xfreerdp"] move to workspace $ws12
 for_window [class="thunderbird"] move to workspace $ws2
+for_window [class="winbox.exe"] move to workspace $ws4
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
 for_window [class="Xfce4-terminal"] floating enable
