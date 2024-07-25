@@ -174,7 +174,7 @@ Host 192.168.3.202
 
 Host 192.168.249.101
     KexAlgorithms +diffie-hellman-group1-sha1
-    HostKeyAlgorithms=+ssh-dss
+    #HostKeyAlgorithms=+ssh-dss
 
 Host 192.168.3.237 192.168.3.236
     User depeche
@@ -184,35 +184,35 @@ Host 192.168.3.237 192.168.3.236
 #Eltex ====================================================================
 Host 192.168.250.215 10.123.1.10 10.123.1.11
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
-    HostKeyAlgorithms=+ssh-dss,ssh-rsa
+    #HostKeyAlgorithms=+ssh-dss,ssh-rsa
 
 Host 192.168.250.213
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
-    HostKeyAlgorithms=+ssh-dss,ssh-rsa
+    #HostKeyAlgorithms=+ssh-dss,ssh-rsa
 
 Host 192.168.250.239
     KexAlgorithms +diffie-hellman-group1-sha1
-    HostKeyAlgorithms=+ssh-dss,ssh-rsa
+    #HostKeyAlgorithms=+ssh-dss,ssh-rsa
 
 Host 192.168.250.224
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
-    HostKeyAlgorithms=+ssh-dss,ssh-rsa
+    #HostKeyAlgorithms=+ssh-dss,ssh-rsa
 
 Host 10.10.6.239
     KexAlgorithms +diffie-hellman-group1-sha1
-    HostKeyAlgorithms=+ssh-dss
+    #HostKeyAlgorithms=+ssh-dss
 
 Host 192.168.250.238
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
-    HostKeyAlgorithms=+ssh-dss,ssh-rsa
+    #HostKeyAlgorithms=+ssh-dss,ssh-rsa
 
 Host 192.168.250.237 10.10.6.237
     KexAlgorithms +diffie-hellman-group1-sha1
-    HostKeyAlgorithms=+ssh-dss
+    #HostKeyAlgorithms=+ssh-dss
     
 Host 192.168.3.240 172.16.16.33
     KexAlgorithms +diffie-hellman-group1-sha1
-    HostKeyAlgorithms=+ssh-dss
+    #HostKeyAlgorithms=+ssh-dss
 
 Host 10.10.6.* 172.16.202.4
     PubkeyAcceptedAlgorithms +ssh-rsa
@@ -222,7 +222,7 @@ Host 10.10.6.* 172.16.202.4
 # == D-Link ===============================================================
 Host 10.254.253.2
     KexAlgorithms +diffie-hellman-group1-sha1
-    HostKeyAlgorithms=+ssh-dss
+    #HostKeyAlgorithms=+ssh-dss
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
 
 #==========================================================================
@@ -244,11 +244,11 @@ Host 192.168.250.118
 
 Host 192.168.42.2
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
-    HostKeyAlgorithms=+ssh-dss,ssh-rsa
+    #HostKeyAlgorithms=+ssh-dss,ssh-rsa
 
 Host 192.168.40.234
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
-    HostKeyAlgorithms=+ssh-dss,ssh-rsa
+    #HostKeyAlgorithms=+ssh-dss,ssh-rsa
 
 Host vri-mail.corp.viam.ru
     User depeche
