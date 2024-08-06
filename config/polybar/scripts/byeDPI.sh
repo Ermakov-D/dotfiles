@@ -27,9 +27,9 @@ case "$1" in
         ;;
     *)
 	if [ "$(runningStatus)" = "1" ];then
-	    echo " ZeroTier"
+	    echo " AntiDPI"
 	else
-	    echo " ZeroTier"
+	    echo " AntiDPI"
 	fi
 esac
 
