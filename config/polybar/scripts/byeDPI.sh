@@ -22,7 +22,7 @@ case "$1" in
 	    if [ $(runningStatus) = "1" ];then
             echo " AntiDPI"
 	    else
-	        echo " AntiDPI"
+	        echo " AntiDPI"
 	    fi
 esac
 

@@ -220,7 +220,7 @@ font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Weather Icons:size=10;2"
 
-modules-left = load-average vpn-VIAMNet vpn-VDSina vpn-ZeroTier
+modules-left = load-average vpn-VIAMNet vpn-VDSina vpn-ZeroTier byeDPI
 modules-center = networkspeeddown networkspeedup pub-ip volume spotify1 
 modules-right = unread-mail openweather filesystem
 
@@ -1588,3 +1588,15 @@ format-background = ${colors.background}
 
 # End Tray Config
 ###############################################################################
+
+###############################################################################
+# Статус byeDPI
+[module/byeDPI]
+type = custom/script
+exec = ~/.config/polybar/scripts/byeDPI.sh
+interval = 5
+click-left = ~/.config/polybar/scripts/byeDPI.sh --toggle &
+format-prefix-foreground = #3EC13F
+format-underline = #D2CFCF
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
