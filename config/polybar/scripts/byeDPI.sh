@@ -1,28 +1,53 @@
 #!/bin/sh
-
+# v 0.2 for two proxy
 
 runningStatus() {
-    if pgrep -x "ciadpi" >/dev/null
-    then
-        echo "1"
+    if pgrep -x "ciadpi" >/dev/null; then
+        if pgrep -x "spoof-dpi" >/dev/null; then
+            echo "ciaDPI-spoofDPI"
+        else
+            echo "ciaDPI"
+        fi
+    elif pgrep -x "spoof-dpi" >/dev/null; then
+        if pgrep -x "ciadpi"; then
+            echo "ciaDPI-spoofDPI"
+        else
+            echo "spoofDPI"
+        fi
     else
         echo "2"
     fi
 }
 
 case "$1" in
-    --toggle)
-        if [ $(runningStatus) = "1" ]; then
+    --ciadpi)
+        if [ $(runningStatus) = "ciaDPI" ] || [ $(runningStatus) = "ciaDPI-spoofDPI" ]; then
             kill $(pgrep ciadpi)
         else
             ~/bin/ciadpi --ip 127.0.0.1 -p 3080 --disorder 1 --auto=torst --tlsrec 1+s &
         fi
         ;;
+    --spoofdpi)
+        if  [ $(runningStatus) = "spoofDPI" ] || [ $(runningStatus) = "ciaDPI-spoofDPI" ]; then
+            kill $(pgrep spoof-dpi)
+        else
+            ~/bin/spoof-dpi -addr 127.0.0.1 -dns-addr 9.9.9.9 -port 3081 -window-size 0 -no-banner &
+        fi
+        ;;
     *)
-	    if [ $(runningStatus) = "1" ];then
-            echo " AntiDPI"
-	    else
-	        echo " AntiDPI"
-	    fi
+        case "$(runningStatus)" in
+            ciaDPI-spoofDPI)
+                echo " [ciaDPI|SpoofDPI]"
+                ;;
+            ciaDPI)
+                echo " [ciaDPI]"
+                ;;
+            spoofDPI)
+                echo " [SpoofDPI]"
+                ;;
+            *)
+                echo " AntiDPI"
+	    esac
+
 esac
 
