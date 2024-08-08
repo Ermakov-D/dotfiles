@@ -85,7 +85,7 @@ for_window [class="Spotify"] floating enable
 # Горячие клавиши
 bindsym $mod+Control+q kill
 bindsym $mod+q exec /home/depeche/bin/rofiMenu
-bindsym $mod+Return exec gnome-terminal   #i3-sensible-terminal # xfce4-terminal
+bindsym $mod+Return exec alacritty  #gnome-terminal   #i3-sensible-terminal # xfce4-terminal
 bindsym $mod+Shift+Return exec thunar
 bindsym $mod+Control+Return exec alacritty -e zsh
 bindsym $mod+Escape exec shutdown -h now
