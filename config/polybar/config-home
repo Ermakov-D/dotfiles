@@ -237,7 +237,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Weather Icons:size=7;2"
 
 ;modules-left = load-average VIAMNET-status
-modules-left =VIAMNET-status byeDPI-status
+modules-left =VIAMNET-status byeDPI
 modules-center = networkspeeddown networkspeedup pub-ip wireless-network wired-network volume 
 modules-right = openweather filesystem
 
@@ -1522,14 +1522,14 @@ format-background = ${colors.background}
 ###############################################################################
 
 ###############################################################################
-[module/byeDPI-status]
+# Статус byeDPI
+[module/byeDPI]
 type = custom/script
 exec = ~/.config/polybar/scripts/byeDPI.sh
-interval = 15
-format = <label>
-;format-prefix = " "
+interval = 5
+click-left = ~/.config/polybar/scripts/byeDPI.sh --ciadpi &
+click-right = ~/.config/polybar/scripts/byeDPI.sh --spoofdpi &
 format-prefix-foreground = #3EC13F
 format-underline = #D2CFCF
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-###############################################################################
