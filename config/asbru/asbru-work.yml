@@ -8931,8 +8931,8 @@ environments:
     variables: []
 tmp:
   changed: 0
-  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{6044}_n4.txt'
-  socket: '/tmp/asbru-cm-UFix/asbru_PID{6044}_n4.socket'
-  socket exec: '/tmp/asbru-cm-UFix/asbru_PID{6044}_n4.exec.socket'
+  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{7141}_n2.txt'
+  socket: '/tmp/asbru-cm-C6TR/asbru_PID{7141}_n2.socket'
+  socket exec: '/tmp/asbru-cm-C6TR/asbru_PID{7141}_n2.exec.socket'
   tray available: 1
-  uuid: 'asbru_PID{6044}_n4'
+  uuid: 'asbru_PID{7141}_n2'
