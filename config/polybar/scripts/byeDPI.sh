@@ -31,7 +31,7 @@ case "$1" in
         if  [ $(runningStatus) = "spoofDPI" ] || [ $(runningStatus) = "ciaDPI-spoofDPI" ]; then
             kill $(pgrep spoof-dpi)
         else
-            ~/bin/spoof-dpi -addr 127.0.0.1 -dns-addr 9.9.9.9 -port 3081 -window-size 0 -no-banner &
+            ~/bin/spoof-dpi -addr 127.0.0.1 -dns-addr 9.9.9.9 -port 3081 -window-size 0 &
         fi
         ;;
     *)
