@@ -217,7 +217,7 @@ Host 192.168.3.240 172.16.16.33
 
 Host 10.10.6.* 172.16.202.4
     PubkeyAcceptedAlgorithms +ssh-rsa
-    #HostkeyAlgorithms +ssh-rsa
+    HostkeyAlgorithms +ssh-rsa
 
     # End Eltex ===============================================================
 # == D-Link ===============================================================
