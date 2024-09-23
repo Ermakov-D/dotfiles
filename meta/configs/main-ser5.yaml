@@ -1,0 +1,8 @@
+- link:
+    ~/.vimrc: vimrc
+    ~/.vim/bundle: vim/bundle
+    ~/.zshrc: zshrc-ser5
+    ~/.ssh/config: ssh/config-ser5
+    ~/.config/polybar/scripts: config/polybar/scripts
+    ~/.rc-function: rc-function
+

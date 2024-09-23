@@ -1,0 +1,6 @@
+- create:
+    - ~/.config/alacritty/themes
+- shell:
+  - [git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes]
+- link:
+     ~/.config/alacritty/alacritty.toml: config/alacritty/alacritty.toml

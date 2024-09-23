@@ -1,0 +1,22 @@
+import = ["/home/depeche/.config/alacritty/themes/themes/breeze.toml"]
+
+[env]
+#TERM = "xterm-265color"
+WINIT_X11_SCALE_FACTOR = "1"
+
+[font]
+size = 11.0
+
+#[font.normal]
+#family = "JetBrainsMono"
+#style = "Regular"
+
+#[font.bold]
+#family = "JetBrainsMono"
+#style = "Bold"
+
+#[font.italic]
+#family = "JetBrainsMono"
+#style = "Italic"
+
+

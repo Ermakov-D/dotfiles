@@ -1,0 +1,7 @@
+- link:
+    ~/.config/i3/config: config/i3/config-ser5
+    ~/.config/i3/wallpaper.jpg: pictures/11722-1440x900.jpg
+    ~/.config/polybar/config: config/polybar/config-ser5
+    ~/.config/polybar/launch.sh: config/polybar/launch-ser5.sh
+
+
