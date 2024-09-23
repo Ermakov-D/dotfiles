@@ -1076,7 +1076,8 @@ bar-progress-indicator-foreground = ${colors.foreground}
 format-online-foreground = ${colors.foreground}
 format-online-background = ${colors.background}
 
-host=127.0.0.1
+#host=127.0.0.1
+host=172.16.202.95
 port=6600
 interval=2
 ################################################################################
