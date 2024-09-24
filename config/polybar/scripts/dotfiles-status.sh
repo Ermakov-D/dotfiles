@@ -14,16 +14,17 @@ REMOTE=$(cd ${dotfiles_dir}; git rev-parse "$UPSTREAM")
 BASE=$(cd ${dotfiles_dir}; git merge-base @ "$UPSTREAM")
 
 if [ $LOCAL = $REMOTE ]; then
-    #echo -n "%{F#6bff49}: Ok%{F-}"
-    echo -n ": Ok"
+    echo -n "%{F#6bff49}: Ok%{F-}"
+    #echo -n "%{F#6bff49}: Ok%{F-}"
+    #echo -n " :Ok"
 elif [ $LOCAL = $BASE ]; then
-    #echo -n "%{F#ff3205}: Pull%{F-}"
-    echo -n ": Pull"
+    echo -n "%{F#ff3205}: Pull%{F-}"
+    #echo -n " :Pull"
 elif [ $REMOTE = $BASE ]; then
-    #echo -n "%{F#ff3205}: Push%{F-}"
-    echo -n ": Push"
+    echo -n "%{F#ff3205}: Push%{F-}"
+    #echo -n " :Push"
 else
-    echo -n ": Push"    
+    echo -n " :"    
 fi
 
 
@@ -31,7 +32,8 @@ if [ $(git -C ${dotfiles_dir} status --porcelain | wc -l) -eq "0" ]; then
   echo
 else	
 	change_file=$(git -C ${dotfiles_dir} status --porcelain | wc -l)
-	echo " : ${change_file}"	  
+	echo "  :${change_file}"	  
+    #echo "  :${change_file}"     
 fi
 
 
