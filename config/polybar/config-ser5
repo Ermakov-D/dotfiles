@@ -418,11 +418,12 @@ font-1 = "FontAwesome:size=10;0"
 font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Weather Icons:size=7;2"
+font-5 = "Font Awesome 6 Free Solid:pixelsize=9;0"
 
 modules-left = temperature2 load-average VIAMNET-status 
 ;modules-left =VIAMNET-status
 modules-center = networkspeeddown networkspeedup pub-ip volume mpd 
-modules-right = openweather filesystem
+modules-right = dotfiles openweather filesystem
 
 separator = |
 
@@ -1620,3 +1621,21 @@ format-prefix-foreground = #3EC13F
 format-underline = #D2CFCF
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
+
+###############################################################################
+# Статус dotFile
+[module/dotfiles]
+type = custom/script
+exec = ~/.config/polybar/scripts/dotfiles-status.sh
+interval = 600
+#label-font = 6
+#format-foreground = ${colors.foreground}
+#format-background = ${colors.background}
+format-underline = #C1B93E
+#format-prefix-foreground = #C1B93E
+#label =  %output:0:150:%
+format-prefix-foreground = #3EC13F
+#format-underline = #737CA1
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+

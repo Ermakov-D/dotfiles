@@ -1,6 +1,15 @@
 #!/bin/sh
 
-dotfiles_dir="/home/depeche/.dotfile/"
+hostname=$(uname -n)
+
+case $hostname in
+    Ser5)
+	dotfiles_dir="/home/depeche/.dotfiles/"
+	;;
+    *)
+	dotfiles_dir="/home/depeche/.dotfile/"
+esac
+    
 
 if [ $(git -C ${dotfiles_dir} status --porcelain | wc -l) -eq "0" ]; then  
   repo_status="local_ok"
