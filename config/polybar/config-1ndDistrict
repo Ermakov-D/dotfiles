@@ -119,7 +119,7 @@ font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Weather Icons:size=7;2"
 
-modules-left = i3 xwindow
+modules-left = jgmenu i3 xwindow
 ;modules-center = weather
 # kernel
 #modules-right = memory2 cpu2 xkeyboard battery date poweroff
@@ -222,7 +222,7 @@ font-4 = "Weather Icons:size=10;2"
 
 modules-left = load-average vpn-VIAMNet vpn-VDSina vpn-ZeroTier byeDPI
 modules-center = networkspeeddown networkspeedup pub-ip volume spotify1 
-modules-right = unread-mail openweather filesystem
+modules-right = unread-mail dotfiles openweather filesystem
 
 separator = |
 
@@ -263,104 +263,6 @@ double-click-right =
 ; - ns-resize : Up and down arrows, can be used to indicate scrolling
 cursor-click =
 cursor-scroll =
-
-
-################################################################################
-################################################################################
-############                     MAINBAR-AWESELOWM                  ############
-################################################################################
-################################################################################
-
-# [bar/mainbar-awesome]
-# ;https://github.com/jaagr/polybar/wiki/Configuration# 
-
-# monitor = ${env:MONITOR}
-# ;monitor-fallback = HDMI1
-# monitor-strict = false
-# override-redirect = false
-# bottom = false
-# fixed-center = true
-# width = 100%
-# height = 30
-# ;offset-x = 1%
-# ;offset-y = 1%# 
-
-# background = ${colors.background}
-# foreground = ${colors.foreground}# 
-
-# ; Background gradient (vertical steps)
-# ;   background-[0-9]+ = #aarrggbb
-# ;background-0 =# 
-
-# radius = 0.0
-# line-size = 2
-# line-color = #000000# 
-
-# border-size = 0
-# ;border-left-size = 25
-# ;border-right-size = 25
-# ;border-top-size = 0
-# ;border-bottom-size = 25
-# border-color = #000000# 
-
-# padding-left = 1
-# padding-right = 1# 
-
-# module-margin-left = 3
-# module-margin-right = 3# 
-
-# ;https://github.com/jaagr/polybar/wiki/Fonts
-# font-0 = "Noto Sans:size=10;0"
-# font-1 = "FontAwesome:size=10;0"
-# font-2 = "Noto Sans:size=10;0"
-# font-3 = "Noto Sans Mono:size=10;0"
-# font-4 = "Weather Icons:size=7;2"# 
-
-# modules-left = i3 xwindow
-# ;modules-center = weather
-# # kernel
-# #modules-right = memory2 cpu2 xkeyboard battery date poweroff
-# modules-right = memory2 cpu2 xkeyboard battery popup-calendar poweroff# 
-
-# separator = |# 
-
-# ;dim-value = 1.0# 
-
-# tray-detached = false
-# tray-offset-x = 0
-# tray-offset-y = 0
-# tray-padding = 2
-# tray-maxsize = 20
-# tray-scale = 1.0
-# tray-position = right
-# tray-background = ${colors.background}# 
-
-# #i3: Make the bar appear below windows
-# ;wm-restack = i3
-# ;override-redirect = true# 
-
-# ; Enable support for inter-process messaging
-# ; See the Messaging wiki page for more details.
-# enable-ipc = true# 
-
-# ; Fallback click handlers that will be called if
-# ; there's no matching module handler found.
-# click-left =
-# click-middle =
-# click-right =
-# scroll-up = i3wm-wsnext
-# scroll-down = i3wm-wsprev
-# double-click-left =
-# double-click-middle =
-# double-click-right =# 
-
-# ; Requires polybar to be built with xcursor support (xcb-util-cursor)
-# ; Possible values are:
-# ; - default   : The default pointer as before, can also be an empty string (default)
-# ; - pointer   : Typically in the form of a hand
-# ; - ns-resize : Up and down arrows, can be used to indicate scrolling
-# cursor-click =
-# cursor-scroll =# 
 
 
 
@@ -1601,3 +1503,22 @@ format-prefix-foreground = #3EC13F
 format-underline = #D2CFCF
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
+
+###############################################################################
+# Статус dotFile
+[module/dotfiles]
+type = custom/script
+exec = ~/.config/polybar/scripts/dotfiles-status.sh
+interval = 600
+#label-font = 1
+#format-foreground = ${colors.foreground}
+#format-background = ${colors.background}
+format-underline = #C1B93E
+#format-prefix-foreground = #C1B93E
+#label =  %output:0:150:%
+format-prefix-foreground = #3EC13F
+#format-underline = #737CA1
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+
+
