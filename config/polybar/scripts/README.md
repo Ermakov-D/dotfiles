@@ -1,6 +1,6 @@
 # Скрипт: openweathermap-fullfeatured
 
-Скрипт для тектового отображения погоды для Polybar
+Скрипт для текстового отображения погоды для Polybar
 
 ![openweathermap-fullfeatured](https://i.imgur.com/wxg5roM.png)
 
