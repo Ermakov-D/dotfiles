@@ -23,6 +23,7 @@ exec --no-startup-id /usr/bin/plank
 exec --no-startup-id /usr/bin/telegram-desktop
 exec --no-startup-id /usr/bin/blueberry-tray
 exec --no-startup-id sudo input-remapper-control --command autoload
+exec --no-startup-id /usr/bin/snixembed --fork
 exec --no-startup-id /usr/bin/safeeyes
 exec --no-startup-id /usr/bin/radiotray-ng
 
