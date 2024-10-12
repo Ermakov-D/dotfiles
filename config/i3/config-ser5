@@ -67,6 +67,7 @@ for_window [class="Asbru-cm"] move to workspace $ws3
 for_window [class="Thunar"] move to workspace $ws8
 for_window [class="Pidgin"] move to workspace $ws10
 for_window [class="TelegramDesktop"] move to workspace $ws10
+for_window [class="Element"] move to workspace $ws10
 for_window [class="Brave-browser"] move to workspace $ws1
 for_window [class="libreoffice"] move to workspace $ws11
 for_window [class="iptvnator"] move to workspace $ws7
