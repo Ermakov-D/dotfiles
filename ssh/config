@@ -94,8 +94,8 @@ Host 185.158.114.227
     IdentityFile ~/.ssh/keys/depeche-rsa4096
 Host ssh.viam-3.nichost.ru
     User viam-3
-    IdentityFile ~/.ssh/keys/depeche-rsa4096
-    PubkeyAcceptedAlgorithms +ssh-rsa
+    #IdentityFile ~/.ssh/keys/depeche-rsa4096
+    #PubkeyAcceptedAlgorithms +ssh-rsa
     HostkeyAlgorithms +ssh-rsa
 
 Host ssh.viam-5.nichost.ru
