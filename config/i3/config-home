@@ -21,7 +21,12 @@ exec --no-startup-id xautolock -time 30 -locker ~/bin/screenlock.sh &
 exec --no-startup-id /usr/bin/blueman-applet
 exec --no-startup-id /usr/bin/solaar -w hide
 
-
+# Restore WorkSpace
+#exec --no-startup-id /usr/bin/i3-resurrect restore -w 1
+#exec --no-startup-id /usr/bin/i3-resurrect restore -w 2
+#exec --no-startup-id /usr/bin/i3-resurrect restore -w 3
+#exec --no-startup-id /usr/bin/i3-resurrect restore -w 10
+##########################
 
 # Отлючение заголовков
 default_border pixel
