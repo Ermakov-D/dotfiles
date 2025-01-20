@@ -24,7 +24,9 @@ case "$1" in
         if [ $(runningStatus) = "ciaDPI" ] || [ $(runningStatus) = "ciaDPI-spoofDPI" ]; then
             kill $(pgrep ciadpi)
         else
-            ~/bin/ciadpi --ip 127.0.0.1 -p 3080 --disorder 1 --auto=torst --tlsrec 1+s &
+            #~/bin/ciadpi --ip 127.0.0.1 -p 3080 --disorder 1 --auto=torst --tlsrec 1+s &
+            # см. https://github.com/hufrea/byedpi/discussions/184
+            ~/bin/ciadpi --ip 127.0.0.1 -p 3080 --oob 1 --split 2 --mod-http h,d --auto torst --fake -1 --tlsrec 3+s --md5sig --auto none
         fi
         ;;
     --spoofdpi)
