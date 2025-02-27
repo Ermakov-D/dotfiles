@@ -78,6 +78,7 @@ for_window [class="xfreerdp"] move to workspace $ws12
 for_window [class="thunderbird"] move to workspace $ws2
 for_window [class="winbox.exe"] move to workspace $ws4
 for_window [class="WinBox"] move to workspace $ws4
+for_window [class="Sublime_text"] move to workspace $ws7
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
 for_window [class="Xfce4-terminal"] floating enable
