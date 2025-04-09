@@ -98,6 +98,7 @@ bindsym $mod+mod1+v exec rofi -theme arthur -modi "clipboard:greenclip print" -s
 bindsym $mod+mod1+k exec ~/bin/networkmanager_dmenu
 bindsym $mod+b exec bwmenu -- -location 2 -theme arthur
 bindsym $mod+Shift+l exec /home/depeche/bin/screenlock.sh
+bindsym $mod+mod1+l exec /home/depeche/bin/screenlock.sh
 bindsym $mod+Shift+t exec picom-trans -o 100
 # Убить окно нажав средней кнопкой мыши на титульный заголовок окна
 #bindsym --whole-window button2 kill
