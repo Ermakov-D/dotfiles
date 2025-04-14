@@ -126,7 +126,7 @@ Host 192.168.1.7
     User mikroansible
     IdentityFile ~/.ssh/keys/mikroansible
 
-Host 185.248.100.187
+Host 185.248.100.187 viam.ru
     User root
     IdentityFile ~/.ssh/keys/depeche-rsa4096
 
