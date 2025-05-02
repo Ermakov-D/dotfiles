@@ -259,3 +259,7 @@ Host 172.16.202.120
     User depeche
     IdentityFile ~/.ssh/keys/depeche-rsa4096
 
+Host vri-matrix.viam.ru
+    User depeche
+    IdentityFile ~/.ssh/keys/depeche-rsa4096
+
