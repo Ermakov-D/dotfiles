@@ -67,7 +67,7 @@ defaults:
   keepass:
     database: ''
     keyfile: ''
-    password: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    password: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     pathcli: ''
     use_keepass: 0
   keybindings:
@@ -350,7 +350,7 @@ defaults:
   start iconified: ''
   start main maximized: 1
   start maximized: ''
-  sudo password: 53616c7465645f5f3132333435363738246b8c24e7c1a87e58018a4945fd0de0
+  sudo password: 53616c7465645f5f4e61bc000000000021fd8290e2e682016e9a0cf5717dd751
   sudo prompt: '[__PAC__SUDO__PROMPT__]'
   sudo show password: ''
   tabs in main window: 1
@@ -426,8 +426,8 @@ environments:
     name: hs-lnx-gate1
     options: ' -x'
     parent: f43749d2-b712-4448-9ee3-6e4546407def
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: depeche
     port: 22
     postpend command: ''
@@ -487,6 +487,17 @@ environments:
     use sudo: ''
     user: ''
     variables: []
+  01f65b7d-8957-4073-b717-a8e3c22224c1:
+    _is_group: 1
+    _protected: 0
+    children:
+      24ce3021-fcdd-485c-ba02-bf834b43643f: 1
+      99ecac19-4ea1-4825-9ca5-9ec4440f4b33: 1
+      e7ff3f1e-1799-4388-926b-4c801076aad0: 1
+    description: Connection group 'RDP'
+    name: RDP
+    parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
+    screenshots: []
   0341e470-11c5-4d1a-be3c-083ff7d99fba:
     KPX title regexp: '.*Jitsi - 1-я территория.*'
     _is_group: 0
@@ -515,8 +526,8 @@ environments:
     name: Jitsi
     options: ' -x'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -610,8 +621,8 @@ environments:
     name: hasp6 /185/
     options: ' -x'
     parent: 9365e4a6-6a88-4782-953a-5f5caa4e42a2
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -700,8 +711,8 @@ environments:
     name: hsi-pve01
     options: ' -x'
     parent: 779a78b3-db94-48c3-9c05-bcffc7afa64b
-    pass: 53616c7465645f5f3132333435363738d0047cd5c23e795c6ef5c943a267ba06
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000afd916022f59164c428c387a71ab268f
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -791,8 +802,8 @@ environments:
     name: hr-sw-306-main01
     options: ' -x'
     parent: 27704f88-6ea3-45fa-9ff5-70bb36da1c86
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -883,8 +894,8 @@ environments:
     name: vr-jitsi
     options: ' -x'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -950,7 +961,7 @@ environments:
     _is_group: 0
     _protected: 0
     auth fallback: 1
-    auth type: userpass
+    auth type: publickey
     autoreconnect: ''
     autossh: ''
     cluster: []
@@ -960,7 +971,7 @@ environments:
     embed: 0
     expect: []
     favourite: 0
-    ip: 192.168.30.9
+    ip: '<ASK:Connect to|192.168.30.9|178.177.54.49>'
     jump ip: ''
     jump key: ''
     jump pass: ''
@@ -976,9 +987,9 @@ environments:
     name: Eltex ESR-12VF
     options: ' -x'
     parent: 75262763-a854-44ab-a062-be7bb8dc2aa9
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase user: ''
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: depeche
     port: 22
     postpend command: ''
     prepend command: ''
@@ -1036,7 +1047,7 @@ environments:
     use prepend command: ''
     use proxy: 0
     use sudo: ''
-    user: depeche
+    user: ''
     variables: []
   0fdfdafa-05de-475a-8daa-b255792cf113:
     KPX title regexp: '.*Server-Lnx - 1-я территория.*'
@@ -1071,8 +1082,8 @@ environments:
     name: Server-Lnx
     options: ' -X -L localhost:8081:10.10.17.24:80'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -1175,8 +1186,8 @@ environments:
     name: VSi-Mirror
     options: ' -x'
     parent: 779a78b3-db94-48c3-9c05-bcffc7afa64b
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -1267,8 +1278,8 @@ environments:
     name: hr-penduli-01
     options: ' -x'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -1361,8 +1372,8 @@ environments:
     name: Греков Ю.
     options: ' -x'
     parent: f5b7de86-798b-4131-9b67-e81ce284f48d
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: depeche
     port: 22
     postpend command: ''
@@ -1427,6 +1438,7 @@ environments:
     _is_group: 1
     _protected: 0
     children:
+      01f65b7d-8957-4073-b717-a8e3c22224c1: 1
       0e84ad5d-197e-4de0-baa1-dce83a5b8543: 1
       27704f88-6ea3-45fa-9ff5-70bb36da1c86: 1
       2a77189a-3e77-41d7-badd-1242b50093df: 1
@@ -1436,11 +1448,15 @@ environments:
       598633e3-aa1a-4dfb-968e-d90751aee7a3: 1
       6451c504-ee70-4685-8d69-9d3347a79859: 1
       7c081988-c951-4019-8716-dc95d4d986d2: 1
+      7fe12ba1-f1ce-4771-bdfa-27b32dc78f91: 1
       862fed85-e992-49ce-a4f3-7e0c95849f2d: 1
+      869d4aef-01eb-4943-be49-9bc3d8fc3bf3: 1
       9365e4a6-6a88-4782-953a-5f5caa4e42a2: 1
       aba5cdc3-d2b8-4a70-b0d0-e984cce0db1b: 1
+      ba2648ad-4fd8-47f9-a0ae-0dd074fafe23: 1
       c6792010-96f1-43e1-805e-18dde77fe3f2: 1
       ccab7ff4-6d55-43db-a619-086abba9048e: 1
+      d1a4ddef-26e6-44ee-9964-44e0e3f6ce65: 1
       d898ffca-4724-4223-98a2-dd986b6dc003: 1
       f226e54c-1ee8-457f-83e9-5201c4e91861: 1
       f73ae80e-ce59-4268-9c3f-71cb48d3a8c3: 1
@@ -1481,8 +1497,8 @@ environments:
     name: VDSina
     options: ' -X'
     parent: f5b7de86-798b-4131-9b67-e81ce284f48d
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -1573,8 +1589,8 @@ environments:
     name: hr-sw-027-05
     options: ' -x'
     parent: 80d39a1a-172f-4c28-ad1c-c56b47c93467
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -1645,10 +1661,12 @@ environments:
       17483850-48fc-4c04-a204-b877e0881bae: 1
       2337ccb7-e004-4dfa-be34-84dc4ba14104: 1
       24f3ca17-412b-4af2-8bb1-a1c018dffdbe: 1
-      2622c248-338e-4e3d-8feb-4192905702fe: 1
+      27e4ccb7-a656-4a59-b21c-e4f08b4cc2ac: 1
       34102fbb-2f79-4642-9c31-21015476ed01: 1
       387c8787-9d30-450c-be70-7e61c2ff807e: 1
+      425d5c76-26d2-405c-b536-afe35ec3c136: 1
       559b5b89-2967-44cb-ab47-5524dfaeb48b: 1
+      5bede78d-05f1-47a1-a9b9-6afe84311062: 1
       6906bbfc-59ef-42e4-83e2-7635d5c71f68: 1
       6d1661aa-1ea6-44fa-a9f0-768760fdd79f: 1
       710b1737-cb30-4421-9687-d80b7316a65e: 1
@@ -1656,9 +1674,12 @@ environments:
       8b2110f2-6cf8-4b6a-9ff2-0338f3f70966: 1
       b078ecc5-d620-427d-b7a2-1d236d451383: 1
       b9e218b8-a413-4ecd-8b93-e0fed466001e: 1
+      c1740613-94a7-4140-aed0-d89606318935: 1
       c68ff7f7-b948-49d5-ab6a-090b8b7a3329: 1
       c8036f8c-154c-4915-a5a1-ccb08747ac69: 1
+      ca9277bf-c409-42bb-beef-4710b1c8c3f4: 1
       d6cdbb80-48b0-41c1-a3e0-97a4712df614: 1
+      d866b29e-2c28-422b-8ff4-b2ef42fc8224: 1
       dcbb8f3d-b4f6-490a-99a7-7fa6e15e3144: 1
       e1a9b4b5-9dde-4a0a-bb20-73ca75b4364e: 1
       e5bb29e1-68f8-4c9b-89ff-10a18ad85d5d: 1
@@ -1699,8 +1720,8 @@ environments:
     name: vri-mail
     options: ' -x'
     parent: 006cf8df-cf10-4157-aaea-e6183296f88e
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -1789,8 +1810,8 @@ environments:
     name: HR-LNX-Gate1
     options: ' -x'
     parent: 2337ccb7-e004-4dfa-be34-84dc4ba14104
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -1862,6 +1883,99 @@ environments:
     name: Gate-Cluster
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
     screenshots: []
+  24ce3021-fcdd-485c-ba02-bf834b43643f:
+    KPX title regexp: '.*RDS - VIAM.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: manual
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    connection options: {}
+    description: Connection with 'dc01.viamnet.local'
+    embed: 1
+    expect: []
+    favourite: 0
+    ip: 192.168.250.10
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: RDP (xfreerdp)
+    name: dc01.viamnet.local
+    options: ' /bpp:24  /u:ermakov.admin@viamnet.local'
+    parent: 01f65b7d-8957-4073-b717-a8e3c22224c1
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: ''
+    port: 3389
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'dc01.viamnet.local - VIAM'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ermakov.admin
+    variables: []
   24f3ca17-412b-4af2-8bb1-a1c018dffdbe:
     KPX title regexp: '.*FreeBSD-Test - 1-я территория.*'
     _is_group: 0
@@ -1887,8 +2001,8 @@ environments:
     name: FreeBSD-Test
     options: ' -X'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -1982,8 +2096,8 @@ environments:
     name: hri-sw-306-Core
     options: ' -x'
     parent: b9e218b8-a413-4ecd-8b93-e0fed466001e
-    pass: 53616c7465645f5f3132333435363738fa97bd0d822b7b8513dddf1360fe857e
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000ed90b788ff5d050408c56eeae610f3f2
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -2043,22 +2157,34 @@ environments:
     use sudo: ''
     user: depeche
     variables: []
-  2622c248-338e-4e3d-8feb-4192905702fe:
-    KPX title regexp: '.*hri-wazuh - 1-я территория.*'
+  27704f88-6ea3-45fa-9ff5-70bb36da1c86:
+    _is_group: 1
+    _protected: 0
+    children:
+      0df0ebec-504d-46fb-b43e-0a1439700f48: 1
+      5152bc04-18b1-4b0f-b7d2-315b610360df: 1
+      52fd5b3e-02c8-42ad-87aa-d9537afa0411: 1
+      80d39a1a-172f-4c28-ad1c-c56b47c93467: 1
+    description: Connection group 'Eltex-ViamNet'
+    name: Eltex-ViamNet
+    parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
+    screenshots: []
+  27e4ccb7-a656-4a59-b21c-e4f08b4cc2ac:
+    KPX title regexp: '.*vri-matrix - 1-я территория.*'
     _is_group: 0
     _protected: 0
     auth fallback: 1
-    auth type: manual
+    auth type: publickey
     autoreconnect: ''
     autossh: ''
     cluster: []
     connection options:
       randomSocksTunnel: ''
-    description: Connection with 'hri-wazuh'
+    description: Connection with 'vri-matrix'
     embed: 0
     expect: []
     favourite: 0
-    ip: 172.16.10.103
+    ip: 78.107.18.118
     jump ip: ''
     jump key: ''
     jump pass: ''
@@ -2071,12 +2197,12 @@ environments:
     mac: ''
     macros: []
     method: SSH
-    name: hri-wazuh
+    name: vri-matrix
     options: ' -x'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase user: ''
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: depeche
     port: 22
     postpend command: ''
     prepend command: ''
@@ -2085,7 +2211,7 @@ environments:
     proxy port: 8080
     proxy user: ''
     pseudo jump: ''
-    public key: ''
+    public key: /home/depeche/.ssh/keys/depeche-rsa4096
     quote command: ''
     quotepost command: ''
     remove control chars: ''
@@ -2129,25 +2255,13 @@ environments:
       use personal settings: ''
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
-    title: 'hri-wazuh - 1-я территория'
+    title: 'vri-matrix - 1-я территория'
     use postpend command: ''
     use prepend command: ''
     use proxy: 0
     use sudo: ''
     user: ''
     variables: []
-  27704f88-6ea3-45fa-9ff5-70bb36da1c86:
-    _is_group: 1
-    _protected: 0
-    children:
-      0df0ebec-504d-46fb-b43e-0a1439700f48: 1
-      5152bc04-18b1-4b0f-b7d2-315b610360df: 1
-      52fd5b3e-02c8-42ad-87aa-d9537afa0411: 1
-      80d39a1a-172f-4c28-ad1c-c56b47c93467: 1
-    description: Connection group 'Eltex-ViamNet'
-    name: Eltex-ViamNet
-    parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    screenshots: []
   28783ede-0a4e-48e9-81a7-b835f0543d84:
     KPX title regexp: '.*hri-pve01 - 1-я территория.*'
     _is_group: 0
@@ -2179,8 +2293,8 @@ environments:
     name: hri-pve03
     options: ' -x'
     parent: 11a6550d-6d9c-4b64-bf25-3046bbeede52
-    pass: 53616c7465645f5f3132333435363738d0047cd5c23e795c6ef5c943a267ba06
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000afd916022f59164c428c387a71ab268f
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -2271,8 +2385,8 @@ environments:
     name: hr-gw01(vyos)
     options: ' -x'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -2363,8 +2477,8 @@ environments:
     name: Gate-Vosk
     options: ' -X'
     parent: 75262763-a854-44ab-a062-be7bb8dc2aa9
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: depeche
     port: 22222
     postpend command: ''
@@ -2457,8 +2571,8 @@ environments:
     name: Eltex-ERS-12VF
     options: ' -x'
     parent: ad3dbcf9-b2d0-4976-b46e-c0e9c6586846
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -2550,8 +2664,8 @@ environments:
     name: vri-kali
     options: ' -x'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -2644,8 +2758,8 @@ environments:
     name: Hr-PVE03.viamnet.local
     options: ' -x'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: root
     port: 22
     postpend command: ''
@@ -2715,6 +2829,7 @@ environments:
     autoreconnect: ''
     autossh: ''
     cluster: []
+    connection options: {}
     description: Connection with 'PVE'
     embed: 0
     expect: []
@@ -2735,8 +2850,8 @@ environments:
     name: PVE
     options: ' -x'
     parent: f5b7de86-798b-4131-9b67-e81ce284f48d
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -2828,8 +2943,8 @@ environments:
     name: hr-penduli-02
     options: ' -x'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -2890,6 +3005,99 @@ environments:
     use sudo: ''
     user: ''
     variables: []
+  425d5c76-26d2-405c-b536-afe35ec3c136:
+    KPX title regexp: '.*vr-ipam.corp.viam.ru - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: publickey
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'vri-ipam'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.3.50
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: vri-ipam
+    options: ' -x'
+    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: depeche
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'vri-ipam - 1-я территория'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
+    variables: []
   4321846d-f14f-4632-a62d-c3a2c8d2ac32:
     KPX title regexp: '.*VR-NetBox - VIAM.*'
     _is_group: 0
@@ -2919,8 +3127,8 @@ environments:
     name: VR-NetBox
     options: ' -x'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: depeche
     port: 22
     postpend command: ''
@@ -3010,8 +3218,8 @@ environments:
     name: hr-sw-027-14
     options: ' -x'
     parent: 80d39a1a-172f-4c28-ad1c-c56b47c93467
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -3102,8 +3310,8 @@ environments:
     name: Raspberry
     options: ' -X -L localhost:9081:172.16.1.1:80'
     parent: f5b7de86-798b-4131-9b67-e81ce284f48d
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -3195,8 +3403,8 @@ environments:
     name: Hr-PgSQL02-D
     options: ' -x'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: depeche
     port: 22
     postpend command: ''
@@ -3287,8 +3495,8 @@ environments:
     name: hr-sw-224room
     options: ' -x'
     parent: 27704f88-6ea3-45fa-9ff5-70bb36da1c86
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -3378,8 +3586,8 @@ environments:
     name: hr-sw-306-vlancore
     options: ' -x'
     parent: 27704f88-6ea3-45fa-9ff5-70bb36da1c86
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -3470,8 +3678,8 @@ environments:
     name: Сажнев С.
     options: ' -x'
     parent: f5b7de86-798b-4131-9b67-e81ce284f48d
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: depeche
     port: 22
     postpend command: ''
@@ -3564,8 +3772,8 @@ environments:
     name: hri-pve01
     options: ' -x'
     parent: 11a6550d-6d9c-4b64-bf25-3046bbeede52
-    pass: 53616c7465645f5f3132333435363738d0047cd5c23e795c6ef5c943a267ba06
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000afd916022f59164c428c387a71ab268f
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -3656,8 +3864,8 @@ environments:
     name: vri-lxc-gitea
     options: ' -x'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f31323334353637387fa039405ec4330b1c9b7fc3bfecc1941c5d697f18a8f5f7
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc0000000000c7dbec6e7e9c66295cb9e4b832d31fcabd1496906c0b1530
     passphrase user: root
     port: 22
     postpend command: ''
@@ -3747,8 +3955,8 @@ environments:
     name: hr-sw-027-03
     options: ' -x'
     parent: 80d39a1a-172f-4c28-ad1c-c56b47c93467
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -3839,8 +4047,8 @@ environments:
     name: hr-pbs
     options: ' -x'
     parent: 11a6550d-6d9c-4b64-bf25-3046bbeede52
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -3926,8 +4134,8 @@ environments:
     name: vps-spb
     options: ' -X'
     parent: a600dc07-df56-455e-86ad-ad5c06d182d0
-    pass: 53616c7465645f5f31323334353637385198a678f433790a9121c41da7914990
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000edf3a1e940fd59a17073d2fba2300234
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -4020,8 +4228,8 @@ environments:
     name: VR-Ksh-T
     options: ' -x'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -4113,8 +4321,8 @@ environments:
     name: vr-sokollnx
     options: ' -X'
     parent: 779a78b3-db94-48c3-9c05-bcffc7afa64b
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: depeche
     port: 22
     postpend command: ''
@@ -4174,6 +4382,99 @@ environments:
     use sudo: ''
     user: ''
     variables: []
+  5bede78d-05f1-47a1-a9b9-6afe84311062:
+    KPX title regexp: '.*Eve-NG - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: publickey
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'Eve-NG'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.3.64
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: Eve-NG
+    options: ' -x'
+    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: root
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'Eve-NG - 1-я территория'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
+    variables: []
   6451c504-ee70-4685-8d69-9d3347a79859:
     KPX title regexp: '.*vr-console - VIAM.*'
     _is_group: 0
@@ -4206,8 +4507,8 @@ environments:
     name: vr-nms
     options: ' -x'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738fa97bd0d822b7b8513dddf1360fe857e
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000ed90b788ff5d050408c56eeae610f3f2
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -4299,8 +4600,8 @@ environments:
     name: vri-gw-backup (VyOS)
     options: ' -x -L localhost:8082:10.10.17.14:80'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -4370,6 +4671,7 @@ environments:
     autossh: ''
     children: {}
     cluster: []
+    connection options: {}
     description: Connection with 'HR-LNX-Gate1'
     embed: 0
     expect: []
@@ -4388,8 +4690,8 @@ environments:
     name: VR-LNX-Gate2
     options: ' -x'
     parent: 2337ccb7-e004-4dfa-be34-84dc4ba14104
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -4482,8 +4784,8 @@ environments:
     name: HGi-GW-NRCKI-01
     options: ' -x'
     parent: ad3dbcf9-b2d0-4976-b46e-c0e9c6586846
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -4570,8 +4872,8 @@ environments:
     name: Stats
     options: ' -X -o "HostKeyAlgorithms=+ssh-dss"'
     parent: 83dad219-1dc5-4c46-a52c-6ab35716b876
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -4665,8 +4967,8 @@ environments:
     name: Gate1
     options: ' -X -C'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738fa97bd0d822b7b8513dddf1360fe857e
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000ed90b788ff5d050408c56eeae610f3f2
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: depeche
     port: 22222
     postpend command: ''
@@ -4762,8 +5064,8 @@ environments:
     name: vri-trueconf
     options: ' -x -L localhost:8080:localhost:80'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -4858,8 +5160,8 @@ environments:
     name: HostingVIAM
     options: ' -X'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f31323334353637384e93637fb80b780cce846ee9c86c6f87
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000796e5e59c4ac010514a199948242da9e
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -4964,8 +5266,8 @@ environments:
     name: vps-msk
     options: ' -X'
     parent: a600dc07-df56-455e-86ad-ad5c06d182d0
-    pass: 53616c7465645f5f3132333435363738d49a21f45222ecc875339c3c3b458f13
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000bad6b4dbaadaab669fad99da10a6279a
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -5061,8 +5363,8 @@ environments:
     name: Hr-Lnx-02.viamnet.local
     options: ' -X'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -5123,6 +5425,100 @@ environments:
     use sudo: ''
     user: ''
     variables: []
+  7fe12ba1-f1ce-4771-bdfa-27b32dc78f91:
+    KPX title regexp: '.*vr-glpi - VIAM.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: publickey
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'vr-glpi'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.248.95
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: vr-git
+    options: ' -x'
+    parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: depeche
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: /home/depeche/.ssh/keys/depeche-rsa4096
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'vr-git - VIAM'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
+    variables: []
   80d39a1a-172f-4c28-ad1c-c56b47c93467:
     _is_group: 1
     _protected: 0
@@ -5167,8 +5563,8 @@ environments:
     name: hasp5 /184/
     options: ' -x'
     parent: 9365e4a6-6a88-4782-953a-5f5caa4e42a2
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -5260,8 +5656,8 @@ environments:
     name: Gate-GCKI
     options: ' -X'
     parent: ad3dbcf9-b2d0-4976-b46e-c0e9c6586846
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738c545f95dc48137a8
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000006e67701a4d2d6892
     passphrase user: vadmin
     port: 22222
     postpend command: ''
@@ -5371,8 +5767,8 @@ environments:
     name: Hr-PVE02.viamnet.local
     options: ' -x'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: root
     port: 22
     postpend command: ''
@@ -5432,6 +5828,100 @@ environments:
     use sudo: ''
     user: ''
     variables: []
+  869d4aef-01eb-4943-be49-9bc3d8fc3bf3:
+    KPX title regexp: '.*vr-glpi - VIAM.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'vr-glpi'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.248.65
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: vr-glpi-d
+    options: ' -x'
+    parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'vr-glpi-d - VIAM'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
   8b2110f2-6cf8-4b6a-9ff2-0338f3f70966:
     KPX title regexp: '.*vr-esr - 1-я территория.*'
     _is_group: 0
@@ -5463,8 +5953,8 @@ environments:
     name: vri-gw-esr01
     options: ' -x'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -5550,8 +6040,8 @@ environments:
     name: Valdemar-IP
     options: ' -X'
     parent: __PAC__ROOT__
-    pass: 53616c7465645f5f3132333435363738fa97bd0d822b7b8513dddf1360fe857e
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000ed90b788ff5d050408c56eeae610f3f2
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -5646,8 +6136,8 @@ environments:
     name: Eltex ESR-12VF (hui-gw-backup)
     options: ' -x'
     parent: 85408ee5-ea23-4c19-b055-ff59115c513d
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -5753,8 +6243,8 @@ environments:
     name: nms
     options: ' -x'
     parent: f5b7de86-798b-4131-9b67-e81ce284f48d
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -5815,6 +6305,99 @@ environments:
     use sudo: ''
     user: depeche
     variables: []
+  99ecac19-4ea1-4825-9ca5-9ec4440f4b33:
+    KPX title regexp: '.*RDS - VIAM.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: manual
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    connection options: {}
+    description: Connection with 'dc01.viamnet.local'
+    embed: 1
+    expect: []
+    favourite: 0
+    ip: 192.168.250.20
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: RDP (xfreerdp)
+    name: dc02.viamnet.local
+    options: ' /bpp:24  /u:ermakov.admin@viamnet.local'
+    parent: 01f65b7d-8957-4073-b717-a8e3c22224c1
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: ''
+    port: 3389
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'dc02.viamnet.local - RDP'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ermakov.admin
+    variables: []
   9a41b230-b6fe-4a16-bb53-d0d786f1a84b:
     KPX title regexp: '.*vri-lxc-mailgate - Mail.*'
     _is_group: 0
@@ -5845,8 +6428,8 @@ environments:
     name: vri-mailgate
     options: ' -x'
     parent: 006cf8df-cf10-4157-aaea-e6183296f88e
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: root
     port: 22
     postpend command: ''
@@ -5935,10 +6518,10 @@ environments:
     macros: []
     method: SSH
     name: pq.hosting
-    options: ' -x'
+    options: ' -x -L localhost:8291:172.16.1.1:8291'
     parent: f5b7de86-798b-4131-9b67-e81ce284f48d
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: depeche
     port: 22
     postpend command: ''
@@ -6021,8 +6604,8 @@ environments:
     name: PACShell
     options: ''
     parent: __PAC__ROOT__
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -6095,8 +6678,8 @@ environments:
       f5b7de86-798b-4131-9b67-e81ce284f48d: 1
     cluster: []
     expect: []
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     screenshots: []
     variables: []
   a164c694-e548-4807-a80b-0a21d80bb367:
@@ -6132,8 +6715,8 @@ environments:
     name: hui-pve01
     options: ' -x -L localhost:8080:10.90.90.90:80'
     parent: 85408ee5-ea23-4c19-b055-ff59115c513d
-    pass: 53616c7465645f5f3132333435363738039c9f5cf718119b7099cbb7f94541de
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000003fe7988a3cf94a7164ac4722af4ad07c
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -6194,6 +6777,99 @@ environments:
     use sudo: ''
     user: ' root'
     variables: []
+  a321e7f5-455e-47ee-8c4c-bc9c40cf34cc:
+    KPX title regexp: '.*Ser5 - HomeSweetHome.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'Ser5'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 172.16.202.120
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: Ser5
+    options: ' -X -C'
+    parent: f5b7de86-798b-4131-9b67-e81ce284f48d
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'Ser5 - HomeSweetHome'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
   a600dc07-df56-455e-86ad-ad5c06d182d0:
     _is_group: 1
     _protected: 0
@@ -6230,8 +6906,8 @@ environments:
     name: Gate-Sokol-I
     options: ' -X -C'
     parent: 779a78b3-db94-48c3-9c05-bcffc7afa64b
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: '<ASK:User Name|depeche|vadmin>'
     port: 22222
     postpend command: ''
@@ -6325,8 +7001,8 @@ environments:
     name: Hr-PVE01.viamnet.local
     options: ' -x'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: root
     port: 22
     postpend command: ''
@@ -6393,6 +7069,7 @@ environments:
       335799f3-860f-432a-8364-c380c50af8ca: 1
       6c00a91f-864b-40e6-bb29-1fa9d3e1fae5: 1
       81646c84-9298-4af6-aca2-ca1b090f5414: 1
+      b273ea55-0117-4ba7-80fe-78ca7300af4e: 1
       de680e46-97e6-4f94-bd29-b40e7061f434: 1
       efee1f48-cc46-4077-987b-40b59f6a304c: 1
       fac1da7e-4e99-4a71-9188-f39109b1978d: 1
@@ -6435,8 +7112,8 @@ environments:
     name: vr-voip
     options: ' -x'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: root
     port: 22
     postpend command: ''
@@ -6496,6 +7173,99 @@ environments:
     use sudo: ''
     user: ''
     variables: []
+  b273ea55-0117-4ba7-80fe-78ca7300af4e:
+    KPX title regexp: '.*hgi-sw-01 - Геленжик.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'hgi-sw-01'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.4.30
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: HGi-SW-01
+    options: ' -x'
+    parent: ad3dbcf9-b2d0-4976-b46e-c0e9c6586846
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'HGi-SW-01 - Геленжик'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
   b9e218b8-a413-4ecd-8b93-e0fed466001e:
     _is_group: 1
     _protected: 0
@@ -6530,8 +7300,8 @@ environments:
     name: sokol-lnx
     options: ' -X'
     parent: 779a78b3-db94-48c3-9c05-bcffc7afa64b
-    pass: 53616c7465645f5f3132333435363738fa97bd0d822b7b8513dddf1360fe857e
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000ed90b788ff5d050408c56eeae610f3f2
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -6595,6 +7365,17 @@ environments:
     use sudo: ''
     user: depeche
     variables: []
+  ba2648ad-4fd8-47f9-a0ae-0dd074fafe23:
+    _is_group: 1
+    _protected: 0
+    children:
+      cb411d95-f5ed-4fc4-8dc0-5657e107caaa: 1
+      d1632713-ab09-4d21-9909-3ba970133e02: 1
+      dcfe28d8-acd2-477d-b095-ce84f1166dfc: 1
+    description: Connection group 'Wazuh'
+    name: Wazuh
+    parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
+    screenshots: []
   bef71702-27b0-4fca-a335-2d76b060204d:
     KPX title regexp: '.*Gate-Sokol-I /local/ - 2-я территория.*'
     _is_group: 0
@@ -6621,8 +7402,8 @@ environments:
     name: Gate-Sokol-II
     options: ' -X -C'
     parent: 779a78b3-db94-48c3-9c05-bcffc7afa64b
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: '<ASK:User Name|depeche|vadmin>'
     port: 22222
     postpend command: ''
@@ -6715,8 +7496,8 @@ environments:
     name: VS-Lnx-Gate2
     options: ' -x'
     parent: f43749d2-b712-4448-9ee3-6e4546407def
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: depeche
     port: 22
     postpend command: ''
@@ -6776,6 +7557,100 @@ environments:
     use sudo: ''
     user: ''
     variables: []
+  c1740613-94a7-4140-aed0-d89606318935:
+    KPX title regexp: '.*vri-lxc-gitea - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: userpass
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'vri-lxc-gitea'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 172.16.10.60
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: vri-syslog
+    options: ' -x'
+    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
+    pass: 53616c7465645f5f4e61bc0000000000ed90b788ff5d050408c56eeae610f3f2
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: /home/depeche/.ssh/keys/vri-lxc-syslog
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>~→]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: 'vri-syslog - 1-я территория'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: depeche
+    variables: []
   c174b27b-119b-4ed1-ae5b-ef1c400ab604:
     KPX title regexp: '.*hri-pve01 - 1-я территория.*'
     _is_group: 0
@@ -6807,8 +7682,8 @@ environments:
     name: hri-pve02
     options: ' -x'
     parent: 11a6550d-6d9c-4b64-bf25-3046bbeede52
-    pass: 53616c7465645f5f3132333435363738d0047cd5c23e795c6ef5c943a267ba06
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000afd916022f59164c428c387a71ab268f
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -6899,8 +7774,8 @@ environments:
     name: vr-console
     options: ' -x'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ermakov.admin
     port: 22
     postpend command: ''
@@ -6987,8 +7862,8 @@ environments:
     name: 'Ermakov_ds-ALT - copy'
     options: ' -X'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -7084,8 +7959,8 @@ environments:
     name: vri-lxc-config
     options: ' -x'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f31323334353637387fa039405ec4330b1c9b7fc3bfecc1941c5d697f18a8f5f7
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc0000000000c7dbec6e7e9c66295cb9e4b832d31fcabd1496906c0b1530
     passphrase user: root
     port: 22
     postpend command: ''
@@ -7146,6 +8021,100 @@ environments:
     use sudo: ''
     user: ''
     variables: []
+  ca9277bf-c409-42bb-beef-4710b1c8c3f4:
+    KPX title regexp: '.*vri-lxc-gitea - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: publickey
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'vri-lxc-gitea'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 172.16.10.30
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: vri-lxc-dns-proxy
+    options: ' -x'
+    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc0000000000bb92fedbf25ca6a228cb0e3750b0eee4467cd651eaacefce
+    passphrase user: root
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: /home/depeche/.ssh/keys/vri-lxc-dns-proxy
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>~→]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: 'vri-lxc-dns-proxy - 1-я территория'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
+    variables: []
   cb2655d8-8346-4e0f-96c8-e0cea91cb23e:
     KPX title regexp: '.*hri-pve01 - 1-я территория.*'
     _is_group: 0
@@ -7176,8 +8145,8 @@ environments:
     name: hri-pve04
     options: ' -x'
     parent: 11a6550d-6d9c-4b64-bf25-3046bbeede52
-    pass: 53616c7465645f5f3132333435363738d0047cd5c23e795c6ef5c943a267ba06
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000afd916022f59164c428c387a71ab268f
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -7237,6 +8206,100 @@ environments:
     use sudo: ''
     user: root
     variables: []
+  cb411d95-f5ed-4fc4-8dc0-5657e107caaa:
+    KPX title regexp: '.*Bacula - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: publickey
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'Hr-Lnx-01.viamnet.local'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.3.160
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: Vri-Wazuh03
+    options: ' -X'
+    parent: ba2648ad-4fd8-47f9-a0ae-0dd074fafe23
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: /home/depeche/.ssh/keys/depeche-rsa4096
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: 5000
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: 'Vri-Wazuh03 - Wazuh'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
+    variables: []
   ccab7ff4-6d55-43db-a619-086abba9048e:
     KPX title regexp: '.*Bacula - 1-я территория.*'
     _is_group: 0
@@ -7269,8 +8332,8 @@ environments:
     name: Hr-Lnx-01.viamnet.local
     options: ' -X'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -7331,6 +8394,193 @@ environments:
     use sudo: ''
     user: ''
     variables: []
+  d1632713-ab09-4d21-9909-3ba970133e02:
+    KPX title regexp: '.*Bacula - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: publickey
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'Hr-Lnx-01.viamnet.local'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.250.160
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: Hr-Wazuh01
+    options: ' -X'
+    parent: ba2648ad-4fd8-47f9-a0ae-0dd074fafe23
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: /home/depeche/.ssh/keys/depeche-rsa4096
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: 5000
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: 'Hr-Wazuh01 - VIAM'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
+    variables: []
+  d1a4ddef-26e6-44ee-9964-44e0e3f6ce65:
+    KPX title regexp: '.*vr-lxc-vaultwarden - VIAM.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: publickey
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'vr-lxc-vaultwarden'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.249.28
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: vr-lxc-vaultwarden
+    options: ' -x'
+    parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: root
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: /home/depeche/.ssh/keys/vr-lxc-vaultwarden
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'vr-lxc-vaultwarden - VIAM'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
+    variables: []
   d6cdbb80-48b0-41c1-a3e0-97a4712df614:
     KPX title regexp: '.*Gate1 - 1-я территория.*'
     _is_group: 0
@@ -7357,8 +8607,8 @@ environments:
     name: Gate2
     options: ' -X -C'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738fa97bd0d822b7b8513dddf1360fe857e
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000ed90b788ff5d050408c56eeae610f3f2
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: depeche
     port: 22222
     postpend command: ''
@@ -7422,6 +8672,100 @@ environments:
     use sudo: ''
     user: depeche
     variables: []
+  d866b29e-2c28-422b-8ff4-b2ef42fc8224:
+    KPX title regexp: '.*vri-matrix - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: publickey
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'vri-matrix'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 78.107.18.119
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: vri-fileCloud
+    options: ' -x'
+    parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: depeche
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: /home/depeche/.ssh/keys/depeche-rsa4096
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'vri-fileCloud - 1-я территория'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
+    variables: []
   d898ffca-4724-4223-98a2-dd986b6dc003:
     KPX title regexp: '.*vr-glpi - VIAM.*'
     _is_group: 0
@@ -7453,8 +8797,8 @@ environments:
     name: vr-glpi
     options: ' -x'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -7547,8 +8891,8 @@ environments:
     name: vri-trueconf-mcu
     options: ' -x -L localhost:8080:localhost:80'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -7609,6 +8953,100 @@ environments:
     use sudo: ''
     user: depeche
     variables: []
+  dcfe28d8-acd2-477d-b095-ce84f1166dfc:
+    KPX title regexp: '.*Bacula - 1-я территория.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: publickey
+    autoreconnect: ''
+    autossh: ''
+    children: {}
+    cluster: []
+    connection options:
+      randomSocksTunnel: ''
+    description: Connection with 'Hr-Lnx-01.viamnet.local'
+    embed: 0
+    expect: []
+    favourite: 0
+    ip: 192.168.250.161
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before: []
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: SSH
+    name: Vr-Wazuh02
+    options: ' -X'
+    parent: ba2648ad-4fd8-47f9-a0ae-0dd074fafe23
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: ''
+    port: 22
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: /home/depeche/.ssh/keys/depeche-rsa4096
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '[#%\$>]|\:\/\s*$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: 5000
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
+    title: 'Vr-Wazuh02 - VIAM'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ''
+    variables: []
   dd408512-7cb1-4e2f-9f7d-e5e63a25ffcb:
     KPX title regexp: '.*hasp1 - Hasp-Lnx.*'
     _is_group: 0
@@ -7641,8 +9079,8 @@ environments:
     name: hasp3 /180/
     options: ' -x'
     parent: 9365e4a6-6a88-4782-953a-5f5caa4e42a2
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -7733,8 +9171,8 @@ environments:
     name: HGi-SW-NRCKI-03
     options: ' -x'
     parent: ad3dbcf9-b2d0-4976-b46e-c0e9c6586846
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -7826,8 +9264,8 @@ environments:
     name: hasp1 /181/
     options: ' -x'
     parent: 9365e4a6-6a88-4782-953a-5f5caa4e42a2
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -7912,8 +9350,8 @@ environments:
     name: Ermakov_ds-ALT
     options: ' -X'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -8009,8 +9447,8 @@ environments:
     name: hasp2 /182/
     options: ' -x'
     parent: 9365e4a6-6a88-4782-953a-5f5caa4e42a2
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -8100,8 +9538,8 @@ environments:
     name: hr-sw-Core
     options: ' -x'
     parent: 80d39a1a-172f-4c28-ad1c-c56b47c93467
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -8171,6 +9609,8 @@ environments:
     autossh: ''
     children: {}
     cluster: []
+    connection options:
+      randomSocksTunnel: ''
     description: Connection with 'vr-trueconf'
     embed: 0
     expect: []
@@ -8189,10 +9629,10 @@ environments:
     macros: []
     method: SSH
     name: vri-docker
-    options: ' -x'
+    options: ' -x -L 127.0.0.1:8090:localhost:8080'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: depeche
     port: 22
     postpend command: ''
@@ -8204,7 +9644,7 @@ environments:
     pseudo jump: ''
     public key: /home/depeche/.ssh/keys/vri-docker
     quote command: ''
-    quotepost command: 0
+    quotepost command: ''
     remove control chars: ''
     save session logs: ''
     screenshots: []
@@ -8213,7 +9653,7 @@ environments:
     send string active: ''
     send string every: 60
     send string intro: 1
-    send string only when idle: 0
+    send string only when idle: ''
     send string txt: ''
     session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
     session logs amount: 10
@@ -8233,6 +9673,7 @@ environments:
       tab back color: '#000000000000'
       terminal backspace: auto
       terminal character encoding: UTF-8
+      terminal emulation: xterm
       terminal font: Monospace 9
       terminal scrollback lines: -2
       terminal select words: -.:_/
@@ -8246,7 +9687,7 @@ environments:
       use tab back color: ''
       username prompt: '([lL]ogin|[uU]suario|[uU]ser-?[nN]ame|[uU]ser):\s*$'
     title: 'vri-docker - 1-я территория'
-    use postpend command: 0
+    use postpend command: ''
     use prepend command: ''
     use proxy: 0
     use sudo: ''
@@ -8283,8 +9724,8 @@ environments:
     name: vri-ipa
     options: ' -x'
     parent: 1fbc7c66-e853-43de-878f-d1aad4bce241
-    pass: 53616c7465645f5f3132333435363738fa97bd0d822b7b8513dddf1360fe857e
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000ed90b788ff5d050408c56eeae610f3f2
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -8370,8 +9811,8 @@ environments:
     name: VyOS
     options: ' -X'
     parent: a600dc07-df56-455e-86ad-ad5c06d182d0
-    pass: 53616c7465645f5f31323334353637385bd42a5c145ebe99805ae3aa99d1191b
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc0000000000f296c56612338c127f1243385e79ad3c
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -8435,6 +9876,101 @@ environments:
     use sudo: ''
     user: vyos
     variables: []
+  e7ff3f1e-1799-4388-926b-4c801076aad0:
+    KPX title regexp: '.*vdi-ermakov - RDP.*'
+    _is_group: 0
+    _protected: 0
+    auth fallback: 1
+    auth type: manual
+    autoreconnect: ''
+    autossh: ''
+    cluster: []
+    connection options: {}
+    description: Connection with 'vdi-ermakov'
+    embed: 1
+    expect: []
+    favourite: 0
+    ip: 10.10.224.12
+    jump ip: ''
+    jump key: ''
+    jump pass: ''
+    jump port: 22
+    jump user: ''
+    local after: []
+    local before:
+      - ask: 1
+        command: zenity --password --title="User Password"
+        default: 1
+    local connected: []
+    log timestamp: ''
+    mac: ''
+    macros: []
+    method: RDP (xfreerdp)
+    name: vdi-ermakov
+    options: ' /bpp:24 /d:viamnet.local /u:ermakov_ds@viamnet.local'
+    parent: 01f65b7d-8957-4073-b717-a8e3c22224c1
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase user: ''
+    port: 3389
+    postpend command: ''
+    prepend command: ''
+    proxy ip: ''
+    proxy pass: ''
+    proxy port: 8080
+    proxy user: ''
+    pseudo jump: ''
+    public key: ''
+    quote command: ''
+    quotepost command: ''
+    remove control chars: ''
+    save session logs: ''
+    screenshots: []
+    search pass on KPX: 0
+    send slow: 0
+    send string active: ''
+    send string every: 60
+    send string intro: 1
+    send string only when idle: ''
+    send string txt: ''
+    session log pattern: <UUID>_<NAME>_<DATE_Y><DATE_M><DATE_D>_<TIME_H><TIME_M><TIME_S>.txt
+    session logs amount: 10
+    session logs folder: /home/depeche/.config/asbru/session_logs
+    startup launch: ''
+    startup script: ''
+    startup script name: sample1.pl
+    terminal options:
+      audible bell: 0
+      back color: '#000000000000'
+      bold color: '#cc62cc62cc62'
+      bold color like text: 1
+      command prompt: '(([#%:>~\$\] ])(?!\g{-1})){3,4}|(\w[@\/]\w|sftp).*?[#%>~\$\]]|([\w\-\.]+)[%>\$\]]( |\033)|^[#%\$>\:\]~] *$'
+      cursor shape: block
+      open in tab: 1
+      password prompt: "([pP]ass|[pP]ass[wW]or[dt](\\s+for\\s+|\\w+@[\\w\\-\\.]+)*|[cC]ontrase.a|Enter passphrase for key '.+')\\s*:\\s*$"
+      tab back color: '#000000000000'
+      terminal backspace: auto
+      terminal character encoding: UTF-8
+      terminal emulation: xterm
+      terminal font: Monospace 9
+      terminal scrollback lines: -2
+      terminal select words: -.:_/
+      terminal transparency: 0
+      terminal window hsize: 800
+      terminal window vsize: 600
+      text color: '#cc62cc62cc62'
+      timeout command: 40
+      timeout connect: 40
+      use personal settings: ''
+      use tab back color: ''
+      username prompt: '([lL]ogin|[uU]suario|([uU]ser-?)*[nN]ame.*|[uU]ser)\s*:\s*$'
+    title: 'vdi-ermakov - RDP'
+    use postpend command: ''
+    use prepend command: ''
+    use proxy: 0
+    use sudo: ''
+    user: ermakov_ds
+    variables: []
   ea2821b5-9d11-4826-bb22-b72638049128:
     KPX title regexp: '.*VSi-Test - 2-я территория.*'
     _is_group: 0
@@ -8464,8 +10000,8 @@ environments:
     name: VSi-Test
     options: ' -X'
     parent: 779a78b3-db94-48c3-9c05-bcffc7afa64b
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: depeche
     port: 22
     postpend command: ''
@@ -8557,8 +10093,8 @@ environments:
     name: hasp4 /183/
     options: ' -x'
     parent: 9365e4a6-6a88-4782-953a-5f5caa4e42a2
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -8650,8 +10186,8 @@ environments:
     name: HGi-SW-NRCKI-04
     options: ' -x'
     parent: ad3dbcf9-b2d0-4976-b46e-c0e9c6586846
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -8742,8 +10278,8 @@ environments:
     name: alex.depeche.xyz
     options: ' -x'
     parent: f5b7de86-798b-4131-9b67-e81ce284f48d
-    pass: 53616c7465645f5f3132333435363738b5767a23a3803504d39b09cee51bc08d
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000007e89df288810fe9dd999740c9412505b
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -8832,6 +10368,7 @@ environments:
       5363b01a-1cdf-4923-854d-c2b3e8bfc52c: 1
       99be1daa-d6a2-4a89-a4cd-5c758bb59d22: 1
       9bba550a-6fc8-4909-bd9b-006d44532b9d: 1
+      a321e7f5-455e-47ee-8c4c-bc9c40cf34cc: 1
       f0a283ca-ae0b-4eb1-8617-29624a5ca7a1: 1
     description: Connection group 'HomeSweetHome'
     name: HomeSweetHome
@@ -8868,8 +10405,8 @@ environments:
     name: Hr-PgSQL01-D
     options: ' -x'
     parent: 195b88b7-7dd1-4e4b-8de1-175cfeab91b0
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: depeche
     port: 22
     postpend command: ''
@@ -8962,8 +10499,8 @@ environments:
     name: HGi-GW-NRCKI-02
     options: ' -x'
     parent: ad3dbcf9-b2d0-4976-b46e-c0e9c6586846
-    pass: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
-    passphrase: 53616c7465645f5f3132333435363738a9fd581c1ddfc1c2
+    pass: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
+    passphrase: 53616c7465645f5f4e61bc00000000005c4aa135f78c9e29
     passphrase user: ''
     port: 22
     postpend command: ''
@@ -9026,8 +10563,8 @@ environments:
     variables: []
 tmp:
   changed: 0
-  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{5963}_n9.txt'
-  socket: '/tmp/asbru-cm-Q4hD/asbru_PID{5963}_n9.socket'
-  socket exec: '/tmp/asbru-cm-Q4hD/asbru_PID{5963}_n9.exec.socket'
+  log file: '/home/depeche/.config/asbru/tmp/asbru_PID{2263}_n9.txt'
+  socket: '/tmp/asbru-cm-uPcJ/asbru_PID{2263}_n9.socket'
+  socket exec: '/tmp/asbru-cm-uPcJ/asbru_PID{2263}_n9.exec.socket'
   tray available: 1
-  uuid: 'asbru_PID{5963}_n9'
+  uuid: 'asbru_PID{2263}_n9'

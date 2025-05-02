@@ -78,6 +78,7 @@ for_window [class="xfreerdp"] move to workspace $ws12
 for_window [class="thunderbird"] move to workspace $ws2
 for_window [class="winbox.exe"] move to workspace $ws4
 for_window [class="WinBox"] move to workspace $ws4
+for_window [class="Sublime_text"] move to workspace $ws7
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
 for_window [class="Xfce4-terminal"] floating enable
@@ -90,13 +91,14 @@ bindsym $mod+q exec /home/depeche/bin/rofiMenu
 bindsym $mod+Return exec alacritty  #gnome-terminal   #i3-sensible-terminal # xfce4-terminal
 bindsym $mod+Shift+Return exec thunar
 bindsym $mod+Control+Return exec alacritty -e zsh
-bindsym $mod+Escape exec shutdown -h now
+bindsym $mod++Control+Escape exec shutdown -h now
 bindsym $mod+r exec rofi -show drun -theme arthur -show-icons
 bindsym $mod+Shift+r exec rofi -show window -theme arthur - show-icons
 bindsym $mod+mod1+v exec rofi -theme arthur -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 bindsym $mod+mod1+k exec ~/bin/networkmanager_dmenu
 bindsym $mod+b exec bwmenu -- -location 2 -theme arthur
 bindsym $mod+Shift+l exec /home/depeche/bin/screenlock.sh
+bindsym $mod+mod1+l exec /home/depeche/bin/screenlock.sh
 bindsym $mod+Shift+t exec picom-trans -o 100
 # Убить окно нажав средней кнопкой мыши на титульный заголовок окна
 #bindsym --whole-window button2 kill
