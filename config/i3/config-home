@@ -78,6 +78,8 @@ for_window [class="Brave-browser"] move to workspace $ws1
 for_window [class="libreoffice"] move to workspace $ws11
 for_window [class="iptvnator"] move to workspace $ws7
 #for_window [class="Remmina"] move to workspace $ws6
+for_window [class="winbox.exe"] move to workspace $ws4
+
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
 for_window [class="Xfce4-terminal"] floating enable
