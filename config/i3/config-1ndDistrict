@@ -49,11 +49,11 @@ for_window [tiling] border pixel 3
 # Привязка приложений к конкретным рабочим столам - workspace
 bindsym $mod+F1 exec --no-startup-id brave; workspace 1
 bindsym $mod+F3 exec --no-startup-id subl3; workspace 3
-bindsym $mod+F4 exec --no-startup-id cherrytree; workspace 4
+bindsym $mod+F4 exec --no-startup-id cjoplin-deskto; workspace 10
 bindsym $mod+F5 exec --no-startup-id galculator
 bindsym $mod+F6 exec --no-startup-id remmina; workspace 6
-bindsym $mod+F7 exec --no-startup-id libreoffice --writer
-bindsym $mod+F8 exec --no-startup-id libreoffice --calc
+bindsym $mod+F7 exec --no-startup-id onlyoffice-desktopeditors --new=doc; workspace 5
+bindsym $mod+F8 exec --no-startup-id onlyoffice-desktopeditors --new=cell; workspace 5
 bindsym $mod+F10 exec --no-startup-id thunar; workspace 8
 bindsym $mod+m exec --no-startup-id megasync
 bindsym Print exec --no-startup-id flameshot gui
@@ -79,6 +79,9 @@ for_window [class="thunderbird"] move to workspace $ws2
 for_window [class="winbox.exe"] move to workspace $ws4
 for_window [class="WinBox"] move to workspace $ws4
 for_window [class="Sublime_text"] move to workspace $ws7
+for_window [class="ONLYOFFICE"] move to workspace $ws5
+for_window [class="libreoffice"] move to workspace $ws5
+
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
 for_window [class="Xfce4-terminal"] floating enable
