@@ -35,6 +35,9 @@ case "$1" in
         --width="$YAD_WIDTH" --height="$YAD_HEIGHT" --posx="$pos_x" --posy="$pos_y" \
         --title="yad-calendar" --borders=0 >/dev/null &
     ;;
+--calendar)
+    ~/.local/bin/naivecalendar
+    ;;
 *)
     echo "$DATE"
     ;;
