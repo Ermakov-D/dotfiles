@@ -139,7 +139,7 @@ font-4 = "Weather Icons:size=7;2"
 modules-left = i3 xwindow
 ;modules-center = weather
 # kernel
-modules-right = memory2 cpu2 xkeyboard battery date poweroff tray
+modules-right = memory2 cpu2 xkeyboard battery popup-calendar poweroff tray
 
 separator = |
 
@@ -1639,3 +1639,15 @@ format-prefix-foreground = #3EC13F
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
+###############################################################################
+# Календарь 
+[module/popup-calendar]
+type = custom/script
+exec = ~/.config/polybar/scripts/popup-calendar.sh
+interval = 5
+click-left = ~/.config/polybar/scripts/popup-calendar.sh --calendar &
+format-prefix = " "
+format-prefix-foreground = #c1941a
+format-underline = #c1941a
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
