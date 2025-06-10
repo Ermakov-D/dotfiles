@@ -81,19 +81,30 @@ for_window [class="Xfce4-terminal"] floating enable
 #for_window [class="St"] floating enable
 
 # Горячие клавиши
+# %%hotkey: Вызов kill %%
 bindsym $mod+Control+q kill
+# %%hotkey: быстрые скрипты %%
 bindsym $mod+q exec /home/depeche/bin/rofiMenu
+# %%hotkey: терминал %%
 bindsym $mod+Return exec alacritty #i3-sensible-terminal # xfce4-terminal
+# %%hotkey: Thunar %%
 bindsym $mod+Shift+Return exec thunar
+# %%hotkey: Shutdown %%
 bindsym $mod+Escape exec shutdown -h now
+# %%hotkey: Приложения %%
 bindsym $mod+r exec rofi -show drun -theme arthur -show-icons
+# %%hotkey: Запущенные приложения %%
 bindsym $mod+Shift+r exec rofi -show window -theme arthur - show-icons
+# %%hotkey: буфер обмена %%
 bindsym $mod+mod1+v exec rofi -theme arthur -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
+# %%hotkey:  %%
 bindsym $mod+mod1+k exec networkmanager_dmenu
 bindsym $mod+b exec bwmenu -- -location 2 -theme arthur
 bindsym $mod+Shift+l exec /home/depeche/bin/screenlock.sh
+# %%hotkey: калькулятор %%
 bindsym $mod+c exec rofi -show calc -modi calc -no-show-match -no-sort -theme arthur
-
+# %%hotkey: 2fa %%
+bindsym $mod+Control+2 exec rofi -show 2fa -modi 2fa:/home/depeche/.local/bin/2fa-rofi.sh -no-show-match -no-sort -theme arthur
 
 # Убить окно нажав средней кнопкой мыши на титульный заголовок окна
 #bindsym --whole-window button2 kill
