@@ -20,6 +20,7 @@ exec --no-startup-id pamac-tray
 exec --no-startup-id xautolock -time 30 -locker ~/bin/screenlock.sh &
 exec --no-startup-id /usr/bin/blueman-applet
 exec --no-startup-id /usr/bin/solaar -w hide
+exec --no-startup-id /usr/bin/nextcloud
 
 # Restore WorkSpace
 #exec --no-startup-id /usr/bin/i3-resurrect restore -w 1
@@ -86,6 +87,7 @@ for_window [class="Xfce4-terminal"] floating enable
 #for_window [class="St"] floating enable
 
 # Горячие клавиши
+## Приложения // Relative Window // <Super> Ctrl q ##
 bindsym $mod+Control+q kill
 bindsym $mod+q exec /home/depeche/bin/rofiMenu
 bindsym $mod+Return exec alacritty #i3-sensible-terminal # xfce4-terminal
@@ -98,6 +100,10 @@ bindsym $mod+mod1+k exec networkmanager_dmenu
 bindsym $mod+b exec bwmenu -- -location 2 -theme arthur
 bindsym $mod+Shift+l exec /home/depeche/bin/screenlock.sh
 bindsym $mod+c exec rofi -show calc -modi calc -no-show-match -no-sort -theme arthur
+bindsym $mod+Control+2 exec rofi -show 2fa -modi 2fa:2fa-rofi.sh -no-show-match -no-sort -theme arthur
+# For french keyboard
+## System // Shortcut help //  ? ##
+bindsym $mod+shift+h exec rofi -modi shortcut:~/.config/rofi/scripts/shortcut.sh -show shortcut
 
 # Убить окно нажав средней кнопкой мыши на титульный заголовок окна
 #bindsym --whole-window button2 kill
@@ -175,6 +181,7 @@ bindsym $mod+l focus up
 bindsym $mod+semicolon focus right
 
 # alternatively, you can use the cursor keys:
+## Navigate // Relative Window // <Super> ↑ ↓ ← → ##
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
