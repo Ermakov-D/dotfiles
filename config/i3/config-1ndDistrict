@@ -89,22 +89,40 @@ for_window [class="xterm"] floating enable
 for_window [class="Spotify"] floating enable
 
 # Горячие клавиши
+# %%hotkey: Kill %%
 bindsym $mod+Control+q kill
+# %%hotkey: быстрые скрипты %%
 bindsym $mod+q exec /home/depeche/bin/rofiMenu
-bindsym $mod+Return exec alacritty  #gnome-terminal   #i3-sensible-terminal # xfce4-terminal
+# %%hotkey: териминал (zsh) %%
+bindsym $mod+Return exec alacritty -e zsh  #gnome-terminal   #i3-sensible-terminal # xfce4-terminal
+# %%hotkey: Thunar %%
 bindsym $mod+Shift+Return exec thunar
-bindsym $mod+Control+Return exec alacritty -e zsh
+# %%hotkey: териминал (bash) %%
+bindsym $mod+Control+Return exec alacritty
+# %%hotkey: выключение %%
 bindsym $mod++Control+Escape exec shutdown -h now
+# %%hotkey: Приложения %%
 bindsym $mod+r exec rofi -show drun -theme arthur -show-icons
+# %%hotkey: Запущенные Приложения %%
 bindsym $mod+Shift+r exec rofi -show window -theme arthur - show-icons
+# %%hotkey: Буфер обмена %%
 bindsym $mod+mod1+v exec rofi -theme arthur -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 bindsym $mod+mod1+k exec ~/bin/networkmanager_dmenu
 bindsym $mod+b exec bwmenu -- -location 2 -theme arthur
-bindsym $mod+Shift+l exec /home/depeche/bin/screenlock.sh
+#bindsym $mod+Shift+l exec /home/depeche/bin/screenlock.sh
+# %%hotkey: Блокировака экрана %%
 bindsym $mod+mod1+l exec /home/depeche/bin/screenlock.sh
 bindsym $mod+Shift+t exec picom-trans -o 100
+bindsym $mod+Control+2 exec rofi -show 2fa -modi 2fa:/home/depeche/bin/2fa-rofi -no-show-match -no-sort -theme arthur
 # Убить окно нажав средней кнопкой мыши на титульный заголовок окна
 #bindsym --whole-window button2 kill
+# %%hotkey: Калькулятор %%
+bindsym $mod+c exec rofi -show calc -modi calc -no-show-match -no-sort 
+# -theme arthur
+# %%hotkey: Горячие клавиши %%
+bindsym $mod+Control+h exec dmenu_hotkeys run --menu rofi --app i3
+bindsym $mod+mod1+h exec /home/depeche/.local/bin/rofi-shortcuts
+
 
 # Настройка на 2-а монитора
 set $notebook LVDS1
@@ -121,7 +139,10 @@ workspace 6 output $HDMI
 
 
 # Переключение рабочих столов
+
+## System // Рабочие столы // +1...0 Alt+1,2 ##
 bindsym $mod+1 workspace number $ws1
+## System // Relative Window // <Super> ↑ ↓ ← → ##
 bindsym $mod+2 workspace number $ws2
 bindsym $mod+3 workspace number $ws3
 bindsym $mod+4 workspace number $ws4

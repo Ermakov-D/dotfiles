@@ -52,9 +52,6 @@ Host 192.168.20.7
 #Host ssh.viam.nichost.ru
 #    PubkeyAuthentication=no
 
-#Host ssh.viam-3.nichost.ru
-#    PubkeyAuthentication=no
-
 Host ssh.materials.nichost.ru
     User materials
     IdentityFile ~/.ssh/keys/depeche-rsa4096
@@ -95,7 +92,7 @@ Host 185.158.114.227
 Host ssh.viam-3.nichost.ru
     User viam-3
     #IdentityFile ~/.ssh/keys/depeche-rsa4096
-    #PubkeyAcceptedAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
     HostkeyAlgorithms +ssh-rsa
 
 Host ssh.viam-5.nichost.ru
