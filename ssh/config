@@ -71,7 +71,7 @@ Host ssh.viam.nichost.ru
     HostKeyAlgorithms=+ssh-rsa
     PubkeyAcceptedKeyTypes +ssh-rsa
 
-Host gitea.corp.viam.ru
+Host gitea.corp.viam.ru git.corp.viam.ru
     HostName 172.16.10.15
     User forgejo
     IdentityFile ~/.ssh/keys/gitea
