@@ -112,6 +112,7 @@ bindsym $mod+b exec bwmenu -- -location 2 -theme arthur
 #bindsym $mod+Shift+l exec /home/depeche/bin/screenlock.sh
 # %%hotkey: Блокировака экрана %%
 bindsym $mod+mod1+l exec /home/depeche/bin/screenlock.sh
+bindsym $mod+mod1+Control+l exec /home/depeche/bin/rofi-xautolock
 bindsym $mod+Shift+t exec picom-trans -o 100
 bindsym $mod+Control+2 exec rofi -show 2fa -modi 2fa:/home/depeche/bin/2fa-rofi -no-show-match -no-sort -theme arthur
 # Убить окно нажав средней кнопкой мыши на титульный заголовок окна
