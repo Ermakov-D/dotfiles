@@ -237,6 +237,7 @@ function update () {
         echo "yay не установлен"
     else
         yay -Syu
+        yay -Sc
     fi
 
     # обновление hblock до 12 дня
