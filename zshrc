@@ -272,3 +272,5 @@ alias lt='exa --tree --level=2'                                        # tree
 alias Cat='bat --paging=never --style=plain'
 eval "$(direnv hook zsh)"
 
+source ~/.vault
+
