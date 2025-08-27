@@ -223,7 +223,7 @@ font-4 = "Weather Icons:size=10;2"
 font-5 = "Font Awesome 6 Free Solid:pixelsize=9;0"
 
 modules-left = load-average vpn-VIAMNet vpn-VDSina vpn-ZeroTier byeDPI
-modules-center = networkspeeddown networkspeedup pub-ip volume spotify1 
+modules-center = networkspeeddown networkspeedup ipv6 pub-ip volume 
 modules-right = unread-mail dotfiles openweather filesystem
 
 separator = |
@@ -1523,4 +1523,18 @@ format-prefix-foreground = #3EC13F
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
+################################################################################
+# Статус IPv6
+[module/ipv6]
+type = custom/script
+exec = ~/.config/polybar/scripts/ipv6.sh
+interval = 5
+click-left = ~/.config/polybar/scripts/ipv6.sh --action &
+#click-right = ~/.config/polybar/scripts/byeDPI.sh --spoofdpi &
+format-prefix-foreground = #3EC13F
+format-underline = #C1B93E
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
 
+###############################################################################
+#

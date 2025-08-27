@@ -1,0 +1,47 @@
+#!/bin/sh
+# set ipv6 
+ipv6 = $(ip -6 addr show dev enp6s0 scope global | awk '/inet6/{print $2}' | cut -d/ -f1)
+echo $ipv6
+exit
+
+getIPv6() {
+        if [ $(ip -6 addr show dev enp6s0 scope global | awk '/inet6/{print $2}' | cut -d/ -f1) = "2a03:e2c0:4f0d:2::10" ]; then
+          echo "yes"
+        else 
+          echo "no"
+
+        fi
+}
+
+case "$1" in
+    --activate)
+        if [ $(ip -6 addr show dev enp6s0 scope global | awk '/inet6/{print $2}' | cut -d/ -f1) = "2a03:e2c0:4f0d:2::10" ]; then
+            break
+        else
+            #~/bin/ciadpi --ip 127.0.0.1 -p 3080 --disorder 1 --auto=torst --tlsrec 1+s &
+            # см. https://github.com/hufrea/byedpi/discussions/184
+            sudo /usr/bin/ip -6 addr add 2a03:e2c0:4f0d:2::10/64  dev enp6s0
+            sudo /usr/bin/ip -6 route add default via 2a03:e2c0:4f0d:2::1 dev enp6s0 
+        fi
+        ;;
+    --deactivate)
+        if [ $(ip -6 addr show dev enp6s0 scope global | awk '/inet6/{print $2}' | cut -d/ -f1) = "2a03:e2c0:4f0d:2::10" ]; then
+            sudo /usr/bin/ip -6 route delete default via 2a03:e2c0:4f0d:2::1 dev enp6s0 
+            sudo /usr/bin/ip -6 addr delete 2a03:e2c0:4f0d:2::10/64  dev enp6s0
+        fi
+        ;;
+    *)
+        case "$(getIPv6)" in
+            yes)
+                echo "󰩠  IPv6"
+                ;;
+            no)
+                echo "󰱟  IPv6"
+                ;;
+            *)
+                echo "󰛵 IPv6"
+                ;;
+	    esac
+
+esac
+
