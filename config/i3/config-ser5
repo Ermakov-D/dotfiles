@@ -90,7 +90,7 @@ bindsym $mod+Return exec alacritty #i3-sensible-terminal # xfce4-terminal
 # %%hotkey: Thunar %%
 bindsym $mod+Shift+Return exec thunar
 # %%hotkey: Shutdown %%
-bindsym $mod+Escape exec shutdown -h now
+bindsym $mod+Control+Escape exec shutdown -h now
 # %%hotkey: Приложения %%
 bindsym $mod+r exec rofi -show drun -theme arthur -show-icons
 # %%hotkey: Запущенные приложения %%
