@@ -222,7 +222,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Weather Icons:size=10;2"
 font-5 = "Font Awesome 6 Free Solid:pixelsize=9;0"
 
-modules-left = load-average vpn-VIAMNet vpn-VDSina vpn-ZeroTier byeDPI
+modules-left = load-average vpn-VIAMNet vpn-VDSina vpn-XRAY byeDPI
 modules-center = networkspeeddown networkspeedup ipv6 pub-ip volume 
 modules-right = unread-mail dotfiles openweather filesystem
 
@@ -1536,5 +1536,16 @@ format-underline = #C1B93E
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
+###############################################################################
+# Статус Xray-xHTTP
+[module/vpn-XRAY]
+type = custom/script
+exec = ~/.config/polybar/scripts/xray-xhttp.sh
+interval = 60
+click-left = ~/.config/polybar/scripts/xray-xhttp.sh --xray &
+format-prefix-foreground = #3EC13F
+format-underline = #D2CFCF
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
 ###############################################################################
 #
