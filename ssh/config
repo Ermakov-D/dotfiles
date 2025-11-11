@@ -1,5 +1,6 @@
 Host *
     StrictHostKeyChecking accept-new
+    WarnWeakCrypto no
     
 Host bitbucket.org
     HostName bitbucket.org
