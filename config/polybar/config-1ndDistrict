@@ -339,6 +339,9 @@ ws-icon-7 = 8;
 ws-icon-8 = 9;
 ws-icon-9 = 10;
 ws-icon-10 = 11;
+ws-icon-11 = 12;
+ws-icon-12 = 14;
+# 
 ws-icon-default = " "
 
 ; Available tags:

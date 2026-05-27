@@ -75,19 +75,34 @@ for_window [class="eXpress"] move to workspace $ws11
 for_window [class="Thunar"] move to workspace $ws8
 for_window [class="org.remmina.Remmina"] move to workspace $ws6
 for_window [class="pamac-manager"] move to workspace $ws9
-for_window [class="xfreerdp"] move to workspace $ws12
+#for_window [class="xfreerdp"] move to workspace $ws12
 for_window [class="thunderbird"] move to workspace $ws2
 for_window [class="winbox.exe"] move to workspace $ws4
 for_window [class="WinBox"] move to workspace $ws4
 for_window [class="Sublime_text"] move to workspace $ws7
 for_window [class="ONLYOFFICE"] move to workspace $ws5
 for_window [class="libreoffice"] move to workspace $ws5
+for_window [class="Bitwarden"] move to workspace $ws11
+
 
 # Открытие программ в плавающе окне
 for_window [title="galculator$"] floating enable
 for_window [class="Xfce4-terminal"] floating enable
 for_window [class="xterm"] floating enable
 for_window [class="Spotify"] floating enable
+for_window [class="zvuk-desktop"] floating enable
+
+# Настройки для Safe Eyeas
+#for_window [class="Safeeyes"] floating enable; border none; fullscreen enable
+#for_window [instance="safeeyes"] floating enable; border none; fullscreen enable
+for_window [class="(?i)safeeyes"] floating enable
+for_window [class="(?i)safeeyes"] border none
+for_window [class="(?i)safeeyes"] focus
+for_window [class="(?i)safeeyes"] move container to output current
+for_window [class="(?i)safeeyes"] fullscreen enable global
+
+
+
 
 # Горячие клавиши
 # %%hotkey: Kill %%
@@ -137,6 +152,8 @@ workspace 1 output $HDMI
 workspace 2 output $DVI
 workspace 3 output $HDMI
 workspace 11 output $DVI
+workspace 12 output $DVI
+workspace 14 output $DVI
 workspace 6 output $HDMI
 
 
@@ -156,6 +173,7 @@ bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
 bindsym $mod+mod1+1 workspace number $ws11
 bindsym $mod+mod1+2 workspace number $ws12
+bindsym $mod+mod1+4 workspace number $ws14
 bindsym $mod+mod1+KP_End workspace number $ws11
 bindsym $mod+mod1+KP_Down workspace number $ws12
 
@@ -258,6 +276,7 @@ set $ws10 "10"
 #set $ws10 "10:"
 set $ws11 "11"
 set $ws12 "12"
+set $ws14 "14"
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1

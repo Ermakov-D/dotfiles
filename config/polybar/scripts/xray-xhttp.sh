@@ -13,7 +13,9 @@ case "$1" in
         if [ $(runningStatus) = "xray" ] ; then
             kill $(pgrep xray)
         else
-            /usr/bin/xray -c /home/depeche/Nextcloud/VPNKeys/xray-xhttp.json >/dev/null 2>&1 &
+            # Orig: /usr/bin/xray -c /home/depeche/Nextcloud/VPNKeys/xray-xhttp.json >/dev/null 2>&1 &
+            # Out to journalctl
+            systemd-cat -t xray-client -p info /usr/bin/xray -c /home/depeche/Nextcloud/VPNKeys/xray-xhttp.json &
         fi
         ;;
     *)

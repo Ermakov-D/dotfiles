@@ -1,6 +1,7 @@
 Host *
     StrictHostKeyChecking accept-new
     WarnWeakCrypto no
+    IdentityAgent ~/.bitwarden-ssh-agent.sock
     
 Host bitbucket.org
     HostName bitbucket.org
@@ -178,9 +179,21 @@ Host 192.168.3.237 192.168.3.236
     User depeche
     IdentityFile ~/.ssh/keys/depeche-rsa4096
  
+# Cisco
+Host 192.168.250.145
+    KexAlgorithms +diffie-hellman-group14-sha1
+    HostKeyAlgorithms +ssh-rsa
+    Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
+    #HostKeyAlgorithms=+ssh-dss,ssh-rsa
+Host 192.168.250.44
+    KexAlgorithms +diffie-hellman-group14-sha1
+    HostKeyAlgorithms +ssh-rsa
+    Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
+    #HostKeyAlgorithms=+ssh-dss,ssh-rsa
+
 
 #Eltex ====================================================================
-Host 192.168.250.215 10.123.1.10 10.123.1.11 192.168.4.30 10.1.24.30 10.1.24.32
+Host 192.168.250.215 10.123.1.10 10.123.1.11 192.168.4.30 10.1.24.30 10.1.24.32 192.168.250.237
     Ciphers aes128-ctr,aes192-ctr,aes256-ctr,aes128-cbc,3des-cbc
     #HostKeyAlgorithms=+ssh-dss,ssh-rsa
     HostKeyAlgorithms=ssh-rsa
@@ -191,6 +204,8 @@ Host 192.168.250.213
 
 Host 192.168.250.239
     KexAlgorithms +diffie-hellman-group1-sha1
+    HostkeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
     #HostKeyAlgorithms=+ssh-dss,ssh-rsa
 
 Host 192.168.250.224
@@ -260,4 +275,47 @@ Host 172.16.202.120
 Host vri-matrix.viam.ru
     User depeche
     IdentityFile ~/.ssh/keys/depeche-rsa4096
+    IdentityAgent ~/.bitwarden-ssh-agent.sock
+
+###########################################################
+#SSH-Menu config
+# Menu: DLink Switch 
+# IP: 10.10.6.178
+# Group: DLink DGS 1510
+Host hr-sw-k24-2porch-03
+    Ciphers 3des-cbc
+    HostName 10.10.6.178
+    User depeche 
+    HostKeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    IdentityAgent none
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/keys/dlink-dgs-1510
+
+# Menu: DLink Switch 
+# IP: 10.10.6.171
+# Group: DLink DGS 1510
+Host hr-sw-23k-1fl-02-right
+    Ciphers 3des-cbc
+    HostName 10.10.6.171
+    User depeche
+    HostKeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    IdentityAgent $SSH_AGENT_DISABLE
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/keys/dlink-dgs-1510
+    
+# Menu: DLink Switch 
+# IP: 10.10.6.183
+# Group: DLink DGS 1510
+Host k23-4fl-2up
+    Ciphers 3des-cbc
+    HostName 10.10.6.183
+    User depeche
+    HostKeyAlgorithms +ssh-rsa
+    PubkeyAcceptedAlgorithms +ssh-rsa
+    IdentityAgent none
+    IdentitiesOnly yes
+    IdentityFile ~/.ssh/keys/dlink-dgs-1510
+
 
