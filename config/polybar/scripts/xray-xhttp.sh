@@ -11,11 +11,19 @@ runningStatus() {
 case "$1" in
     --xray)
         if [ $(runningStatus) = "xray" ] ; then
-            kill $(pgrep xray)
+            kill $(pidof xray)
+            if [[ $HOSTNAME == "depeche-host" ]]; then
+                kill $(pgrep autossh)            
+            fi
         else
             # Orig: /usr/bin/xray -c /home/depeche/Nextcloud/VPNKeys/xray-xhttp.json >/dev/null 2>&1 &
             # Out to journalctl
-            systemd-cat -t xray-client -p info /usr/bin/xray -c /home/depeche/Nextcloud/VPNKeys/xray-xhttp.json &
+            if [[ $HOSTNAME == "depeche-host" ]]; then
+                autossh -M 0 -f -N 03-tunnel
+                systemd-cat -t xray-client -p info /usr/bin/xray -c /home/depeche/Nextcloud/VPNKeys/xray-xhttp-via-localhost.json &
+            else
+                systemd-cat -t xray-client -p info /usr/bin/xray -c /home/depeche/Nextcloud/VPNKeys/xray-xhttp.json &
+            fi
         fi
         ;;
     *)
