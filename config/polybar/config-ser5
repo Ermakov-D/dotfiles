@@ -226,7 +226,7 @@ font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Weather Icons:size=7;2"
 
-;modules-left = load-average VIAMNET-status
+;modules-left = load-average VIAMNET-status xray-proxy
 modules-left =VIAMNET-status byeDPI
 modules-center = networkspeeddown networkspeedup pub-ip wireless-network wired-network volume 
 modules-right = openweather filesystem
@@ -322,7 +322,7 @@ font-2 = "Noto Sans:size=10;0"
 font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Weather Icons:size=7;2"
 
-modules-left = temperature2 load-average VIAMNET-status 
+modules-left = temperature2 load-average VIAMNET-status xray-proxy
 ;modules-left =VIAMNET-status
 modules-center = networkspeeddown networkspeedup pub-ip volume mpd 
 modules-right = openweather filesystem
@@ -420,7 +420,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Weather Icons:size=7;2"
 font-5 = "Font Awesome 6 Free Solid:pixelsize=9;0"
 
-modules-left = temperature2 load-average VIAMNET-status 
+modules-left = temperature2 load-average VIAMNET-status xray-proxy
 ;modules-left =VIAMNET-status
 modules-center = networkspeeddown networkspeedup pub-ip volume mpd 
 modules-right = dotfiles openweather filesystem
@@ -1651,3 +1651,16 @@ format-prefix-foreground = #c1941a
 format-underline = #c1941a
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
+
+###############################################################################
+# Статус Xray-xHTTP
+[module/xray-proxy]
+type = custom/script
+exec = ~/.config/polybar/scripts/xray-xhttp.sh
+interval = 60
+click-left = ~/.config/polybar/scripts/xray-xhttp.sh --xray &
+format-prefix-foreground = #3EC13F
+format-underline = #D2CFCF
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+###############################################################################
