@@ -277,6 +277,16 @@ Host vri-matrix.viam.ru
     IdentityFile ~/.ssh/keys/depeche-rsa4096
     IdentityAgent ~/.bitwarden-ssh-agent.sock
 
+Host 03-tunnel
+    HostName 03.depeche.xyz
+    User tunneluser
+    Port 443
+    IdentityFile ~/.ssh/keys/03.depeche.xyz.tunnel
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
+    ExitOnForwardFailure yes
+    LocalForward 127.0.0.1:8340 localhost:8340
+
 ###########################################################
 #SSH-Menu config
 # Menu: DLink Switch 
